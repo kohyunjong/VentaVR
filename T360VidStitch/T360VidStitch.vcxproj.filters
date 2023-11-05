@@ -1,0 +1,1892 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T360VidStitch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="T360VidStitchDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CenterView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Quram360Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewConfigDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="curvegraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CurvePaneDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CustCurveCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskPanelDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Src\GdiplusH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LeftChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightSourceChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanoPreViewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorSettingDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneBottomDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneLeftDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PaneRightDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfCalibrationChildOne.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfCalibrationChildThree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfCalibrationChildTwo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfiguChildView1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfiguChildView2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfiguChildView3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfOutputsChildOne.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfOutputsChildThree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfOutputsChildTwo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfiguView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FolderDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PictureCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjAllConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImgDialogBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CGdiPlusBitmap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GdipButton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MemDC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FormView1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceEditRect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GdipButtonext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TransparentDlgType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VIRecentFileList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditInputDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BottomSourceChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BottomPanoChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightCalibChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightPanoraChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightAdvanceChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightOverlayChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddOverlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightManualCalibChildDlg.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightAdvanceAlignChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightAdvanceUpdateChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightAdvanceManualChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddOverlayPreviewDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightInteracChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditCameraParamDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BottomManualChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfOutputsChildFour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LogViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="QLicense.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RightOverlayListChildDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditInputStereoDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddOverlayParentDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddOverlayChild1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddOverlayChild2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddOverlayChild3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AddOverlayChild4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ManualRotateDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild_0.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild_1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild_2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild_3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild_4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild_5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild_6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfPanoramaChildOne.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfPanoramaChildTwo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayEditPositionDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NewLoadConfigChild_7.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T360VidStitch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="T360VidStitchDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CenterView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewConfigDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CurvePaneDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CustCurveCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskPanelDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Label.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LeftChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightPanoraChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightSourceChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorSettingDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneBottomDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneLeftDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PaneRightDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PanoPreViewDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfCalibrationChildOne.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfCalibrationChildThree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfCalibrationChildTwo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfiguChildView1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfiguChildView2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfiguChildView3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfOutputsChildOne.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfOutputsChildThree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfOutputsChildTwo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfiguView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FolderDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PictureCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjAllConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImgDialogBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GdipButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FormView1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceEditRect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GdipButtonext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TransparentDlgType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VIRecentFileList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditInputDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BottomPanoChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BottomSourceChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightCalibChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightAdvanceChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightOverlayChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightManualCalibChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightAdvanceAlignChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightAdvanceUpdateChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightAdvanceManualChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightInteracChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditCameraParamDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BottomManualChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfOutputsChildFour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LogViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RightOverlayListChildDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditInputStereoDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ManualRotateDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild_0.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild_1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild_2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild_3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild_4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild_6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfPanoramaChildOne.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfPanoramaChildTwo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayEditPositionDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NewLoadConfigChild_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\T360VidStitch.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toast_bg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toast_bg1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_btn_new_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_btn_new_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_btn_new_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_btn_new_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_btn_load_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_btn_load_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_btn_load_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\file_btn_load_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_panorama_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_panorama_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_panorama_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_panorama_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_sources_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_sources_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_sources_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_sources_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_interaction_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_interaction_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_interaction_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_interaction_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_configuration_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_configuration_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_configuration_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_configuration_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_configuration_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_calibration_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_calibration_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_calibration_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_hdd_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_hdd_encording.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_hdd_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_hdd_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_hdd_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_output_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_output_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_output_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_output_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_output_streaming.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rtmp_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rtmp_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rtmp_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rtmp_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rtmp_streaming.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_snapshot_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_snapshot_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_snapshot_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_snapshot_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toggle_on.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\toggle_off.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_openfile_btn_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_openfile_btn_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_save_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_save_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_save_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_color_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_color_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_color_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_curves_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_curves_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_curves_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_curves_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_apply_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_apply_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_apply_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_apply_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_create_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_create_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_create_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_create_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_save_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_save_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_save_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_save_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_calibration_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_calibration_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_calibration_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_calibration_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_outputs_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_outputs_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_outputs_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_outputs_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_panorama_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_panorama_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_panorama_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_panorama_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_save_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_save_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_save_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_openfile_btn_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_openfile_btn_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sources_guideline_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sources_guideline_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_apply_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_apply_mover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_apply_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_apply_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_create_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_create_mover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_create_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_create_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_save_disable.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_save_mover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_save_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_btn_save_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_sources_thumbnail_sel_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_sources_thumbnail_sel_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_sources_thumbnail_sel_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_sources_thumbnail_sel_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_sources_thumbnail_sel_5.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_sources_thumbnail_sel_6.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_sources_thumbnail_sel_7.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_sources_thumbnail_sel_8.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\sources_drag.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\close_btn_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\close_btn_nor.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\close_btn_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\close_btn_mover.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\close_btn_nor.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\close_btn_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\window_icon_interaction.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\window_icon_none.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\window_icon_panorama.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\window_icon_sources.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\splash.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\window_icon_configu.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_list_line.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\configuration_tab_line.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\line.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\divide_line.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_camera_sel_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_camera_sel_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_camera_sel_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_apply_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_apply_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_apply_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_apply_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_fast_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_b.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_detail_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_advance_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_back_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_detail_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_detail_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_fast_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_fast_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_advance_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_advance_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_back_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_back_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_align_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_align_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_align_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_EditOff_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_EditOn_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_EditOn_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_EditOff_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_EditOff_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_EditOn_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_EditOff_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_straighten_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_straighten_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_straighten_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_select_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_select_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_select_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_mask_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_mask_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_mask_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_advancecalibration_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_advancecalibration_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_advancecalibration_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_clear_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_selectall_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_redo_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_undo_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_panosave_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_panosave_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_panosave_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Nadir\nadir_black.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Nadir\nadir.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Nadir\nadir_sk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_redo_over.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_redo_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_undo_over.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_undo_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_clear_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_clear_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_selectall_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_selectall_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_overlay_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_overlay_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_overlay_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_add_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_add_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_add_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_delete_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_delete_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_delete_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_hdd_encording_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_hdd_encording_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_output_streaming_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_output_streaming_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rtmp_streaming_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rtmp_streaming_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_configuration_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_configuration_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_interaction_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_interaction_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_panorama_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_panorama_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_sources_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_sources_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_done_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_done_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_done_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_browse_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_browse_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_browse_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_step_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_step_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_step_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rotate_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rotate_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rotate_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rotate_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rotate_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rotate_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_alignmode_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_alignmode_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_alignmode_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_updatemode_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_updatemode_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_updatemode_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manualmode_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manualmode_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manualmode_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manualmask_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manualmask_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manualmask_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_masksave_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_masksave_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_masksave_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_leftrotate_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rightrotate_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rightrotate_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_rightrotate_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_leftrotate_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_leftrotate_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\transparent_color_btn_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_camera_sel_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_OK_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_OK_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_OK_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_playandstop_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_playandstop_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_playandstop_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_playandstop_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_playandstop_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_playandstop_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_speeddown_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_speeddown_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_speeddown_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_speedup_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_speedup_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_speedup_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_edit_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_edit_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_edit_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_edit_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_edit_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_edit_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_selectall_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_selectall_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_selectall_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_1_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_1_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_1_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_2_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_2_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_2_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_3_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_3_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_3_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_4_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_4_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_4_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_5_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_5_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_5_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_6_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_6_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_6_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_7_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_7_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_7_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_8_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_8_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_8_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_1_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_1_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_1_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_2_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_2_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_2_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_3_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_3_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_3_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_4_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_4_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_4_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_5_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_5_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_5_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_6_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_6_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_6_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_7_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_7_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_7_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_8_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_8_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_manual_8_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_textedit_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_textedit_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_textedit_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_WarpingReturn_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_WarpingReturn_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_WarpingReturn_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_Warping_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_Warping_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_Warping_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_openfile_btn_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_vodrtmp_disable.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_vodrtmp_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_vodrtmp_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_vodrtmp_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_vodrtmp_streaming.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_vodrtmp_streaming_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_vodrtmp_streaming_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_saveD_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_saveD_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_saveD_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_logview_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_logview_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_logview_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_logview_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_logview_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_logview_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_Warping_resetwarping_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_Warping_resetwarping_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_Warping_resetwarping_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\vrue360_logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\vrue360_logo_small.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_undo_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_redo_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_smartcalibration_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_smartcalibration_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_smartcalibration_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_cancel_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_cancel_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_cancel_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_edit_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_edit_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_edit_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_save_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_save_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlay_save_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_preparemode_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_preparemode_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_preparemode_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_preparemode_selsected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_preparemode_selsected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_preparemode_selsected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair0_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair0_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair0_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair0_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair0_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair0_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair1_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair1_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair1_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair1_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair1_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair1_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair2_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair2_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair2_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair2_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair2_selected_movere.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair2_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair3_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair3_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair3_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair3_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair3_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\mainmenu_btn_pair3_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_positionedit_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_positionedit_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_positionedit_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_editinput_reset_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_editinput_reset_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_editinput_reset_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_stream_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_stream_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_stream_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_stream_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_stream_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_stream_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_camera_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_camera_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_camera_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_camera_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_camera_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_camera_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_gif_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_gif_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_gif_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_gif_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_gif_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_gif_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_image_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_image_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_image_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_image_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_image_selected_moveer.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_image_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_text_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_text_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_text_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_text_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_text_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_text_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_video_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_video_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_video_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_video_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_video_selected_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\btn_overlaytype_video_selected_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_autocrop_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_autocrop_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_autocrop_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manularotate_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manularotate_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_manularotate_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_newproject_normal.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_newproject_pressed.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_cameraparameter_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_cameraparameter_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\export_btn_cameraparameter_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\logo_PowedByLG.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_loadconfig_mover.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_loadconfig_normal.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_loadconfig_pressed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\popup_btn_loadconfig_selected.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="res\logo_PoweredByLG.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="T360VidStitch.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\T360VidStitch.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>

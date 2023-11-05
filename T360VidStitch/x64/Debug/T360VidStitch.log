@@ -1,0 +1,303 @@
+﻿빌드 시작: 2019-08-14 오전 11:02:01
+     1>2 노드의 "D:\QVS\T360VidStitch\T360VidStitch.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\Src /ID:\QVS\\3rdParty\headers\CUDA\v8.0\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /Zi /nologo /W3 /WX- /sdl /Od /D _CRT_SECURE_NO_WARNINGS /D _AFXDLL /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\T360VidStitch.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+     1>d:\qvs\xtreme toolkitpro v17.3.0\source\Common/XTPVersion.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+         --------------------------------------------------------------------------------
+         Including Xtreme Toolkit Pro
+         Including Markup         (Use _XTP_EXCLUDE_MARKUP         to exclude from build)
+         Including TabManager     (Use _XTP_EXCLUDE_TABMANAGER     to exclude from build)
+         Including Controls       (Use _XTP_EXCLUDE_CONTROLS       to exclude from build)
+     1>d:\qvs\xtreme toolkitpro v17.3.0\source\Controls/Combo/XTPFontComboBox.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+         Including Calendar       (Use _XTP_EXCLUDE_CALENDAR       to exclude from build)
+            - Calendar MAPI support excluded from build (Use _XTP_INCLUDE_CALENDAR_MAPI to include it)
+         Including Chart          (Use _XTP_EXCLUDE_CHART          to exclude from build)
+         Including CommandBars    (Use _XTP_EXCLUDE_COMMANDBARS    to exclude from build)
+         Including DockingPane    (Use _XTP_EXCLUDE_DOCKINGPANE    to exclude from build)
+         Including FlowGraph      (Use _XTP_EXCLUDE_FLOWGRAPH      to exclude from build)
+     1>d:\qvs\xtreme toolkitpro v17.3.0\source\FlowGraph/XTPFlowGraphNodeCustom.h : warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+         Including GraphicLibrary (Use _XTP_EXCLUDE_GRAPHICLIBRARY to exclude from build)
+         Including PropertyGrid   (Use _XTP_EXCLUDE_PROPERTYGRID   to exclude from build)
+         Including ReportControl  (Use _XTP_EXCLUDE_REPORTCONTROL  to exclude from build)
+         Including Ribbon         (Use _XTP_EXCLUDE_RIBBON         to exclude from build)
+         Including ShortcutBar    (Use _XTP_EXCLUDE_SHORTCUTBAR    to exclude from build)
+         Including SkinFramework  (Use _XTP_EXCLUDE_SKINFRAMEWORK  to exclude from build)
+         Including SyntaxEdit     (Use _XTP_EXCLUDE_SYNTAXEDIT     to exclude from build)
+         Including TaskPanel      (Use _XTP_EXCLUDE_TASKPANEL      to exclude from build)
+         --------------------------------------------------------------------------------
+         Automatically linking with ToolkitPro1730vc120x64UD.dll
+     1>d:\qvs\t360vidstitch\global.h(40): warning C4005: 'COLOR_LOAD_DIALOG_BK' : 매크로 재정의
+                 d:\qvs\t360vidstitch\global.h(37) : 'COLOR_LOAD_DIALOG_BK'의 이전 정의를 참조하십시오.
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\Src /ID:\QVS\\3rdParty\headers\CUDA\v8.0\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /Zi /nologo /W3 /WX- /sdl /Od /D _CRT_SECURE_NO_WARNINGS /D _AFXDLL /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\T360VidStitch.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt AddOverlay.cpp AddOverlayPreviewDlg.cpp BottomManualChildDlg.cpp BottomPanoChildDlg.cpp BottomSourceChildDlg.cpp CenterView.cpp ColorSettingDlg.cpp ConfCalibrationChildOne.cpp ConfCalibrationChildThree.cpp ConfCalibrationChildTwo.cpp ConfiguChildView1.cpp ConfiguChildView2.cpp ConfiguChildView3.cpp ConfiguView.cpp ConfOutputsChildFour.cpp ConfOutputsChildOne.cpp ConfOutputsChildThree.cpp ConfOutputsChildTwo.cpp CurvePaneDlg.cpp CustCurveCtrl.cpp EditCameraParamDlg.cpp EditInputDlg.cpp FormView1.cpp Label.cpp LeftChildDlg.cpp LogViewer.cpp NewConfigDlg.cpp NewLoadView.cpp PaneBottomDlg.cpp PaneLeftDlg.cpp PaneRightDlg.cpp PanoPreViewDlg.cpp PictureCtrl.cpp ProjAllConfig.cpp RightAdvanceAlignChildDlg.cpp RightAdvanceChildDlg.cpp RightAdvanceManualChildDlg.cpp RightAdvanceUpdateChildDlg.cpp RightCalibChildDlg.cpp RightInteracChildDlg.cpp RightManualCalibChildDlg.cpp RightOverlayChildDlg.cpp RightOverlayListChildDlg.cpp RightPanoraChildDlg.cpp RightSourceChildDlg.cpp ScreenManager.cpp SourceEditRect.cpp src\FolderDlg.cpp src\GdipButton.cpp src\GdipButtonext.cpp src\ImgDialogBase.cpp src\Utility.cpp T360VidStitch.cpp T360VidStitchDlg.cpp TaskPanelDlg.cpp TransparentDlgType.cpp VIRecentFileList.cpp
+         VIRecentFileList.cpp
+         TransparentDlgType.cpp
+         TaskPanelDlg.cpp
+         T360VidStitchDlg.cpp
+     1>T360VidStitchDlg.cpp(572): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+         T360VidStitch.cpp
+         Utility.cpp
+         ImgDialogBase.cpp
+         GdipButtonext.cpp
+     1>src\GdipButtonext.cpp(266): warning C4244: '=' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(267): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(298): warning C4244: '=' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(299): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(300): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(339): warning C4244: '=' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(340): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(341): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(374): warning C4244: '=' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(405): warning C4244: '=' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(406): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(407): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(435): warning C4244: '=' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(436): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(437): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(443): warning C4244: '=' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(444): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(445): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(482): warning C4244: '=' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(483): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(484): warning C4244: '인수' : 'UINT'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButtonext.cpp(820): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         GdipButton.cpp
+     1>src\GdipButton.cpp(710): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>src\GdipButton.cpp(722): warning C4244: '인수' : 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         FolderDlg.cpp
+         SourceEditRect.cpp
+         ScreenManager.cpp
+     1>ScreenManager.cpp(38): warning C4267: '인수' : 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>ScreenManager.cpp(40): warning C4267: '인수' : 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>ScreenManager.cpp(1471): warning C4800: 'BOOL' : 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+     1>ScreenManager.cpp(1472): warning C4800: 'BOOL' : 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+         RightSourceChildDlg.cpp
+         RightPanoraChildDlg.cpp
+         RightOverlayListChildDlg.cpp
+         RightOverlayChildDlg.cpp
+         RightManualCalibChildDlg.cpp
+         RightInteracChildDlg.cpp
+     1>RightInteracChildDlg.cpp(80): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>RightInteracChildDlg.cpp(130): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>RightInteracChildDlg.cpp(149): warning C4305: '+=' : 'double'에서 'float'(으)로 잘립니다.
+     1>RightInteracChildDlg.cpp(158): warning C4305: '=' : 'double'에서 'float'(으)로 잘립니다.
+     1>RightInteracChildDlg.cpp(169): warning C4305: '-=' : 'double'에서 'float'(으)로 잘립니다.
+     1>RightInteracChildDlg.cpp(178): warning C4305: '=' : 'double'에서 'float'(으)로 잘립니다.
+         RightCalibChildDlg.cpp
+         RightAdvanceUpdateChildDlg.cpp
+         코드를 생성하고 있습니다...
+     1>d:\qvs\t360vidstitch\rightinteracchilddlg.cpp(186): warning C4715: 'CRightInteracChildDlg::PlaySpeed' : 모든 제어 경로에서 값을 반환하지는 않습니다.
+         컴파일하고 있습니다...
+         RightAdvanceManualChildDlg.cpp
+     1>RightAdvanceManualChildDlg.cpp(308): warning C4805: '==' : 연산에 'int' 형식과 'bool' 형식을 함께 사용하는 것은 안전하지 않습니다.
+         RightAdvanceChildDlg.cpp
+         RightAdvanceAlignChildDlg.cpp
+         ProjAllConfig.cpp
+         PictureCtrl.cpp
+         PanoPreViewDlg.cpp
+         PaneRightDlg.cpp
+         PaneLeftDlg.cpp
+         PaneBottomDlg.cpp
+         NewLoadView.cpp
+         NewConfigDlg.cpp
+     1>NewConfigDlg.cpp(165): warning C4101: 'nDstWidth' :참조되지 않은 지역 변수입니다.
+     1>NewConfigDlg.cpp(165): warning C4101: 'nDstHeight' :참조되지 않은 지역 변수입니다.
+         LogViewer.cpp
+     1>LogViewer.cpp(90): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+         LeftChildDlg.cpp
+         Label.cpp
+         FormView1.cpp
+     1>FormView1.cpp(116): warning C4101: 'n' :참조되지 않은 지역 변수입니다.
+     1>FormView1.cpp(115): warning C4101: 'pfd' :참조되지 않은 지역 변수입니다.
+         EditInputDlg.cpp
+     1>EditInputDlg.cpp(259): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+         EditCameraParamDlg.cpp
+     1>EditCameraParamDlg.cpp(214): warning C4244: '인수' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         CustCurveCtrl.cpp
+     1>CustCurveCtrl.cpp(173): warning C4244: '초기화 중' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(196): warning C4244: '초기화 중' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(242): warning C4244: '인수' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(284): warning C4244: '인수' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(297): warning C4244: '초기화 중' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(304): warning C4244: '인수' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(317): warning C4244: '초기화 중' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(372): warning C4244: '초기화 중' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(373): warning C4244: '초기화 중' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(412): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(413): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(414): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(427): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(428): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(429): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(451): warning C4244: '인수' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(468): warning C4244: '인수' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CustCurveCtrl.cpp(485): warning C4244: '인수' : 'INT_PTR'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         CurvePaneDlg.cpp
+     1>CurvePaneDlg.cpp(32): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(42): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(192): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(193): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(194): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(202): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(203): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(204): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(212): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(213): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(214): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(255): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(256): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(257): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(265): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(266): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(267): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(275): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(276): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(277): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(478): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(479): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(482): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(483): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(486): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(487): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(494): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(495): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(498): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(499): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(502): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(503): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(510): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(511): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(514): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(515): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(518): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CurvePaneDlg.cpp(519): warning C4244: '=' : 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         ConfOutputsChildTwo.cpp
+     1>ConfOutputsChildTwo.cpp(163): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfOutputsChildTwo.cpp(180): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfOutputsChildTwo.cpp(245): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>ConfOutputsChildTwo.cpp(310): warning C4244: '=' : 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         코드를 생성하고 있습니다...
+         컴파일하고 있습니다...
+         ConfOutputsChildThree.cpp
+     1>ConfOutputsChildThree.cpp(100): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfOutputsChildThree.cpp(110): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+         ConfOutputsChildOne.cpp
+     1>ConfOutputsChildOne.cpp(172): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfOutputsChildOne.cpp(253): warning C4244: '=' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>ConfOutputsChildOne.cpp(308): warning C4244: '=' : 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         ConfOutputsChildFour.cpp
+     1>ConfOutputsChildFour.cpp(74): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfOutputsChildFour.cpp(84): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfOutputsChildFour.cpp(176): warning C4800: 'int' : 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+         ConfiguView.cpp
+         ConfiguChildView3.cpp
+         ConfiguChildView2.cpp
+     1>ConfiguChildView2.cpp(164): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfiguChildView2.cpp(174): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+         ConfiguChildView1.cpp
+         ConfCalibrationChildTwo.cpp
+     1>ConfCalibrationChildTwo.cpp(124): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfCalibrationChildTwo.cpp(134): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+         ConfCalibrationChildThree.cpp
+     1>ConfCalibrationChildThree.cpp(106): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+     1>ConfCalibrationChildThree.cpp(116): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+         ConfCalibrationChildOne.cpp
+     1>ConfCalibrationChildOne.cpp(113): warning C4065: switch문에 'default'가 있으나 'case' 레이블이 없습니다.
+         ColorSettingDlg.cpp
+         CenterView.cpp
+     1>CenterView.cpp(170): warning C4244: '인수' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CenterView.cpp(207): warning C4244: '인수' : 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CenterView.cpp(208): warning C4305: '인수' : 'double'에서 'float'(으)로 잘립니다.
+     1>CenterView.cpp(591): warning C4800: 'int' : 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+     1>CenterView.cpp(1088): warning C4800: 'int' : 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+     1>CenterView.cpp(1167): warning C4800: 'int' : 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+     1>CenterView.cpp(1513): warning C4305: '=' : 'double'에서 'float'(으)로 잘립니다.
+     1>CenterView.cpp(1553): warning C4244: '인수' : 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>CenterView.cpp(1572): warning C4305: '인수' : 'double'에서 'float'(으)로 잘립니다.
+     1>CenterView.cpp(1577): warning C4305: '인수' : 'double'에서 'float'(으)로 잘립니다.
+     1>CenterView.cpp(1587): warning C4244: '인수' : 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         BottomSourceChildDlg.cpp
+         BottomPanoChildDlg.cpp
+         BottomManualChildDlg.cpp
+         AddOverlayPreviewDlg.cpp
+     1>AddOverlayPreviewDlg.cpp(67): warning C4244: '초기화 중' : 'Gdiplus::REAL'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>AddOverlayPreviewDlg.cpp(68): warning C4244: '초기화 중' : 'Gdiplus::REAL'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>AddOverlayPreviewDlg.cpp(71): warning C4244: '인수' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>AddOverlayPreviewDlg.cpp(160): warning C4244: '초기화 중' : 'Gdiplus::REAL'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>AddOverlayPreviewDlg.cpp(161): warning C4244: '초기화 중' : 'Gdiplus::REAL'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>AddOverlayPreviewDlg.cpp(164): warning C4244: '인수' : 'int'에서 'Gdiplus::REAL'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         AddOverlay.cpp
+     1>AddOverlay.cpp(609): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+     1>AddOverlay.cpp(633): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+     1>AddOverlay.cpp(656): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+     1>AddOverlay.cpp(743): warning C4244: '=' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>AddOverlay.cpp(745): warning C4244: '=' : 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+         코드를 생성하고 있습니다...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Debug\ /nologo /fo"x64\Debug\T360VidStitch.res" T360VidStitch.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\QVS\x64\Debug\T360VidStitch.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\QVS\x64\Debug\ /LIBPATH:D:\QVS\\3rdParty\libs\x64 /LIBPATH:D:\QVS\\T360VidStitch\lib64 /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" gdiplus.lib opengl32.lib glu32.lib Q360Core100d.lib pthreadVC2.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\QVS\x64\Debug\T360VidStitch.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\QVS\x64\Debug\T360VidStitch.lib" /MACHINE:X64 x64\Debug\T360VidStitch.res
+         x64\Debug\AddOverlay.obj
+         x64\Debug\AddOverlayPreviewDlg.obj
+         x64\Debug\BottomManualChildDlg.obj
+         x64\Debug\BottomPanoChildDlg.obj
+         x64\Debug\BottomSourceChildDlg.obj
+         x64\Debug\CenterView.obj
+         x64\Debug\ColorSettingDlg.obj
+         x64\Debug\ConfCalibrationChildOne.obj
+         x64\Debug\ConfCalibrationChildThree.obj
+         x64\Debug\ConfCalibrationChildTwo.obj
+         x64\Debug\ConfiguChildView1.obj
+         x64\Debug\ConfiguChildView2.obj
+         x64\Debug\ConfiguChildView3.obj
+         x64\Debug\ConfiguView.obj
+         x64\Debug\ConfOutputsChildFour.obj
+         x64\Debug\ConfOutputsChildOne.obj
+         x64\Debug\ConfOutputsChildThree.obj
+         x64\Debug\ConfOutputsChildTwo.obj
+         x64\Debug\CurvePaneDlg.obj
+         x64\Debug\CustCurveCtrl.obj
+         x64\Debug\EditCameraParamDlg.obj
+         x64\Debug\EditInputDlg.obj
+         x64\Debug\FormView1.obj
+         x64\Debug\Label.obj
+         x64\Debug\LeftChildDlg.obj
+         x64\Debug\LogViewer.obj
+         x64\Debug\NewConfigDlg.obj
+         x64\Debug\NewLoadView.obj
+         x64\Debug\PaneBottomDlg.obj
+         x64\Debug\PaneLeftDlg.obj
+         x64\Debug\PaneRightDlg.obj
+         x64\Debug\PanoPreViewDlg.obj
+         x64\Debug\PictureCtrl.obj
+         x64\Debug\ProjAllConfig.obj
+         x64\Debug\RightAdvanceAlignChildDlg.obj
+         x64\Debug\RightAdvanceChildDlg.obj
+         x64\Debug\RightAdvanceManualChildDlg.obj
+         x64\Debug\RightAdvanceUpdateChildDlg.obj
+         x64\Debug\RightCalibChildDlg.obj
+         x64\Debug\RightInteracChildDlg.obj
+         x64\Debug\RightManualCalibChildDlg.obj
+         x64\Debug\RightOverlayChildDlg.obj
+         x64\Debug\RightOverlayListChildDlg.obj
+         x64\Debug\RightPanoraChildDlg.obj
+         x64\Debug\RightSourceChildDlg.obj
+         x64\Debug\ScreenManager.obj
+         x64\Debug\SourceEditRect.obj
+         x64\Debug\FolderDlg.obj
+         x64\Debug\GdipButton.obj
+         x64\Debug\GdipButtonext.obj
+         x64\Debug\ImgDialogBase.obj
+         x64\Debug\Utility.obj
+         x64\Debug\stdafx.obj
+         x64\Debug\T360VidStitch.obj
+         x64\Debug\T360VidStitchDlg.obj
+         x64\Debug\TaskPanelDlg.obj
+         x64\Debug\TransparentDlgType.obj
+         x64\Debug\VIRecentFileList.obj
+     1>LINK : fatal error LNK1104: 'Q360Core100d.lib' 파일을 열 수 없습니다.
+     1>"D:\QVS\T360VidStitch\T360VidStitch.vcxproj" 프로젝트를 빌드했습니다(Build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:23.18

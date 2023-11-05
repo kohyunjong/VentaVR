@@ -1,0 +1,23 @@
+#if defined(__GNUC__)
+#if defined(__clang__) || (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6))
+#pragma GCC diagnostic push
+#endif
+#if defined(__clang__) || (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 2))
+#pragma GCC diagnostic ignored "-Wcast-qual"
+#endif
+#endif
+
+#include FATBINFILE
+
+#if defined(_WIN32)
+__declspec(selectany) void *__nv__fatDeviceText_dummy = (void *)&__FATIDNAME(__NV_MODULE_ID);
+#else
+void *__nv__fatDeviceText_dummy __attribute__((weak)) = (void *)&__FATIDNAME(__NV_MODULE_ID);
+;
+#endif
+
+#if defined(__GNUC__)
+#if defined(__clang__) || (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6))
+#pragma GCC diagnostic pop
+#endif
+#endif

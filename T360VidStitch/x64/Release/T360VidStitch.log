@@ -1,0 +1,866 @@
+﻿Build started 2023-11-05 오후 6:33:35.
+     1>Project "D:\Venta\trunk\T360VidStitch\T360VidStitch.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\Src /ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /Zi /nologo /W4 /WX- /O2 /Ob1 /Ot /Oy /D _AFXDLL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /Qpar /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Release\VRUE360.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /FR"x64\Release\\" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+     1>d:\venta\trunk\xtreme toolkitpro v17.3.0\source\Common/XTPVersion.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         --------------------------------------------------------------------------------
+         Including Xtreme Toolkit Pro
+         Including Markup         (Use _XTP_EXCLUDE_MARKUP         to exclude from build)
+         Including TabManager     (Use _XTP_EXCLUDE_TABMANAGER     to exclude from build)
+         Including Controls       (Use _XTP_EXCLUDE_CONTROLS       to exclude from build)
+     1>d:\venta\trunk\xtreme toolkitpro v17.3.0\source\Controls/Combo/XTPFontComboBox.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Including Calendar       (Use _XTP_EXCLUDE_CALENDAR       to exclude from build)
+            - Calendar MAPI support excluded from build (Use _XTP_INCLUDE_CALENDAR_MAPI to include it)
+         Including Chart          (Use _XTP_EXCLUDE_CHART          to exclude from build)
+         Including CommandBars    (Use _XTP_EXCLUDE_COMMANDBARS    to exclude from build)
+         Including DockingPane    (Use _XTP_EXCLUDE_DOCKINGPANE    to exclude from build)
+         Including FlowGraph      (Use _XTP_EXCLUDE_FLOWGRAPH      to exclude from build)
+     1>d:\venta\trunk\xtreme toolkitpro v17.3.0\source\FlowGraph/XTPFlowGraphNodeCustom.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Including GraphicLibrary (Use _XTP_EXCLUDE_GRAPHICLIBRARY to exclude from build)
+         Including PropertyGrid   (Use _XTP_EXCLUDE_PROPERTYGRID   to exclude from build)
+         Including ReportControl  (Use _XTP_EXCLUDE_REPORTCONTROL  to exclude from build)
+         Including Ribbon         (Use _XTP_EXCLUDE_RIBBON         to exclude from build)
+         Including ShortcutBar    (Use _XTP_EXCLUDE_SHORTCUTBAR    to exclude from build)
+         Including SkinFramework  (Use _XTP_EXCLUDE_SKINFRAMEWORK  to exclude from build)
+         Including SyntaxEdit     (Use _XTP_EXCLUDE_SYNTAXEDIT     to exclude from build)
+         Including TaskPanel      (Use _XTP_EXCLUDE_TASKPANEL      to exclude from build)
+         --------------------------------------------------------------------------------
+         Automatically linking with ToolkitPro1730vc120x64U.dll
+     1>d:\venta\trunk\t360vidstitch\global.h(40): warning C4005: 'COLOR_LOAD_DIALOG_BK' : macro redefinition
+                 d:\venta\trunk\t360vidstitch\global.h(37) : see previous definition of 'COLOR_LOAD_DIALOG_BK'
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\Src /ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /Zi /nologo /W4 /WX- /O2 /Ob1 /Ot /Oy /D _AFXDLL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /Qpar /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\VRUE360.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /FR"x64\Release\\" /Gd /TP /errorReport:prompt BottomManualChildDlg.cpp BottomPanoChildDlg.cpp BottomSourceChildDlg.cpp ColorSettingDlg.cpp ConfCalibrationChildOne.cpp ConfCalibrationChildThree.cpp ConfCalibrationChildTwo.cpp ConfiguChildView1.cpp ConfiguChildView2.cpp ConfiguChildView3.cpp ConfiguView.cpp ConfOutputsChildFour.cpp ConfOutputsChildOne.cpp ConfOutputsChildThree.cpp ConfOutputsChildTwo.cpp ConfPanoramaChildOne.cpp ConfPanoramaChildTwo.cpp CurvePaneDlg.cpp CustCurveCtrl.cpp EditCameraParamDlg.cpp EditInputDlg.cpp EditInputStereoDlg.cpp FormView1.cpp Label.cpp LeftChildDlg.cpp LogViewer.cpp ManualRotateDlg.cpp NewConfigDlg.cpp NewLoadConfigChild.cpp NewLoadConfigChild_0.cpp NewLoadConfigChild_1.cpp NewLoadConfigChild_2.cpp NewLoadConfigChild_3.cpp NewLoadConfigChild_4.cpp NewLoadConfigChild_5.cpp NewLoadConfigChild_6.cpp NewLoadConfigChild_7.cpp NewLoadView.cpp OverlayEditPositionDlg.cpp PaneBottomDlg.cpp PaneLeftDlg.cpp PaneRightDlg.cpp PanoPreViewDlg.cpp PictureCtrl.cpp ProjAllConfig.cpp RightAdvanceAlignChildDlg.cpp RightAdvanceChildDlg.cpp RightAdvanceManualChildDlg.cpp RightAdvanceUpdateChildDlg.cpp RightCalibChildDlg.cpp RightInteracChildDlg.cpp RightManualCalibChildDlg.cpp RightOverlayChildDlg.cpp RightOverlayListChildDlg.cpp RightPanoraChildDlg.cpp RightSourceChildDlg.cpp ScreenManager.cpp SourceEditRect.cpp src\FolderDlg.cpp src\GdipButton.cpp src\GdipButtonext.cpp src\ImgDialogBase.cpp src\Utility.cpp T360VidStitch.cpp T360VidStitchDlg.cpp TaskPanelDlg.cpp TransparentDlgType.cpp VIRecentFileList.cpp
+         BottomManualChildDlg.cpp
+         BottomPanoChildDlg.cpp
+     1>BottomPanoChildDlg.cpp(160): warning C4189: 'nPrevGainSel' : local variable is initialized but not referenced
+     1>BottomPanoChildDlg.cpp(366): warning C4189: 'nPrevGainSel' : local variable is initialized but not referenced
+     1>BottomPanoChildDlg.cpp(427): warning C4100: 'value' : unreferenced formal parameter
+     1>BottomPanoChildDlg.cpp(456): warning C4100: 'value' : unreferenced formal parameter
+     1>BottomPanoChildDlg.cpp(467): warning C4100: 'value' : unreferenced formal parameter
+     1>BottomPanoChildDlg.cpp(729): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>BottomPanoChildDlg.cpp(782): warning C4189: 'hResult' : local variable is initialized but not referenced
+     1>BottomPanoChildDlg.cpp(930): warning C4100: 'lParam' : unreferenced formal parameter
+         BottomSourceChildDlg.cpp
+     1>BottomSourceChildDlg.cpp(279): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>BottomSourceChildDlg.cpp(417): warning C4100: 'lParam' : unreferenced formal parameter
+         ColorSettingDlg.cpp
+         ConfCalibrationChildOne.cpp
+     1>ConfCalibrationChildOne.cpp(113): warning C4065: switch statement contains 'default' but no 'case' labels
+         ConfCalibrationChildThree.cpp
+     1>ConfCalibrationChildThree.cpp(106): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfCalibrationChildThree.cpp(116): warning C4065: switch statement contains 'default' but no 'case' labels
+         ConfCalibrationChildTwo.cpp
+     1>ConfCalibrationChildTwo.cpp(127): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfCalibrationChildTwo.cpp(137): warning C4065: switch statement contains 'default' but no 'case' labels
+         ConfiguChildView1.cpp
+     1>ConfiguChildView1.cpp(148): warning C4100: 'pDC' : unreferenced formal parameter
+         ConfiguChildView2.cpp
+     1>ConfiguChildView2.cpp(107): warning C4100: 'pDC' : unreferenced formal parameter
+         ConfiguChildView3.cpp
+         ConfiguView.cpp
+         ConfOutputsChildFour.cpp
+     1>ConfOutputsChildFour.cpp(74): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfOutputsChildFour.cpp(84): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfOutputsChildFour.cpp(176): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         ConfOutputsChildOne.cpp
+     1>ConfOutputsChildOne.cpp(169): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfOutputsChildOne.cpp(281): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>ConfOutputsChildOne.cpp(305): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         ConfOutputsChildThree.cpp
+     1>ConfOutputsChildThree.cpp(100): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfOutputsChildThree.cpp(110): warning C4065: switch statement contains 'default' but no 'case' labels
+         ConfOutputsChildTwo.cpp
+     1>ConfOutputsChildTwo.cpp(160): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfOutputsChildTwo.cpp(177): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfOutputsChildTwo.cpp(283): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>ConfOutputsChildTwo.cpp(307): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         ConfPanoramaChildOne.cpp
+     1>ConfPanoramaChildOne.cpp(114): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>ConfPanoramaChildOne.cpp(124): warning C4065: switch statement contains 'default' but no 'case' labels
+         ConfPanoramaChildTwo.cpp
+         CurvePaneDlg.cpp
+     1>CurvePaneDlg.cpp(32): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(42): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(192): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(193): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(194): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(202): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(203): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(204): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(212): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(213): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(214): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(255): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(256): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(257): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(265): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(266): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(267): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(275): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(276): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(277): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(478): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(479): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(482): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(483): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(486): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(487): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(494): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(495): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(498): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(499): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(502): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(503): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(510): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(511): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(514): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(515): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(518): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CurvePaneDlg.cpp(519): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+         CustCurveCtrl.cpp
+     1>CustCurveCtrl.cpp(173): warning C4244: 'initializing' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(196): warning C4244: 'initializing' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(242): warning C4244: 'argument' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(284): warning C4244: 'argument' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(297): warning C4244: 'initializing' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(304): warning C4244: 'argument' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(317): warning C4244: 'initializing' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(372): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(373): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(412): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CustCurveCtrl.cpp(413): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CustCurveCtrl.cpp(414): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CustCurveCtrl.cpp(427): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CustCurveCtrl.cpp(428): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CustCurveCtrl.cpp(429): warning C4244: '=' : conversion from 'double' to 'LONG', possible loss of data
+     1>CustCurveCtrl.cpp(451): warning C4244: 'argument' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(468): warning C4244: 'argument' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(485): warning C4244: 'argument' : conversion from 'INT_PTR' to 'int', possible loss of data
+     1>CustCurveCtrl.cpp(442): warning C4189: 'MoveState' : local variable is initialized but not referenced
+         EditCameraParamDlg.cpp
+     1>EditCameraParamDlg.cpp(214): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         Generating Code...
+     1>d:\venta\trunk\t360vidstitch\curvepanedlg.cpp(324): warning C4701: potentially uninitialized local variable 'output' used
+     1>d:\venta\trunk\t360vidstitch\curvepanedlg.cpp(323): warning C4701: potentially uninitialized local variable 'input' used
+     1>d:\venta\trunk\t360vidstitch\bottompanochilddlg.cpp(582): warning C4701: potentially uninitialized local variable 'Adelay' used
+     1>d:\venta\trunk\t360vidstitch\bottompanochilddlg.cpp(609): warning C4701: potentially uninitialized local variable 'Vdelay' used
+         Compiling...
+         EditInputDlg.cpp
+     1>EditInputDlg.cpp(176): warning C4244: 'argument' : conversion from 'double' to 'UINT', possible loss of data
+     1>EditInputDlg.cpp(460): warning C4101: 'temp' : unreferenced local variable
+     1>EditInputDlg.cpp(631): warning C4189: 'pEditY' : local variable is initialized but not referenced
+     1>EditInputDlg.cpp(630): warning C4189: 'pEditX' : local variable is initialized but not referenced
+         EditInputStereoDlg.cpp
+     1>EditInputStereoDlg.cpp(179): warning C4244: 'argument' : conversion from 'double' to 'UINT', possible loss of data
+     1>EditInputStereoDlg.cpp(431): warning C4101: 'temp' : unreferenced local variable
+     1>EditInputStereoDlg.cpp(712): warning C4189: 'pEditY' : local variable is initialized but not referenced
+     1>EditInputStereoDlg.cpp(711): warning C4189: 'pEditX' : local variable is initialized but not referenced
+         FormView1.cpp
+     1>FormView1.cpp(116): warning C4101: 'n' : unreferenced local variable
+     1>FormView1.cpp(115): warning C4101: 'pfd' : unreferenced local variable
+         Label.cpp
+     1>Label.cpp(64): warning C4244: '=' : conversion from 'BOOL' to 'BYTE', possible loss of data
+     1>Label.cpp(72): warning C4244: '=' : conversion from 'BOOL' to 'BYTE', possible loss of data
+     1>Label.cpp(165): warning C4189: 'bCreated' : local variable is initialized but not referenced
+         LeftChildDlg.cpp
+     1>LeftChildDlg.cpp(273): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>LeftChildDlg.cpp(275): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>LeftChildDlg.cpp(277): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>LeftChildDlg.cpp(281): warning C4189: 'pSchema' : local variable is initialized but not referenced
+     1>LeftChildDlg.cpp(337): warning C4189: 'hr' : local variable is initialized but not referenced
+         LogViewer.cpp
+     1>LogViewer.cpp(90): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>LogViewer.cpp(130): warning C4189: 'pSchema' : local variable is initialized but not referenced
+         ManualRotateDlg.cpp
+     1>ManualRotateDlg.cpp(167): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>ManualRotateDlg.cpp(169): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>ManualRotateDlg.cpp(171): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>ManualRotateDlg.cpp(498): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>ManualRotateDlg.cpp(493): warning C4101: 'yaw' : unreferenced local variable
+     1>ManualRotateDlg.cpp(525): warning C4189: 'ariaB12' : local variable is initialized but not referenced
+         NewConfigDlg.cpp
+     1>NewConfigDlg.cpp(62): warning C4100: 'lParam' : unreferenced formal parameter
+     1>NewConfigDlg.cpp(111): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(284) : see declaration of 'wcscat'
+     1>NewConfigDlg.cpp(165): warning C4101: 'nDstWidth' : unreferenced local variable
+     1>NewConfigDlg.cpp(165): warning C4101: 'nDstHeight' : unreferenced local variable
+     1>NewConfigDlg.cpp(458): warning C4189: 'aria12' : local variable is initialized but not referenced
+     1>NewConfigDlg.cpp(460): warning C4189: 'aria13' : local variable is initialized but not referenced
+         NewLoadConfigChild.cpp
+     1>NewLoadConfigChild.cpp(73): warning C4996: 'wcscpy': This function or variable may be unsafe. Consider using wcscpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(294) : see declaration of 'wcscpy'
+     1>NewLoadConfigChild.cpp(226): warning C4100: 'pDC' : unreferenced formal parameter
+         NewLoadConfigChild_0.cpp
+     1>NewLoadConfigChild_0.cpp(97): warning C4189: 'aria13' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_0.cpp(96): warning C4189: 'aria11' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_0.cpp(116): warning C4996: 'wcscat': This function or variable may be unsafe. Consider using wcscat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(284) : see declaration of 'wcscat'
+         NewLoadConfigChild_1.cpp
+     1>NewLoadConfigChild_1.cpp(118): warning C4189: 'aria13' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_1.cpp(117): warning C4189: 'aria11' : local variable is initialized but not referenced
+         NewLoadConfigChild_2.cpp
+     1>NewLoadConfigChild_2.cpp(117): warning C4189: 'aria13' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_2.cpp(116): warning C4189: 'aria11' : local variable is initialized but not referenced
+         NewLoadConfigChild_3.cpp
+     1>NewLoadConfigChild_3.cpp(126): warning C4189: 'aria13' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_3.cpp(125): warning C4189: 'aria11' : local variable is initialized but not referenced
+         NewLoadConfigChild_4.cpp
+     1>NewLoadConfigChild_4.cpp(118): warning C4189: 'aria13' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_4.cpp(117): warning C4189: 'aria11' : local variable is initialized but not referenced
+         NewLoadConfigChild_5.cpp
+     1>NewLoadConfigChild_5.cpp(121): warning C4189: 'aria13' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_5.cpp(120): warning C4189: 'aria11' : local variable is initialized but not referenced
+         NewLoadConfigChild_6.cpp
+     1>NewLoadConfigChild_6.cpp(133): warning C4189: 'aria13' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_6.cpp(132): warning C4189: 'aria11' : local variable is initialized but not referenced
+         NewLoadConfigChild_7.cpp
+     1>NewLoadConfigChild_7.cpp(83): warning C4189: 'aria13' : local variable is initialized but not referenced
+     1>NewLoadConfigChild_7.cpp(82): warning C4189: 'aria11' : local variable is initialized but not referenced
+         NewLoadView.cpp
+     1>NewLoadView.cpp(152): warning C4189: 'logoH' : local variable is initialized but not referenced
+     1>NewLoadView.cpp(307): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>NewLoadView.cpp(337): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>NewLoadView.cpp(361): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>NewLoadView.cpp(371): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>NewLoadView.cpp(382): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>NewLoadView.cpp(386): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>NewLoadView.cpp(390): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>NewLoadView.cpp(396): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>NewLoadView.cpp(400): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>NewLoadView.cpp(404): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>NewLoadView.cpp(590): warning C4189: 'pSchema' : local variable is initialized but not referenced
+     1>NewLoadView.cpp(715): warning C4189: 'pLVCD' : local variable is initialized but not referenced
+     1>NewLoadView.cpp(722): warning C4189: 'iRow' : local variable is initialized but not referenced
+     1>NewLoadView.cpp(832): warning C4189: 'oldPen' : local variable is initialized but not referenced
+     1>NewLoadView.cpp(819): warning C4189: 'pOldFont' : local variable is initialized but not referenced
+     1>NewLoadView.cpp(919): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+     1>NewLoadView.cpp(900): warning C4100: 'pNMHDR' : unreferenced formal parameter
+         OverlayEditPositionDlg.cpp
+     1>OverlayEditPositionDlg.cpp(179): warning C4100: 'pDC' : unreferenced formal parameter
+         PaneBottomDlg.cpp
+         Generating Code...
+     1>d:\venta\trunk\t360vidstitch\newloadconfigchild.cpp(555): warning C4701: potentially uninitialized local variable 'nHeight' used
+     1>d:\venta\trunk\t360vidstitch\newloadconfigchild.cpp(554): warning C4701: potentially uninitialized local variable 'nWidth' used
+         Compiling...
+         PaneLeftDlg.cpp
+         PaneRightDlg.cpp
+         PanoPreViewDlg.cpp
+         PictureCtrl.cpp
+         ProjAllConfig.cpp
+         RightAdvanceAlignChildDlg.cpp
+     1>RightAdvanceAlignChildDlg.cpp(55): warning C4189: 'ariaB12' : local variable is initialized but not referenced
+         RightAdvanceChildDlg.cpp
+         RightAdvanceManualChildDlg.cpp
+     1>RightAdvanceManualChildDlg.cpp(179): warning C4100: 'state' : unreferenced formal parameter
+         RightAdvanceUpdateChildDlg.cpp
+     1>RightAdvanceUpdateChildDlg.cpp(61): warning C4189: 'ariaB12' : local variable is initialized but not referenced
+         RightCalibChildDlg.cpp
+         RightInteracChildDlg.cpp
+     1>RightInteracChildDlg.cpp(80): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RightInteracChildDlg.cpp(130): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>RightInteracChildDlg.cpp(149): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>RightInteracChildDlg.cpp(158): warning C4305: '=' : truncation from 'double' to 'float'
+     1>RightInteracChildDlg.cpp(169): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>RightInteracChildDlg.cpp(178): warning C4305: '=' : truncation from 'double' to 'float'
+         RightManualCalibChildDlg.cpp
+         RightOverlayChildDlg.cpp
+     1>RightOverlayChildDlg.cpp(278): warning C4245: 'argument' : conversion from 'int' to 'DWORD', signed/unsigned mismatch
+         RightOverlayListChildDlg.cpp
+     1>RightOverlayListChildDlg.cpp(84): warning C4100: 'lpDrawItemStruct' : unreferenced formal parameter
+     1>RightOverlayListChildDlg.cpp(84): warning C4100: 'nIDCtl' : unreferenced formal parameter
+     1>RightOverlayListChildDlg.cpp(105): warning C4100: 'pResult' : unreferenced formal parameter
+     1>RightOverlayListChildDlg.cpp(107): warning C4189: 'pNMItemActivate' : local variable is initialized but not referenced
+     1>RightOverlayListChildDlg.cpp(121): warning C4100: 'pResult' : unreferenced formal parameter
+     1>RightOverlayListChildDlg.cpp(123): warning C4189: 'pNMItemActivate' : local variable is initialized but not referenced
+     1>RightOverlayListChildDlg.cpp(130): warning C4100: 'pResult' : unreferenced formal parameter
+     1>RightOverlayListChildDlg.cpp(132): warning C4189: 'pNMItemActivate' : local variable is initialized but not referenced
+     1>RightOverlayListChildDlg.cpp(139): warning C4100: 'pWnd' : unreferenced formal parameter
+     1>RightOverlayListChildDlg.cpp(181): warning C4100: 'changePlayMode' : unreferenced formal parameter
+     1>RightOverlayListChildDlg.cpp(181): warning C4100: 'idx' : unreferenced formal parameter
+         RightPanoraChildDlg.cpp
+     1>RightPanoraChildDlg.cpp(577): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(582): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(584): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(588): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(592): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(596): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(600): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(604): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(610): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(614): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(618): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(623): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(628): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(633): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(635): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(639): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(643): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(647): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(651): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(655): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(661): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(665): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(669): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(673): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightPanoraChildDlg.cpp(678): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         RightSourceChildDlg.cpp
+     1>RightSourceChildDlg.cpp(56): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RightSourceChildDlg.cpp(123): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         ScreenManager.cpp
+     1>ScreenManager.cpp(38): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>ScreenManager.cpp(40): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>ScreenManager.cpp(464): warning C4100: 'screen' : unreferenced formal parameter
+     1>ScreenManager.cpp(1445): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>ScreenManager.cpp(1446): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+     1>ScreenManager.cpp(1472): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1498): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1517): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1549): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1567): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1586): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1625): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1756): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1802): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1826): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1838): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>ScreenManager.cpp(1877): warning C4189: 'CCV' : local variable is initialized but not referenced
+         SourceEditRect.cpp
+         FolderDlg.cpp
+         GdipButton.cpp
+     1>src\GdipButton.cpp(203): warning C4100: 'nCtlColor' : unreferenced formal parameter
+     1>src\GdipButton.cpp(503): warning C4100: 'pDC' : unreferenced formal parameter
+     1>src\GdipButton.cpp(559): warning C4100: 'lparam' : unreferenced formal parameter
+     1>src\GdipButton.cpp(559): warning C4100: 'wparam' : unreferenced formal parameter
+     1>src\GdipButton.cpp(583): warning C4100: 'lparam' : unreferenced formal parameter
+     1>src\GdipButton.cpp(583): warning C4100: 'wparam' : unreferenced formal parameter
+     1>src\GdipButton.cpp(710): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>src\GdipButton.cpp(722): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         Generating Code...
+     1>d:\venta\trunk\t360vidstitch\src\cgdiplusbitmap.h(71): warning C4702: unreachable code
+     1>d:\venta\trunk\t360vidstitch\rightinteracchilddlg.cpp(186): warning C4715: 'CRightInteracChildDlg::PlaySpeed' : not all control paths return a value
+         Compiling...
+         GdipButtonext.cpp
+     1>src\GdipButtonext.cpp(149): warning C4100: 'pType' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(155): warning C4100: 'pType' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(161): warning C4100: 'pType' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(166): warning C4100: 'pType' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(266): warning C4244: '=' : conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(267): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(298): warning C4244: '=' : conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(299): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(300): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(339): warning C4244: '=' : conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(340): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(341): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(374): warning C4244: '=' : conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(405): warning C4244: '=' : conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(406): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(407): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(435): warning C4244: '=' : conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(436): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(437): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(443): warning C4244: '=' : conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(444): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(445): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(482): warning C4244: '=' : conversion from 'int' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(483): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(484): warning C4244: 'argument' : conversion from 'UINT' to 'Gdiplus::REAL', possible loss of data
+     1>src\GdipButtonext.cpp(224): warning C4100: 'nCtlColor' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(610): warning C4100: 'pDC' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(666): warning C4100: 'lparam' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(666): warning C4100: 'wparam' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(692): warning C4100: 'lparam' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(692): warning C4100: 'wparam' : unreferenced formal parameter
+     1>src\GdipButtonext.cpp(820): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         ImgDialogBase.cpp
+     1>src\ImgDialogBase.cpp(296): warning C4244: 'initializing' : conversion from 'int' to 'BYTE', possible loss of data
+     1>src\ImgDialogBase.cpp(384): warning C4245: 'argument' : conversion from '' to 'Gdiplus::ARGB', signed/unsigned mismatch
+     1>src\ImgDialogBase.cpp(475): warning C4100: 'graphics' : unreferenced formal parameter
+     1>src\ImgDialogBase.cpp(488): warning C4100: 'pDC' : unreferenced formal parameter
+         Utility.cpp
+         T360VidStitch.cpp
+     1>T360VidStitch.cpp(204): warning C4189: 'pBytes' : local variable is initialized but not referenced
+         T360VidStitchDlg.cpp
+     1>T360VidStitchDlg.cpp(64): warning C4100: 'lParam' : unreferenced formal parameter
+     1>T360VidStitchDlg.cpp(64): warning C4100: 'wParam' : unreferenced formal parameter
+     1>T360VidStitchDlg.cpp(496): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>T360VidStitchDlg.cpp(500): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>T360VidStitchDlg.cpp(540): warning C4189: 'centerMode' : local variable is initialized but not referenced
+     1>T360VidStitchDlg.cpp(623): warning C4065: switch statement contains 'default' but no 'case' labels
+     1>T360VidStitchDlg.cpp(638): warning C4189: 'centerMode' : local variable is initialized but not referenced
+         TaskPanelDlg.cpp
+         TransparentDlgType.cpp
+     1>TransparentDlgType.cpp(96): warning C4244: 'argument' : conversion from 'int' to 'BYTE', possible loss of data
+     1>TransparentDlgType.cpp(169): warning C4101: 'bitrate' : unreferenced local variable
+         VIRecentFileList.cpp
+         Generating Code...
+     1>d:\venta\trunk\t360vidstitch\src\cgdiplusbitmap.h(71): warning C4702: unreachable code
+     1>d:\venta\trunk\t360vidstitch\transparentdlgtype.cpp(184): warning C4700: uninitialized local variable 'secs' used
+     1>d:\venta\trunk\t360vidstitch\transparentdlgtype.cpp(194): warning C4700: uninitialized local variable 'fps' used
+     1>d:\venta\trunk\t360vidstitch\src\cgdiplusbitmap.h(71): warning C4702: unreachable code
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\Src /ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /Zi /nologo /W4 /WX- /O2 /Ob1 /Ot /Oy /D _AFXDLL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /GF /Gm- /EHsc /MD /GS /Gy /Qpar /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /FR"x64\Release\\" /Gd /TP /errorReport:prompt CenterView.cpp
+         CenterView.cpp
+     1>d:\venta\trunk\xtreme toolkitpro v17.3.0\source\Common/XTPVersion.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         --------------------------------------------------------------------------------
+         Including Xtreme Toolkit Pro
+         Including Markup         (Use _XTP_EXCLUDE_MARKUP         to exclude from build)
+         Including TabManager     (Use _XTP_EXCLUDE_TABMANAGER     to exclude from build)
+         Including Controls       (Use _XTP_EXCLUDE_CONTROLS       to exclude from build)
+     1>d:\venta\trunk\xtreme toolkitpro v17.3.0\source\Controls/Combo/XTPFontComboBox.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Including Calendar       (Use _XTP_EXCLUDE_CALENDAR       to exclude from build)
+            - Calendar MAPI support excluded from build (Use _XTP_INCLUDE_CALENDAR_MAPI to include it)
+         Including Chart          (Use _XTP_EXCLUDE_CHART          to exclude from build)
+         Including CommandBars    (Use _XTP_EXCLUDE_COMMANDBARS    to exclude from build)
+         Including DockingPane    (Use _XTP_EXCLUDE_DOCKINGPANE    to exclude from build)
+         Including FlowGraph      (Use _XTP_EXCLUDE_FLOWGRAPH      to exclude from build)
+     1>d:\venta\trunk\xtreme toolkitpro v17.3.0\source\FlowGraph/XTPFlowGraphNodeCustom.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Including GraphicLibrary (Use _XTP_EXCLUDE_GRAPHICLIBRARY to exclude from build)
+         Including PropertyGrid   (Use _XTP_EXCLUDE_PROPERTYGRID   to exclude from build)
+         Including ReportControl  (Use _XTP_EXCLUDE_REPORTCONTROL  to exclude from build)
+         Including Ribbon         (Use _XTP_EXCLUDE_RIBBON         to exclude from build)
+         Including ShortcutBar    (Use _XTP_EXCLUDE_SHORTCUTBAR    to exclude from build)
+         Including SkinFramework  (Use _XTP_EXCLUDE_SKINFRAMEWORK  to exclude from build)
+         Including SyntaxEdit     (Use _XTP_EXCLUDE_SYNTAXEDIT     to exclude from build)
+         Including TaskPanel      (Use _XTP_EXCLUDE_TASKPANEL      to exclude from build)
+         --------------------------------------------------------------------------------
+         Automatically linking with ToolkitPro1730vc120x64U.dll
+     1>d:\venta\trunk\t360vidstitch\global.h(40): warning C4005: 'COLOR_LOAD_DIALOG_BK' : macro redefinition
+                 d:\venta\trunk\t360vidstitch\global.h(37) : see previous definition of 'COLOR_LOAD_DIALOG_BK'
+     1>CenterView.cpp(167): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>CenterView.cpp(174): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>CenterView.cpp(214): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>CenterView.cpp(215): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>CenterView.cpp(148): warning C4100: 'time' : unreferenced formal parameter
+     1>CenterView.cpp(148): warning C4100: 'nEl' : unreferenced formal parameter
+     1>CenterView.cpp(148): warning C4100: 'nID' : unreferenced formal parameter
+     1>CenterView.cpp(148): warning C4100: 'hWnd' : unreferenced formal parameter
+     1>CenterView.cpp(581): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>CenterView.cpp(657): warning C4189: 'oldTick1' : local variable is initialized but not referenced
+     1>CenterView.cpp(653): warning C4189: 'oldTick' : local variable is initialized but not referenced
+     1>CenterView.cpp(1387): warning C4100: 'pDC' : unreferenced formal parameter
+     1>CenterView.cpp(1429): warning C4305: '=' : truncation from 'double' to 'float'
+     1>CenterView.cpp(1421): warning C4189: 'nPos' : local variable is initialized but not referenced
+     1>CenterView.cpp(1469): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>CenterView.cpp(1488): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>CenterView.cpp(1493): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>CenterView.cpp(1505): warning C4305: '=' : truncation from 'double' to 'float'
+     1>CenterView.cpp(1510): warning C4305: '=' : truncation from 'double' to 'float'
+     1>CenterView.cpp(1547): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(1532): warning C4100: 'lParam' : unreferenced formal parameter
+     1>CenterView.cpp(1532): warning C4100: 'wParam' : unreferenced formal parameter
+     1>CenterView.cpp(1578): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(1563): warning C4100: 'lParam' : unreferenced formal parameter
+     1>CenterView.cpp(1563): warning C4100: 'wParam' : unreferenced formal parameter
+     1>CenterView.cpp(1708): warning C4100: 'bShow' : unreferenced formal parameter
+     1>CenterView.cpp(2010): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2013): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2016): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2057): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2064): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2068): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2072): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2076): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2080): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2086): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2089): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2093): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2095): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2097): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2100): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>CenterView.cpp(2103): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>d:\venta\trunk\t360vidstitch\centerview.cpp(1445): warning C4706: assignment within conditional expression
+     1>d:\venta\trunk\t360vidstitch\centerview.cpp(1449): warning C4706: assignment within conditional expression
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0409" /Ix64\Release\ /nologo /fo"x64\Release\T360VidStitch.res" T360VidStitch.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Venta\trunk\x64\Release\VRUE360.exe" /INCREMENTAL:NO /LIBPATH:D:\Venta\trunk\x64\Release\ /LIBPATH:D:\Venta\trunk\\3rdParty\libs\x64 /LIBPATH:D:\Venta\trunk\\T360VidStitch\lib64 /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" gdiplus.lib opengl32.lib glu32.lib Q360Core100.lib pthreadVC2.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\Venta\trunk\x64\Release\VRUE360.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Venta\trunk\x64\Release\VRUE360.lib" /MACHINE:X64 /FORCE:MULTIPLE x64\Release\T360VidStitch.res
+         x64\Release\BottomManualChildDlg.obj
+         x64\Release\BottomPanoChildDlg.obj
+         x64\Release\BottomSourceChildDlg.obj
+         x64\Release\CenterView.obj
+         x64\Release\ColorSettingDlg.obj
+         x64\Release\ConfCalibrationChildOne.obj
+         x64\Release\ConfCalibrationChildThree.obj
+         x64\Release\ConfCalibrationChildTwo.obj
+         x64\Release\ConfiguChildView1.obj
+         x64\Release\ConfiguChildView2.obj
+         x64\Release\ConfiguChildView3.obj
+         x64\Release\ConfiguView.obj
+         x64\Release\ConfOutputsChildFour.obj
+         x64\Release\ConfOutputsChildOne.obj
+         x64\Release\ConfOutputsChildThree.obj
+         x64\Release\ConfOutputsChildTwo.obj
+         x64\Release\ConfPanoramaChildOne.obj
+         x64\Release\ConfPanoramaChildTwo.obj
+         x64\Release\CurvePaneDlg.obj
+         x64\Release\CustCurveCtrl.obj
+         x64\Release\EditCameraParamDlg.obj
+         x64\Release\EditInputDlg.obj
+         x64\Release\EditInputStereoDlg.obj
+         x64\Release\FormView1.obj
+         x64\Release\Label.obj
+         x64\Release\LeftChildDlg.obj
+         x64\Release\LogViewer.obj
+         x64\Release\ManualRotateDlg.obj
+         x64\Release\NewConfigDlg.obj
+         x64\Release\NewLoadConfigChild.obj
+         x64\Release\NewLoadConfigChild_0.obj
+         x64\Release\NewLoadConfigChild_1.obj
+         x64\Release\NewLoadConfigChild_2.obj
+         x64\Release\NewLoadConfigChild_3.obj
+         x64\Release\NewLoadConfigChild_4.obj
+         x64\Release\NewLoadConfigChild_5.obj
+         x64\Release\NewLoadConfigChild_6.obj
+         x64\Release\NewLoadConfigChild_7.obj
+         x64\Release\NewLoadView.obj
+         x64\Release\OverlayEditPositionDlg.obj
+         x64\Release\PaneBottomDlg.obj
+         x64\Release\PaneLeftDlg.obj
+         x64\Release\PaneRightDlg.obj
+         x64\Release\PanoPreViewDlg.obj
+         x64\Release\PictureCtrl.obj
+         x64\Release\ProjAllConfig.obj
+         x64\Release\RightAdvanceAlignChildDlg.obj
+         x64\Release\RightAdvanceChildDlg.obj
+         x64\Release\RightAdvanceManualChildDlg.obj
+         x64\Release\RightAdvanceUpdateChildDlg.obj
+         x64\Release\RightCalibChildDlg.obj
+         x64\Release\RightInteracChildDlg.obj
+         x64\Release\RightManualCalibChildDlg.obj
+         x64\Release\RightOverlayChildDlg.obj
+         x64\Release\RightOverlayListChildDlg.obj
+         x64\Release\RightPanoraChildDlg.obj
+         x64\Release\RightSourceChildDlg.obj
+         x64\Release\ScreenManager.obj
+         x64\Release\SourceEditRect.obj
+         x64\Release\FolderDlg.obj
+         x64\Release\GdipButton.obj
+         x64\Release\GdipButtonext.obj
+         x64\Release\ImgDialogBase.obj
+         x64\Release\Utility.obj
+         x64\Release\stdafx.obj
+         x64\Release\T360VidStitch.obj
+         x64\Release\T360VidStitchDlg.obj
+         x64\Release\TaskPanelDlg.obj
+         x64\Release\TransparentDlgType.obj
+         x64\Release\VIRecentFileList.obj
+         Microsoft (R) Incremental Linker Version 12.00.21005.1
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         "/OUT:D:\Venta\trunk\x64\Release\VRUE360.exe" /INCREMENTAL:NO /LIBPATH:D:\Venta\trunk\x64\Release\ /LIBPATH:D:\Venta\trunk\\3rdParty\libs\x64 /LIBPATH:D:\Venta\trunk\\T360VidStitch\lib64 "/LIBPATH:C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" gdiplus.lib opengl32.lib glu32.lib Q360Core100.lib pthreadVC2.lib /MANIFEST "/MANIFESTUAC:level='asInvoker' uiAccess='false'" /manifest:embed "/PDB:D:\Venta\trunk\x64\Release\VRUE360.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /LTCG /TLBID:1 "/ENTRY:wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT "/IMPLIB:D:\Venta\trunk\x64\Release\VRUE360.lib" /MACHINE:X64 /FORCE:MULTIPLE x64\Release\T360VidStitch.res 
+         x64\Release\BottomManualChildDlg.obj 
+         x64\Release\BottomPanoChildDlg.obj 
+         x64\Release\BottomSourceChildDlg.obj 
+         x64\Release\CenterView.obj 
+         x64\Release\ColorSettingDlg.obj 
+         x64\Release\ConfCalibrationChildOne.obj 
+         x64\Release\ConfCalibrationChildThree.obj 
+         x64\Release\ConfCalibrationChildTwo.obj 
+         x64\Release\ConfiguChildView1.obj 
+         x64\Release\ConfiguChildView2.obj 
+         x64\Release\ConfiguChildView3.obj 
+         x64\Release\ConfiguView.obj 
+         x64\Release\ConfOutputsChildFour.obj 
+         x64\Release\ConfOutputsChildOne.obj 
+         x64\Release\ConfOutputsChildThree.obj 
+         x64\Release\ConfOutputsChildTwo.obj 
+         x64\Release\ConfPanoramaChildOne.obj 
+         x64\Release\ConfPanoramaChildTwo.obj 
+         x64\Release\CurvePaneDlg.obj 
+         x64\Release\CustCurveCtrl.obj 
+         x64\Release\EditCameraParamDlg.obj 
+         x64\Release\EditInputDlg.obj 
+         x64\Release\EditInputStereoDlg.obj 
+         x64\Release\FormView1.obj 
+         x64\Release\Label.obj 
+         x64\Release\LeftChildDlg.obj 
+         x64\Release\LogViewer.obj 
+         x64\Release\ManualRotateDlg.obj 
+         x64\Release\NewConfigDlg.obj 
+         x64\Release\NewLoadConfigChild.obj 
+         x64\Release\NewLoadConfigChild_0.obj 
+         x64\Release\NewLoadConfigChild_1.obj 
+         x64\Release\NewLoadConfigChild_2.obj 
+         x64\Release\NewLoadConfigChild_3.obj 
+         x64\Release\NewLoadConfigChild_4.obj 
+         x64\Release\NewLoadConfigChild_5.obj 
+         x64\Release\NewLoadConfigChild_6.obj 
+         x64\Release\NewLoadConfigChild_7.obj 
+         x64\Release\NewLoadView.obj 
+         x64\Release\OverlayEditPositionDlg.obj 
+         x64\Release\PaneBottomDlg.obj 
+         x64\Release\PaneLeftDlg.obj 
+         x64\Release\PaneRightDlg.obj 
+         x64\Release\PanoPreViewDlg.obj 
+         x64\Release\PictureCtrl.obj 
+         x64\Release\ProjAllConfig.obj 
+         x64\Release\RightAdvanceAlignChildDlg.obj 
+         x64\Release\RightAdvanceChildDlg.obj 
+         x64\Release\RightAdvanceManualChildDlg.obj 
+         x64\Release\RightAdvanceUpdateChildDlg.obj 
+         x64\Release\RightCalibChildDlg.obj 
+         x64\Release\RightInteracChildDlg.obj 
+         x64\Release\RightManualCalibChildDlg.obj 
+         x64\Release\RightOverlayChildDlg.obj 
+         x64\Release\RightOverlayListChildDlg.obj 
+         x64\Release\RightPanoraChildDlg.obj 
+         x64\Release\RightSourceChildDlg.obj 
+         x64\Release\ScreenManager.obj 
+         x64\Release\SourceEditRect.obj 
+         x64\Release\FolderDlg.obj 
+         x64\Release\GdipButton.obj 
+         x64\Release\GdipButtonext.obj 
+         x64\Release\ImgDialogBase.obj 
+         x64\Release\Utility.obj 
+         x64\Release\stdafx.obj 
+         x64\Release\T360VidStitch.obj 
+         x64\Release\T360VidStitchDlg.obj 
+         x64\Release\TaskPanelDlg.obj 
+         x64\Release\TransparentDlgType.obj 
+         x64\Release\VIRecentFileList.obj 
+     1>BottomManualChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>BottomPanoChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>BottomSourceChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>CenterView.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ColorSettingDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfCalibrationChildOne.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfCalibrationChildThree.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfCalibrationChildTwo.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfiguChildView1.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfiguChildView2.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfiguChildView3.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfiguView.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfOutputsChildFour.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfOutputsChildOne.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfOutputsChildThree.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfOutputsChildTwo.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfPanoramaChildOne.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfPanoramaChildTwo.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>CurvePaneDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>CustCurveCtrl.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>EditCameraParamDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>EditInputDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>EditInputStereoDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>FormView1.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>Label.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>LeftChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>LogViewer.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ManualRotateDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewConfigDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_0.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_1.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_2.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_3.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_4.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_5.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_6.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_7.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadView.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>OverlayEditPositionDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PaneBottomDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PaneLeftDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PaneRightDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PanoPreViewDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PictureCtrl.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ProjAllConfig.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightAdvanceAlignChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightAdvanceChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightAdvanceManualChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightAdvanceUpdateChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightCalibChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightInteracChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightManualCalibChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightOverlayChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightOverlayListChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightPanoraChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightSourceChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ScreenManager.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>SourceEditRect.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>FolderDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>GdipButton.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>GdipButtonext.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ImgDialogBase.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>Utility.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>stdafx.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>T360VidStitch.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>T360VidStitchDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>TaskPanelDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>TransparentDlgType.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>VIRecentFileList.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+            Creating library D:\Venta\trunk\x64\Release\VRUE360.lib and object D:\Venta\trunk\x64\Release\VRUE360.exp
+         Generating code
+     1>d:\venta\trunk\q360core\inputmanager.cpp(36): warning C4715: 'InputManager::getTimeStamp' : not all control paths return a value
+     1>d:\venta\trunk\q360core\enginemanager.cpp(3963): warning C4715: 'EngineManager::getStep' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(748): warning C4715: 'QVS_Engine::QVS_getDoingLoad' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1139): warning C4715: 'QVS_Engine::QVS_getStereoPair' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1079): warning C4715: 'QVS_Engine::QVS_hidePrepareView' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1073): warning C4715: 'QVS_Engine::QVS_showPrepareView' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1061): warning C4715: 'QVS_Engine::QVS_getPrepareMode' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1028): warning C4715: 'QVS_Engine::QVS_getCursorY' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1023): warning C4715: 'QVS_Engine::QVS_getCursorX' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1003): warning C4715: 'QVS_Engine::QVS_ResetToFullView' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1018): warning C4715: 'QVS_Engine::QVS_setCursor' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(998): warning C4715: 'QVS_Engine::QVS_ScaleOutput' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1008): warning C4715: 'QVS_Engine::QVS_Scroll' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(988): warning C4715: 'QVS_Engine::QVS_ZoomIn' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(855): warning C4715: 'QVS_Engine::QVS_GetDrawMaskRightIndex' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(850): warning C4715: 'QVS_Engine::QVS_GetDrawMaskLeftIndex' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(560): warning C4715: 'QVS_Engine::QVS_setROIMode' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1106): warning C4715: 'QVS_Engine::QVS_getIsDoingAnimation' : not all control paths return a value
+     1>d:\venta\trunk\q360core\quram360engine.cpp(1100): warning C4715: 'QVS_Engine::QVS_viewLog' : not all control paths return a value
+     1>d:\venta\trunk\q360core\composer\composer.cpp(460): warning C4715: 'WarpComposer::selectOverlay' : not all control paths return a value
+     1>d:\venta\trunk\q360core\exposurecompensator.cpp(2278): warning C4715: 'ExposureCompensator::getDefaultColorTransformInformations' : not all control paths return a value
+         Finished generating code
+     1>BottomManualChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>BottomPanoChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>BottomSourceChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>CenterView.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ColorSettingDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfCalibrationChildOne.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfCalibrationChildThree.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfCalibrationChildTwo.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfiguChildView1.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfiguChildView2.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfiguChildView3.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfiguView.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfOutputsChildFour.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfOutputsChildOne.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfOutputsChildThree.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfOutputsChildTwo.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfPanoramaChildOne.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ConfPanoramaChildTwo.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>CurvePaneDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>CustCurveCtrl.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>EditCameraParamDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>EditInputDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>EditInputStereoDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>FormView1.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>Label.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>LeftChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>LogViewer.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ManualRotateDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewConfigDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_0.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_1.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_2.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_3.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_4.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_5.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_6.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadConfigChild_7.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>NewLoadView.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>OverlayEditPositionDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PaneBottomDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PaneLeftDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PaneRightDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PanoPreViewDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>PictureCtrl.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ProjAllConfig.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightAdvanceAlignChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightAdvanceChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightAdvanceManualChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightAdvanceUpdateChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightCalibChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightInteracChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightManualCalibChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightOverlayChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightOverlayListChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightPanoraChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>RightSourceChildDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ScreenManager.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>SourceEditRect.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>FolderDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>GdipButton.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>GdipButtonext.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>ImgDialogBase.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>Utility.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>stdafx.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>T360VidStitch.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>T360VidStitchDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>TaskPanelDlg.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>TransparentDlgType.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+     1>VIRecentFileList.obj : warning LNK4258: directive '/entry:WinMainCRTStartup' not compatible with switch '/ENTRY:wWinMainCRTStartup'; ignored
+         T360VidStitch.vcxproj -> D:\Venta\trunk\x64\Release\VRUE360.exe
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\bscmake.exe /nologo /o"D:\Venta\trunk\x64\Release\VRUE360.bsc" /n x64\Release\BottomManualChildDlg.sbr x64\Release\BottomPanoChildDlg.sbr x64\Release\BottomSourceChildDlg.sbr x64\Release\CenterView.sbr x64\Release\ColorSettingDlg.sbr x64\Release\ConfCalibrationChildOne.sbr x64\Release\ConfCalibrationChildThree.sbr x64\Release\ConfCalibrationChildTwo.sbr x64\Release\ConfiguChildView1.sbr x64\Release\ConfiguChildView2.sbr x64\Release\ConfiguChildView3.sbr x64\Release\ConfiguView.sbr x64\Release\ConfOutputsChildFour.sbr x64\Release\ConfOutputsChildOne.sbr x64\Release\ConfOutputsChildThree.sbr x64\Release\ConfOutputsChildTwo.sbr x64\Release\ConfPanoramaChildOne.sbr x64\Release\ConfPanoramaChildTwo.sbr x64\Release\CurvePaneDlg.sbr x64\Release\CustCurveCtrl.sbr x64\Release\EditCameraParamDlg.sbr x64\Release\EditInputDlg.sbr x64\Release\EditInputStereoDlg.sbr x64\Release\FormView1.sbr x64\Release\Label.sbr x64\Release\LeftChildDlg.sbr x64\Release\LogViewer.sbr x64\Release\ManualRotateDlg.sbr x64\Release\NewConfigDlg.sbr x64\Release\NewLoadConfigChild.sbr x64\Release\NewLoadConfigChild_0.sbr x64\Release\NewLoadConfigChild_1.sbr x64\Release\NewLoadConfigChild_2.sbr x64\Release\NewLoadConfigChild_3.sbr x64\Release\NewLoadConfigChild_4.sbr x64\Release\NewLoadConfigChild_5.sbr x64\Release\NewLoadConfigChild_6.sbr x64\Release\NewLoadConfigChild_7.sbr x64\Release\NewLoadView.sbr x64\Release\OverlayEditPositionDlg.sbr x64\Release\PaneBottomDlg.sbr x64\Release\PaneLeftDlg.sbr x64\Release\PaneRightDlg.sbr x64\Release\PanoPreViewDlg.sbr x64\Release\PictureCtrl.sbr x64\Release\ProjAllConfig.sbr x64\Release\RightAdvanceAlignChildDlg.sbr x64\Release\RightAdvanceChildDlg.sbr x64\Release\RightAdvanceManualChildDlg.sbr x64\Release\RightAdvanceUpdateChildDlg.sbr x64\Release\RightCalibChildDlg.sbr x64\Release\RightInteracChildDlg.sbr x64\Release\RightManualCalibChildDlg.sbr x64\Release\RightOverlayChildDlg.sbr x64\Release\RightOverlayListChildDlg.sbr x64\Release\RightPanoraChildDlg.sbr x64\Release\RightSourceChildDlg.sbr x64\Release\ScreenManager.sbr x64\Release\SourceEditRect.sbr x64\Release\FolderDlg.sbr x64\Release\GdipButton.sbr x64\Release\GdipButtonext.sbr x64\Release\ImgDialogBase.sbr x64\Release\Utility.sbr x64\Release\stdafx.sbr x64\Release\T360VidStitch.sbr x64\Release\T360VidStitchDlg.sbr x64\Release\TaskPanelDlg.sbr x64\Release\TransparentDlgType.sbr x64\Release\VIRecentFileList.sbr
+     1>Done Building Project "D:\Venta\trunk\T360VidStitch\T360VidStitch.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:33.32

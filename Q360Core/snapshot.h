@@ -1,0 +1,1 @@
+void saveJPEG(const char* path, int width, int height, unsigned char* data);

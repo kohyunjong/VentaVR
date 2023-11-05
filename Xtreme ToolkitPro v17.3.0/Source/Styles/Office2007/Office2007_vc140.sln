@@ -1,0 +1,4 @@
+Microsoft Visual Studio Solution File, Format Version 14.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Office2007", ".\Office2007_vc140.vcxproj", "{36633195-7137-4591-7269-546397758379}"
+EndProject

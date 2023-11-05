@@ -1,0 +1,233 @@
+//Microsoft Developer Studio generated resource script.
+//
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// INI
+//
+
+OFFICE2013WHITE_INI                TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013Word.ini"
+OFFICE2013ACCESS_INI               TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013Access.ini"
+OFFICE2013ACCESSGRAYLIGHT_INI      TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013AccessGrayLight.ini"
+OFFICE2013ACCESSGRAYDARK_INI       TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013AccessGrayDark.ini"
+OFFICE2013EXCEL_INI                TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013Excel.ini"
+OFFICE2013EXCELGRAYLIGHT_INI       TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013ExcelGrayLight.ini"
+OFFICE2013EXCELGRAYDARK_INI        TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013ExcelGrayDark.ini"
+OFFICE2013ONENOTE_INI              TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013OneNote.ini"
+OFFICE2013ONENOTEGRAYLIGHT_INI     TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013OneNoteGrayLight.ini"
+OFFICE2013ONENOTEGRAYDARK_INI      TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013OneNoteGrayDark.ini"
+OFFICE2013OUTLOOK_INI              TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013Outlook.ini"
+OFFICE2013OUTLOOKGRAYLIGHT_INI     TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013OutlookGrayLight.ini"
+OFFICE2013OUTLOOKGRAYDARK_INI      TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013OutlookGrayDark.ini"
+OFFICE2013PUBLISHER_INI            TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013Publisher.ini"
+OFFICE2013PUBLISHERGRAYLIGHT_INI   TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013PublisherGrayLight.ini"
+OFFICE2013PUBLISHERGRAYDARK_INI    TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013PublisherGrayDark.ini"
+OFFICE2013POWERPOINT_INI           TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013PowerPoint.ini"
+OFFICE2013POWERPOINTGRAYLIGHT_INI  TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013PowerPointGrayLight.ini"
+OFFICE2013POWERPOINTGRAYDARK_INI   TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013PowerPointGrayDark.ini"
+OFFICE2013WORD_INI                 TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013Word.ini"
+OFFICE2013WORDGRAYLIGHT_INI        TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013WordGrayLight.ini"
+OFFICE2013WORDGRAYDARK_INI         TEXTFILE MOVEABLE PURE "Styles\\Office2013\\Office2013WordGrayDark.ini"
+
+#if !defined(_XTP_NO_BINARY_RESOURCES)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// ZIP
+//
+
+XAML_STYLE STYLE DISCARDABLE "Styles\\Office2013\\XamlStyle.zip"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+Office2013_TimeLineViewAppointmentIcon            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\TimeLineViewAppointmentIcon.png"
+
+#if !defined(_XTP_EXCLUDE_OFFICE2013_RBKIMG)
+
+Office2013_RibbonBackCalligraphyLarge             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphyLarge.png"
+Office2013_RibbonBackCalligraphyLargeDark         PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphyLargeDark.png"
+Office2013_RibbonBackCalligraphyLargeLight        PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphyLargeLight.png"
+Office2013_RibbonBackCalligraphyMedium            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphyMedium.png"
+Office2013_RibbonBackCalligraphyMediumDark        PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphyMediumDark.png"
+Office2013_RibbonBackCalligraphyMediumLight       PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphyMediumLight.png"
+Office2013_RibbonBackCalligraphySmall             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphySmall.png"
+Office2013_RibbonBackCalligraphySmallDark         PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphySmallDark.png"
+Office2013_RibbonBackCalligraphySmallLight        PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCalligraphySmallLight.png"
+Office2013_RibbonBackCirclesAndStripesLarge       PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesLarge.png"
+Office2013_RibbonBackCirclesAndStripesLargeDark   PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesLargeDark.png"
+Office2013_RibbonBackCirclesAndStripesLargeLight  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesLargeLight.png"
+Office2013_RibbonBackCirclesAndStripesMedium      PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesMedium.png"
+Office2013_RibbonBackCirclesAndStripesMediumDark  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesMediumDark.png"
+Office2013_RibbonBackCirclesAndStripesMediumLight PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesMediumLight.png"
+Office2013_RibbonBackCirclesAndStripesSmall       PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesSmall.png"
+Office2013_RibbonBackCirclesAndStripesSmallDark   PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesSmallDark.png"
+Office2013_RibbonBackCirclesAndStripesSmallLight  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCirclesAndStripesSmallLight.png"
+Office2013_RibbonBackCircuitLarge                 PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitLarge.png"
+Office2013_RibbonBackCircuitLargeDark             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitLargeDark.png"
+Office2013_RibbonBackCircuitLargeLight            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitLargeLight.png"
+Office2013_RibbonBackCircuitMedium                PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitMedium.png"
+Office2013_RibbonBackCircuitMediumDark            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitMediumDark.png"
+Office2013_RibbonBackCircuitMediumLight           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitMediumLight.png"
+Office2013_RibbonBackCircuitSmall                 PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitSmall.png"
+Office2013_RibbonBackCircuitSmallDark             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitSmallDark.png"
+Office2013_RibbonBackCircuitSmallLight            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCircuitSmallLight.png"
+Office2013_RibbonBackCloudsLarge                  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsLarge.png"
+Office2013_RibbonBackCloudsLargeDark              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsLargeDark.png"
+Office2013_RibbonBackCloudsLargeLight             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsLargeLight.png"
+Office2013_RibbonBackCloudsMedium                 PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsMedium.png"
+Office2013_RibbonBackCloudsMediumDark             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsMediumDark.png"
+Office2013_RibbonBackCloudsMediumLight            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsMediumLight.png"
+Office2013_RibbonBackCloudsSmall                  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsSmall.png"
+Office2013_RibbonBackCloudsSmallDark              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsSmallDark.png"
+Office2013_RibbonBackCloudsSmallLight             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackCloudsSmallLight.png"
+Office2013_RibbonBackDoodleCirclesLarge           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesLarge.png"
+Office2013_RibbonBackDoodleCirclesLargeDark       PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesLargeDark.png"
+Office2013_RibbonBackDoodleCirclesLargeLight      PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesLargeLight.png"
+Office2013_RibbonBackDoodleCirclesMedium          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesMedium.png"
+Office2013_RibbonBackDoodleCirclesMediumDark      PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesMediumDark.png"
+Office2013_RibbonBackDoodleCirclesMediumLight     PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesMediumLight.png"
+Office2013_RibbonBackDoodleCirclesSmall           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesSmall.png"
+Office2013_RibbonBackDoodleCirclesSmallDark       PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesSmallDark.png"
+Office2013_RibbonBackDoodleCirclesSmallLight      PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleCirclesSmallLight.png"
+Office2013_RibbonBackDoodleDiamondsLarge          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsLarge.png"
+Office2013_RibbonBackDoodleDiamondsLargeDark      PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsLargeDark.png"
+Office2013_RibbonBackDoodleDiamondsLargeLight     PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsLargeLight.png"
+Office2013_RibbonBackDoodleDiamondsMedium         PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsMedium.png"
+Office2013_RibbonBackDoodleDiamondsMediumDark     PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsMediumDark.png"
+Office2013_RibbonBackDoodleDiamondsMediumLight    PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsMediumLight.png"
+Office2013_RibbonBackDoodleDiamondsSmall          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsSmall.png"
+Office2013_RibbonBackDoodleDiamondsSmallDark      PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsSmallDark.png"
+Office2013_RibbonBackDoodleDiamondsSmallLight     PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackDoodleDiamondsSmallLight.png"
+Office2013_RibbonBackGeometryLarge                PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometryLarge.png"
+Office2013_RibbonBackGeometryLargeDark            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometryLargeDark.png"
+Office2013_RibbonBackGeometryLargeLight           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometryLargeLight.png"
+Office2013_RibbonBackGeometryMedium               PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometryMedium.png"
+Office2013_RibbonBackGeometryMediumDark           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometryMediumDark.png"
+Office2013_RibbonBackGeometryMediumLight          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometryMediumLight.png"
+Office2013_RibbonBackGeometrySmall                PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometrySmall.png"
+Office2013_RibbonBackGeometrySmallDark            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometrySmallDark.png"
+Office2013_RibbonBackGeometrySmallLight           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackGeometrySmallLight.png"
+Office2013_RibbonBackLunchBoxLarge                PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxLarge.png"
+Office2013_RibbonBackLunchBoxLargeDark            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxLargeDark.png"
+Office2013_RibbonBackLunchBoxLargeLight           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxLargeLight.png"
+Office2013_RibbonBackLunchBoxMedium               PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxMedium.png"
+Office2013_RibbonBackLunchBoxMediumDark           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxMediumDark.png"
+Office2013_RibbonBackLunchBoxMediumLight          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxMediumLight.png"
+Office2013_RibbonBackLunchBoxSmall                PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxSmall.png"
+Office2013_RibbonBackLunchBoxSmallDark            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxSmallDark.png"
+Office2013_RibbonBackLunchBoxSmallLight           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackLunchBoxSmallLight.png"
+Office2013_RibbonBackSchoolSuppliesLarge          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesLarge.png"
+Office2013_RibbonBackSchoolSuppliesLargeDark      PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesLargeDark.png"
+Office2013_RibbonBackSchoolSuppliesLargeLight     PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesLargeLight.png"
+Office2013_RibbonBackSchoolSuppliesMedium         PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesMedium.png"
+Office2013_RibbonBackSchoolSuppliesMediumDark     PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesMediumDark.png"
+Office2013_RibbonBackSchoolSuppliesMediumLight    PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesMediumLight.png"
+Office2013_RibbonBackSchoolSuppliesSmall          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesSmall.png"
+Office2013_RibbonBackSchoolSuppliesSmallDark      PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesSmallDark.png"
+Office2013_RibbonBackSchoolSuppliesSmallLight     PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSchoolSuppliesSmallLight.png"
+Office2013_RibbonBackSpringLarge                  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringLarge.png"
+Office2013_RibbonBackSpringLargeDark              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringLargeDark.png"
+Office2013_RibbonBackSpringLargeLight             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringLargeLight.png"
+Office2013_RibbonBackSpringMedium                 PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringMedium.png"
+Office2013_RibbonBackSpringMediumDark             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringMediumDark.png"
+Office2013_RibbonBackSpringMediumLight            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringMediumLight.png"
+Office2013_RibbonBackSpringSmall                  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringSmall.png"
+Office2013_RibbonBackSpringSmallDark              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringSmallDark.png"
+Office2013_RibbonBackSpringSmallLight             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackSpringSmallLight.png"
+Office2013_RibbonBackStarsLarge                   PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsLarge.png"
+Office2013_RibbonBackStarsLargeDark               PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsLargeDark.png"
+Office2013_RibbonBackStarsLargeLight              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsLargeLight.png"
+Office2013_RibbonBackStarsMedium                  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsMedium.png"
+Office2013_RibbonBackStarsMediumDark              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsMediumDark.png"
+Office2013_RibbonBackStarsMediumLight             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsMediumLight.png"
+Office2013_RibbonBackStarsSmall                   PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsSmall.png"
+Office2013_RibbonBackStarsSmallDark               PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsSmallDark.png"
+Office2013_RibbonBackStarsSmallLight              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStarsSmallLight.png"
+Office2013_RibbonBackStrawsLarge                  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsLarge.png"
+Office2013_RibbonBackStrawsLargeDark              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsLargeDark.png"
+Office2013_RibbonBackStrawsLargeLight             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsLargeLight.png"
+Office2013_RibbonBackStrawsMedium                 PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsMedium.png"
+Office2013_RibbonBackStrawsMediumDark             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsMediumDark.png"
+Office2013_RibbonBackStrawsMediumLight            PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsMediumLight.png"
+Office2013_RibbonBackStrawsSmall                  PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsSmall.png"
+Office2013_RibbonBackStrawsSmallDark              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsSmallDark.png"
+Office2013_RibbonBackStrawsSmallLight             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackStrawsSmallLight.png"
+Office2013_RibbonBackTreeRingsLarge               PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsLarge.png"
+Office2013_RibbonBackTreeRingsLargeDark           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsLargeDark.png"
+Office2013_RibbonBackTreeRingsLargeLight          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsLargeLight.png"
+Office2013_RibbonBackTreeRingsMedium              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsMedium.png"
+Office2013_RibbonBackTreeRingsMediumDark          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsMediumDark.png"
+Office2013_RibbonBackTreeRingsMediumLight         PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsMediumLight.png"
+Office2013_RibbonBackTreeRingsSmall               PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsSmall.png"
+Office2013_RibbonBackTreeRingsSmallDark           PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsSmallDark.png"
+Office2013_RibbonBackTreeRingsSmallLight          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackTreeRingsSmallLight.png"
+Office2013_RibbonBackUnderWaterLarge              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterLarge.png"
+Office2013_RibbonBackUnderWaterLargeDark          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterLargeDark.png"
+Office2013_RibbonBackUnderWaterLargeLight         PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterLargeLight.png"
+Office2013_RibbonBackUnderWaterMedium             PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterMedium.png"
+Office2013_RibbonBackUnderWaterMediumDark         PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterMediumDark.png"
+Office2013_RibbonBackUnderWaterMediumLight        PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterMediumLight.png"
+Office2013_RibbonBackUnderWaterSmall              PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterSmall.png"
+Office2013_RibbonBackUnderWaterSmallDark          PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterSmallDark.png"
+Office2013_RibbonBackUnderWaterSmallLight         PNG  MOVEABLE PURE "Styles\\Office2013\\res\\RibbonBackUnderWaterSmallLight.png"
+
+#endif // !defined(_XTP_EXCLUDE_OFFICE2013_RBKIMG)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+Office2013_CalendarEventGlyphs     BITMAP MOVEABLE PURE "Styles\\Office2013\\res\\CalendarEventGlyphs.bmp"
+
+#endif // !defined(_XTP_NO_BINARY_RESOURCES)
+
+#ifdef _XTP_INCLUDE_VERSION
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 17,3,0,0
+ PRODUCTVERSION 17,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "October 5, 2016\0"
+            VALUE "CompanyName", "Codejock Software\0"
+            VALUE "FileDescription", "Office 2013 Theme Resource DLL\0"
+            VALUE "FileVersion", "17, 3, 0, 0\0"
+            VALUE "InternalName", "Office2013.dll\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Office2013.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Office 2013 Theme Resource DLL\0"
+            VALUE "ProductVersion", "17, 3, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // _XTP_INCLUDE_VERSION

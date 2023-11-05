@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="CamInput">
+      <UniqueIdentifier>{12dd566e-6bfa-4d79-bfd2-d48e5965b484}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Capture">
+      <UniqueIdentifier>{d57d133a-641f-4268-b921-386053399b3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Composer">
+      <UniqueIdentifier>{78858997-c244-426c-9832-a49be4c4e2b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GLbase">
+      <UniqueIdentifier>{0bc3afc1-f48b-4b7f-a011-2e95bac3f2f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PugiXML">
+      <UniqueIdentifier>{04885af2-9b5f-48dd-a661-958f00ac2918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QTP">
+      <UniqueIdentifier>{e4053f67-e00c-428d-97d4-56a1fc702adf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Draw">
+      <UniqueIdentifier>{01ec779a-ce94-46dc-862c-f8bf78d8bf17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RegionalWarping">
+      <UniqueIdentifier>{62ea506e-d216-4535-b468-5a4ba74f2f6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CameraParameter">
+      <UniqueIdentifier>{94831661-96df-429b-bf84-ff87f76d79de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CamInput\CamInput.cpp">
+      <Filter>CamInput</Filter>
+    </ClCompile>
+    <ClCompile Include="CamInput\CamInputArray.cpp">
+      <Filter>CamInput</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\AudioCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\BMAudioCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\BMOutput.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\BMVideoCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\Capture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\DeckLinkAPI_i.c">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\IMGVideoCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\MICAudioCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\MWAudioCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\MWVideoCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\platform.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\VideoCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\XIAudioCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\XIVideoCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="Composer\Composer.cpp">
+      <Filter>Composer</Filter>
+    </ClCompile>
+    <ClCompile Include="GLbase\glProg.cpp">
+      <Filter>GLbase</Filter>
+    </ClCompile>
+    <ClCompile Include="GLbase\glPyramid.cpp">
+      <Filter>GLbase</Filter>
+    </ClCompile>
+    <ClCompile Include="GLbase\glTexMask.cpp">
+      <Filter>GLbase</Filter>
+    </ClCompile>
+    <ClCompile Include="PugiXML\pugixml.cpp">
+      <Filter>PugiXML</Filter>
+    </ClCompile>
+    <ClCompile Include="QAdvencedParam.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="qSeamFinder.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Quram360Engine.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="seamFinder.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="snapshot.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stitcher.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioPlayer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Base64ImageDecoder.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EditPanorama.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="PTSParam.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="QTP\QTPMutex.cpp">
+      <Filter>QTP</Filter>
+    </ClCompile>
+    <ClCompile Include="QTP\QTPTask.cpp">
+      <Filter>QTP</Filter>
+    </ClCompile>
+    <ClCompile Include="QTP\QTPThreadManager.cpp">
+      <Filter>QTP</Filter>
+    </ClCompile>
+    <ClCompile Include="QTP\QTP.cpp">
+      <Filter>QTP</Filter>
+    </ClCompile>
+    <ClCompile Include="ExposureCompensation.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ExposureCompensator.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="StitchingTemplate.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Capture\FILEVideoCapture.cpp">
+      <Filter>Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="QParser.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioController.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="mask_util.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="QWarper.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="QWarperCore.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Composer\ComposeHelper.cpp">
+      <Filter>Composer</Filter>
+    </ClCompile>
+    <ClCompile Include="csc_converter\csc_converter.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="csc_converter\QuramThreadpool.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="QCalibrator\QUtils\qwarping.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="QCalibrator\QUtils\Warping.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw\Draw.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Draw\Texture.cpp">
+      <Filter>Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="InputTempData.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Calibrator_Input.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionalWarping\MLSWarping\imgwarp_mls.cpp">
+      <Filter>RegionalWarping</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionalWarping\MLSWarping\imgwarp_mls_rigid.cpp">
+      <Filter>RegionalWarping</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionalWarping\MLSWarping\imgwarp_mls_similarity.cpp">
+      <Filter>RegionalWarping</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionalWarping\TPSWarping\CThinPlateSpline.cpp">
+      <Filter>RegionalWarping</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionalWarping\RegionalWarping.cpp">
+      <Filter>RegionalWarping</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionalWarping\MultiRegionalWarping.cpp">
+      <Filter>RegionalWarping</Filter>
+    </ClCompile>
+    <ClCompile Include="RegionalWarping\SingleRegionalWarping.cpp">
+      <Filter>RegionalWarping</Filter>
+    </ClCompile>
+    <ClCompile Include="OverlayManager.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraParameter\QCameraParams.cpp">
+      <Filter>CameraParameter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CamInput\CamInput.h">
+      <Filter>CamInput</Filter>
+    </ClInclude>
+    <ClInclude Include="CamInput\CamInputArray.h">
+      <Filter>CamInput</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\AudioCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\BMAudioCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\BMOutput.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\BMVideoCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\Capture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\DeckLinkAPI_h.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\IMGVideoCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\MICAudioCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\MWAudioCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\MWCommon.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\MWVideoCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\platform.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\VideoCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\XIAudioCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\XICommon.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\XIVideoCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="Composer\ComposeHelper.h">
+      <Filter>Composer</Filter>
+    </ClInclude>
+    <ClInclude Include="Composer\Composer.h">
+      <Filter>Composer</Filter>
+    </ClInclude>
+    <ClInclude Include="GLbase\glProg.h">
+      <Filter>GLbase</Filter>
+    </ClInclude>
+    <ClInclude Include="GLbase\glPyramid.h">
+      <Filter>GLbase</Filter>
+    </ClInclude>
+    <ClInclude Include="GLbase\glsl.h">
+      <Filter>GLbase</Filter>
+    </ClInclude>
+    <ClInclude Include="GLbase\glTexMask.h">
+      <Filter>GLbase</Filter>
+    </ClInclude>
+    <ClInclude Include="PugiXML\pugiconfig.hpp">
+      <Filter>PugiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="PugiXML\pugixml.hpp">
+      <Filter>PugiXML</Filter>
+    </ClInclude>
+    <ClInclude Include="WarpInfo.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveFile.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioPlayer.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64ImageDecoder.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Calibrator_Input.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="clock.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EditPanorama.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameOutput.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GCGraph.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gcgraph.hpp">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="PTSParam.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="QAdvencedParam.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="qSeamFinder.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Quram360Engine.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="seamFinder.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="snapshot.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stitcher.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StitchingMode.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="QTP\QTPMutex.h">
+      <Filter>QTP</Filter>
+    </ClInclude>
+    <ClInclude Include="QTP\QTPTask.h">
+      <Filter>QTP</Filter>
+    </ClInclude>
+    <ClInclude Include="QTP\QTPThreadManager.h">
+      <Filter>QTP</Filter>
+    </ClInclude>
+    <ClInclude Include="QTP\QTP.h">
+      <Filter>QTP</Filter>
+    </ClInclude>
+    <ClInclude Include="QTP\QTPSynchronized.h">
+      <Filter>QTP</Filter>
+    </ClInclude>
+    <ClInclude Include="ExposureCompensation.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ExposureCompensator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="StitchingTemplate.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Capture\FILEVideoCapture.h">
+      <Filter>Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="glUtils.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioController.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="mask_util.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="QWarper.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="QWarperCore.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="csc_converter\csc_converter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="csc_converter\QuramThreadpool.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="QCalibrator\QUtils\qwarping.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="QCalibrator\QUtils\Warping.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw\Draw.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Draw\Texture.h">
+      <Filter>Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="InputTempData.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Calibrator.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionalWarping\MLSWarping\imgwarp_mls.h">
+      <Filter>RegionalWarping</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionalWarping\MLSWarping\imgwarp_mls_rigid.h">
+      <Filter>RegionalWarping</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionalWarping\MLSWarping\imgwarp_mls_similarity.h">
+      <Filter>RegionalWarping</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionalWarping\TPSWarping\CThinPlateSpline.h">
+      <Filter>RegionalWarping</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionalWarping\RegionalWarping.h">
+      <Filter>RegionalWarping</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionalWarping\MultiRegionalWarping.h">
+      <Filter>RegionalWarping</Filter>
+    </ClInclude>
+    <ClInclude Include="RegionalWarping\SingleRegionalWarping.h">
+      <Filter>RegionalWarping</Filter>
+    </ClInclude>
+    <ClInclude Include="OverlayManager.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="QLicense.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraParameter\QCameraParams.h">
+      <Filter>CameraParameter</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="calcCuda.cu">
+      <Filter>Composer</Filter>
+    </CudaCompile>
+  </ItemGroup>
+</Project>

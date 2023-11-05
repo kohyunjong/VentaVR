@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D14B1836-A83A-4528-9E10-D830B58253A0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Q360Core</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)100d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)100</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)\3rdParty\headers;$(SolutionDir)\3rdParty\headers\XICapture;$(SolutionDir)\3rdParty\headers\opencv\include;$(SolutionDir)\3rdParty\headers\MWCapture;$(SolutionDir)\3rdParty\headers\PThread\include;$(SolutionDir)\3rdParty\headers\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdParty\libs\$(Platform);$(SolutionDir)\3rdParty\headers\CUDA\v8.0\lib\$(Platform);$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cudart_static.lib;LibXIStream2.lib;LibXIProperty.lib;LibMWCapture.lib;opencv_world320d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;$(SolutionDir)\3rdParty\headers;$(SolutionDir)\3rdParty\headers\XICapture;$(SolutionDir)\3rdParty\headers\opencv\include;$(SolutionDir)\3rdParty\headers\MWCapture;$(SolutionDir)\3rdParty\headers\PThread\include;$(SolutionDir)\3rdParty\headers\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdParty\libs\$(Platform);$(SolutionDir)\3rdParty\headers\CUDA\v8.0\lib\$(Platform);$(SolutionDir)$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>cudart_static.lib;LibXIStream2.lib;LibXIProperty.lib;LibMWCapture.lib;opencv_world320.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioController.cpp" />
+    <ClCompile Include="AudioPlayer.cpp" />
+    <ClCompile Include="Base64ImageDecoder.cpp" />
+    <ClCompile Include="Calibrator_Input.cpp" />
+    <ClCompile Include="CameraParameter\QCameraParams.cpp" />
+    <ClCompile Include="CamInput\CamInput.cpp" />
+    <ClCompile Include="CamInput\CamInputArray.cpp" />
+    <ClCompile Include="Capture\AudioCapture.cpp" />
+    <ClCompile Include="Capture\BMAudioCapture.cpp" />
+    <ClCompile Include="Capture\BMOutput.cpp" />
+    <ClCompile Include="Capture\BMVideoCapture.cpp" />
+    <ClCompile Include="Capture\Capture.cpp" />
+    <ClCompile Include="Capture\DeckLinkAPI_i.c" />
+    <ClCompile Include="Capture\FILEVideoCapture.cpp" />
+    <ClCompile Include="Capture\IMGVideoCapture.cpp" />
+    <ClCompile Include="Capture\MICAudioCapture.cpp" />
+    <ClCompile Include="Capture\MWAudioCapture.cpp" />
+    <ClCompile Include="Capture\MWVideoCapture.cpp" />
+    <ClCompile Include="Capture\platform.cpp" />
+    <ClCompile Include="Capture\VideoCapture.cpp" />
+    <ClCompile Include="Capture\XIAudioCapture.cpp" />
+    <ClCompile Include="Capture\XIVideoCapture.cpp" />
+    <ClCompile Include="Composer\ComposeHelper.cpp" />
+    <ClCompile Include="Composer\Composer.cpp" />
+    <ClCompile Include="csc_converter\csc_converter.c" />
+    <ClCompile Include="csc_converter\QuramThreadpool.c" />
+    <ClCompile Include="Draw\Draw.cpp" />
+    <ClCompile Include="Draw\Texture.cpp" />
+    <ClCompile Include="EditPanorama.cpp" />
+    <ClCompile Include="EngineManager.cpp" />
+    <ClCompile Include="ExposureCompensation.cpp" />
+    <ClCompile Include="ExposureCompensator.cpp" />
+    <ClCompile Include="GLbase\glProg.cpp" />
+    <ClCompile Include="GLbase\glPyramid.cpp" />
+    <ClCompile Include="GLbase\glTexMask.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="InputTempData.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mask_util.cpp" />
+    <ClCompile Include="OverlayManager.cpp" />
+    <ClCompile Include="PTSParam.cpp" />
+    <ClCompile Include="PugiXML\pugixml.cpp" />
+    <ClCompile Include="QAdvencedParam.cpp" />
+    <ClCompile Include="qSeamFinder.cpp" />
+    <ClCompile Include="QTP\QTPMutex.cpp" />
+    <ClCompile Include="QTP\QTPTask.cpp" />
+    <ClCompile Include="QTP\QTPThreadManager.cpp" />
+    <ClCompile Include="QTP\QTP.cpp" />
+    <ClCompile Include="Quram360Engine.cpp" />
+    <ClCompile Include="QWarperCore.cpp" />
+    <ClCompile Include="RegionalWarping\MLSWarping\imgwarp_mls.cpp" />
+    <ClCompile Include="RegionalWarping\MLSWarping\imgwarp_mls_rigid.cpp" />
+    <ClCompile Include="RegionalWarping\MLSWarping\imgwarp_mls_similarity.cpp" />
+    <ClCompile Include="RegionalWarping\MultiRegionalWarping.cpp" />
+    <ClCompile Include="RegionalWarping\RegionalWarping.cpp" />
+    <ClCompile Include="RegionalWarping\SingleRegionalWarping.cpp" />
+    <ClCompile Include="RegionalWarping\TPSWarping\CThinPlateSpline.cpp" />
+    <ClCompile Include="seamFinder.cpp" />
+    <ClCompile Include="snapshot.cpp" />
+    <ClCompile Include="stitcher.cpp" />
+    <ClCompile Include="StitchingTemplate.cpp" />
+    <ClCompile Include="QWarper.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioController.h" />
+    <ClInclude Include="AudioPlayer.h" />
+    <ClInclude Include="Base64ImageDecoder.h" />
+    <ClInclude Include="Calibrator.h" />
+    <ClInclude Include="Calibrator_Input.h" />
+    <ClInclude Include="CameraParameter\QCameraParams.h" />
+    <ClInclude Include="CamInput\CamInput.h" />
+    <ClInclude Include="CamInput\CamInputArray.h" />
+    <ClInclude Include="Capture\AudioCapture.h" />
+    <ClInclude Include="Capture\BMAudioCapture.h" />
+    <ClInclude Include="Capture\BMOutput.h" />
+    <ClInclude Include="Capture\BMVideoCapture.h" />
+    <ClInclude Include="Capture\Capture.h" />
+    <ClInclude Include="Capture\DeckLinkAPI_h.h" />
+    <ClInclude Include="Capture\FILEVideoCapture.h" />
+    <ClInclude Include="Capture\IMGVideoCapture.h" />
+    <ClInclude Include="Capture\MICAudioCapture.h" />
+    <ClInclude Include="Capture\MWAudioCapture.h" />
+    <ClInclude Include="Capture\MWCommon.h" />
+    <ClInclude Include="Capture\MWVideoCapture.h" />
+    <ClInclude Include="Capture\platform.h" />
+    <ClInclude Include="Capture\VideoCapture.h" />
+    <ClInclude Include="Capture\XIAudioCapture.h" />
+    <ClInclude Include="Capture\XICommon.h" />
+    <ClInclude Include="Capture\XIVideoCapture.h" />
+    <ClInclude Include="clock.h" />
+    <ClInclude Include="Composer\ComposeHelper.h" />
+    <ClInclude Include="Composer\Composer.h" />
+    <ClInclude Include="csc_converter\csc_converter.h" />
+    <ClInclude Include="csc_converter\QuramThreadpool.h" />
+    <ClInclude Include="Draw\Draw.h" />
+    <ClInclude Include="Draw\Texture.h" />
+    <ClInclude Include="EditPanorama.h" />
+    <ClInclude Include="EngineManager.h" />
+    <ClInclude Include="ExposureCompensation.h" />
+    <ClInclude Include="ExposureCompensator.h" />
+    <ClInclude Include="FrameOutput.h" />
+    <ClInclude Include="GCGraph.h" />
+    <ClInclude Include="gcgraph.hpp" />
+    <ClInclude Include="GLbase\glProg.h" />
+    <ClInclude Include="GLbase\glPyramid.h" />
+    <ClInclude Include="GLbase\glsl.h" />
+    <ClInclude Include="GLbase\glTexMask.h" />
+    <ClInclude Include="glUtils.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="InputTempData.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="mask_util.h" />
+    <ClInclude Include="OverlayManager.h" />
+    <ClInclude Include="PTSParam.h" />
+    <ClInclude Include="PugiXML\pugiconfig.hpp" />
+    <ClInclude Include="PugiXML\pugixml.hpp" />
+    <ClInclude Include="QAdvencedParam.h" />
+    <ClInclude Include="QLicense.h" />
+    <ClInclude Include="qSeamFinder.h" />
+    <ClInclude Include="QTP\QTPMutex.h" />
+    <ClInclude Include="QTP\QTPTask.h" />
+    <ClInclude Include="QTP\QTPThreadManager.h" />
+    <ClInclude Include="QTP\QTP.h" />
+    <ClInclude Include="QTP\QTPSynchronized.h" />
+    <ClInclude Include="Quram360Engine.h" />
+    <ClInclude Include="QWarperCore.h" />
+    <ClInclude Include="RegionalWarping\MLSWarping\imgwarp_mls.h" />
+    <ClInclude Include="RegionalWarping\MLSWarping\imgwarp_mls_rigid.h" />
+    <ClInclude Include="RegionalWarping\MLSWarping\imgwarp_mls_similarity.h" />
+    <ClInclude Include="RegionalWarping\MultiRegionalWarping.h" />
+    <ClInclude Include="RegionalWarping\RegionalWarping.h" />
+    <ClInclude Include="RegionalWarping\SingleRegionalWarping.h" />
+    <ClInclude Include="RegionalWarping\TPSWarping\CThinPlateSpline.h" />
+    <ClInclude Include="seamFinder.h" />
+    <ClInclude Include="snapshot.h" />
+    <ClInclude Include="stitcher.h" />
+    <ClInclude Include="StitchingMode.h" />
+    <ClInclude Include="StitchingTemplate.h" />
+    <ClInclude Include="QWarper.h" />
+    <ClInclude Include="WarpInfo.h" />
+    <ClInclude Include="WaveFile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="calcCuda.cu" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.targets" />
+  </ImportGroup>
+</Project>

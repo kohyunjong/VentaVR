@@ -1,0 +1,500 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{fa37a176-41b4-4cca-949f-37bbb486a496}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Image Files">
+      <UniqueIdentifier>{05b49cef-716d-4219-bf8d-794765a00289}</UniqueIdentifier>
+      <Extensions>.png;.bmp</Extensions>
+    </Filter>
+    <Filter Include="Image Files\png">
+      <UniqueIdentifier>{5d76f2a5-8d5c-406c-a16a-0093c0eb7615}</UniqueIdentifier>
+      <Extensions>*.png</Extensions>
+    </Filter>
+    <Filter Include="Image Files\bmp">
+      <UniqueIdentifier>{8c672509-87c5-4286-84ea-741144e0b7f7}</UniqueIdentifier>
+      <Extensions>*.bmp</Extensions>
+    </Filter>
+    <Filter Include="Ini Files">
+      <UniqueIdentifier>{933ca0a9-2ec4-4de3-a4ea-4360de064a6e}</UniqueIdentifier>
+      <Extensions>.ini</Extensions>
+    </Filter>
+    <Filter Include="Zip Files">
+      <UniqueIdentifier>{f822e6e5-8796-400f-9c30-6c86601eb523}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Office2013.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\RibbonBackCalligraphyLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCalligraphyLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCalligraphyLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCalligraphyMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCalligraphyMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCalligraphyMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCalligraphySmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCalligraphySmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCalligraphySmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCirclesAndStripesSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCircuitSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackCloudsSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleCirclesSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackDoodleDiamondsSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometryLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometryLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometryLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometryMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometryMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometryMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometrySmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometrySmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackGeometrySmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackLunchBoxSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSchoolSuppliesSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackSpringSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStarsSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackStrawsSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackTreeRingsSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterLarge.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterLargeDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterLargeLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterMedium.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterMediumDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterMediumLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterSmall.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterSmallDark.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\RibbonBackUnderWaterSmallLight.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\ShortcutBarGlyphs.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\ShortcutBarGripper.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\ShortcutBarItems.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\ShortcutBarNavigateItem.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\TimeLineViewAppointmentIcon.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="Styles\Office2013\res\TimeLineViewAppointmentIcon.png">
+      <Filter>Image Files\png</Filter>
+    </None>
+    <None Include="res\CalendarEventGlyphs.bmp">
+      <Filter>Image Files\bmp</Filter>
+    </None>
+    <None Include="Office2013Access.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013AccessGrayDark.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013AccessGrayLight.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013Excel.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013ExcelGrayDark.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013ExcelGrayLight.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013OneNote.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013OneNoteGrayDark.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013OneNoteGrayLight.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013Outlook.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013OutlookGrayDark.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013OutlookGrayLight.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013PowerPoint.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013PowerPointGrayDark.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013PowerPointGrayLight.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013Publisher.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013PublisherGrayDark.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013PublisherGrayLight.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013Word.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013WordGrayDark.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Office2013WordGrayLight.ini">
+      <Filter>Ini Files</Filter>
+    </None>
+    <None Include="Styles\Office2013\XAMLStyle.zip">
+      <Filter>Zip Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

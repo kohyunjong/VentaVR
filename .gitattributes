@@ -1,0 +1,7 @@
+/ToolkitPro[[:space:]]v17.3.0/Bin/vc120x64/ToolkitPro1730vc120x64UD.ilk filter=lfs diff=lfs merge=lfs -text
+ipch/t360vidstitch-3a400f78/vrue360-4689fe5f.ipch filter=lfs diff=lfs merge=lfs -text
+[200~3rdParty/headers/CUDA/v8.0/bin/cufft64_80.dll filter=lfs diff=lfs merge=lfs -text
+3rdParty/headers/CUDA/v8.0/bin/cufft64_80.dll filter=lfs diff=lfs merge=lfs -text
+SKT360Video.sdf filter=lfs diff=lfs merge=lfs -text
+Xtreme[[:space:]]ToolkitPro[[:space:]]v17.3.0/Bin/vc120x64/ToolkitPro1730vc120x64UD.ilk filter=lfs diff=lfs merge=lfs -text
+ipch/t360vidstitch-3a400f78/ filter=lfs diff=lfs merge=lfs -text

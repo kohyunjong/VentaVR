@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{62168893-154E-498C-A361-24955D10C52E}</ProjectGuid>
+    <RootNamespace>SubFormView</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>T360VidStitch</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\Xtreme ToolkitPro v17.3.0\Source;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Xtreme ToolkitPro v17.3.0\Lib\vc120x64;$(LibraryPath)</LibraryPath>
+    <SourcePath>..\Xtreme ToolkitPro v17.3.0\Source;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\Xtreme ToolkitPro v17.3.0\Source;$(IncludePath)</IncludePath>
+    <LibraryPath>..\Xtreme ToolkitPro v17.3.0\Lib\vc120x64;$(LibraryPath)</LibraryPath>
+    <SourcePath>..\Xtreme ToolkitPro v17.3.0\Source;$(SourcePath)</SourcePath>
+    <TargetName>VRUE360</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_AFXDLL;WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\Src;$(SolutionDir)\3rdParty\headers\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>gdiplus.lib;opengl32.lib;glu32.lib;Q360Core100d.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)\3rdParty\libs\$(Platform);$(SolutionDir)\T360VidStitch\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <ProgramDatabaseFile>$(OutDir)T360VidStitch.pdb</ProgramDatabaseFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>_AFXDLL;WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>
+      </SDLCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\Src;$(SolutionDir)\3rdParty\headers\CUDA\v8.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <StringPooling>true</StringPooling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)\3rdParty\libs\$(Platform);$(SolutionDir)\T360VidStitch\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gdiplus.lib;opengl32.lib;glu32.lib;Q360Core100.lib;pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <SuppressStartupBanner>false</SuppressStartupBanner>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <EnableDpiAwareness>false</EnableDpiAwareness>
+    </Manifest>
+    <CudaCompile>
+      <CudaRuntime>Shared</CudaRuntime>
+    </CudaCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddOverlay.h" />
+    <ClInclude Include="AddOverlayChild1.h" />
+    <ClInclude Include="AddOverlayChild2.h" />
+    <ClInclude Include="AddOverlayChild3.h" />
+    <ClInclude Include="AddOverlayChild4.h" />
+    <ClInclude Include="AddOverlayParentDlg.h" />
+    <ClInclude Include="AddOverlayPreviewDlg.h" />
+    <ClInclude Include="BottomManualChildDlg.h" />
+    <ClInclude Include="BottomPanoChildDlg.h" />
+    <ClInclude Include="BottomSourceChildDlg.h" />
+    <ClInclude Include="CenterView.h" />
+    <ClInclude Include="ColorSettingDlg.h" />
+    <ClInclude Include="ConfCalibrationChildOne.h" />
+    <ClInclude Include="ConfCalibrationChildThree.h" />
+    <ClInclude Include="ConfCalibrationChildTwo.h" />
+    <ClInclude Include="ConfiguChildView1.h" />
+    <ClInclude Include="ConfiguChildView2.h" />
+    <ClInclude Include="ConfiguChildView3.h" />
+    <ClInclude Include="ConfiguView.h" />
+    <ClInclude Include="ConfOutputsChildFour.h" />
+    <ClInclude Include="ConfOutputsChildOne.h" />
+    <ClInclude Include="ConfOutputsChildThree.h" />
+    <ClInclude Include="ConfOutputsChildTwo.h" />
+    <ClInclude Include="ConfPanoramaChildOne.h" />
+    <ClInclude Include="ConfPanoramaChildTwo.h" />
+    <ClInclude Include="curvegraph.h" />
+    <ClInclude Include="CurvePaneDlg.h" />
+    <ClInclude Include="CustCurveCtrl.h" />
+    <ClInclude Include="EditCameraParamDlg.h" />
+    <ClInclude Include="EditInputDlg.h" />
+    <ClInclude Include="EditInputStereoDlg.h" />
+    <ClInclude Include="FormView1.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="LeftChildDlg.h" />
+    <ClInclude Include="LogViewer.h" />
+    <ClInclude Include="ManualRotateDlg.h" />
+    <ClInclude Include="NewConfigDlg.h" />
+    <ClInclude Include="NewLoadConfigChild.h" />
+    <ClInclude Include="NewLoadConfigChild_0.h" />
+    <ClInclude Include="NewLoadConfigChild_1.h" />
+    <ClInclude Include="NewLoadConfigChild_2.h" />
+    <ClInclude Include="NewLoadConfigChild_3.h" />
+    <ClInclude Include="NewLoadConfigChild_4.h" />
+    <ClInclude Include="NewLoadConfigChild_5.h" />
+    <ClInclude Include="NewLoadConfigChild_6.h" />
+    <ClInclude Include="NewLoadConfigChild_7.h" />
+    <ClInclude Include="NewLoadView.h" />
+    <ClInclude Include="OverlayEditPositionDlg.h" />
+    <ClInclude Include="PaneBottomDlg.h" />
+    <ClInclude Include="PaneLeftDlg.h" />
+    <ClInclude Include="PaneRightDlg.h" />
+    <ClInclude Include="PanoPreViewDlg.h" />
+    <ClInclude Include="PictureCtrl.h" />
+    <ClInclude Include="ProjAllConfig.h" />
+    <ClInclude Include="QLicense.h" />
+    <ClInclude Include="Quram360Engine.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RightAdvanceAlignChildDlg.h" />
+    <ClInclude Include="RightAdvanceChildDlg.h" />
+    <ClInclude Include="RightAdvanceManualChildDlg.h" />
+    <ClInclude Include="RightAdvanceUpdateChildDlg.h" />
+    <ClInclude Include="RightCalibChildDlg.h" />
+    <ClInclude Include="RightInteracChildDlg.h" />
+    <ClInclude Include="RightManualCalibChildDlg.h" />
+    <ClInclude Include="RightOverlayChildDlg.h" />
+    <ClInclude Include="RightOverlayListChildDlg.h" />
+    <ClInclude Include="RightPanoraChildDlg.h" />
+    <ClInclude Include="RightSourceChildDlg.h" />
+    <ClInclude Include="ScreenManager.h" />
+    <ClInclude Include="SourceEditRect.h" />
+    <ClInclude Include="src\CGdiPlusBitmap.h" />
+    <ClInclude Include="src\FolderDlg.h" />
+    <ClInclude Include="src\GdipButton.h" />
+    <ClInclude Include="src\GdipButtonext.h" />
+    <ClInclude Include="Src\GdiplusH.h" />
+    <ClInclude Include="src\ImgDialogBase.h" />
+    <ClInclude Include="src\MemDC.h" />
+    <ClInclude Include="src\Utility.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="T360VidStitch.h" />
+    <ClInclude Include="T360VidStitchDlg.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TaskPanelDlg.h" />
+    <ClInclude Include="TransparentDlgType.h" />
+    <ClInclude Include="VIRecentFileList.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BottomManualChildDlg.cpp" />
+    <ClCompile Include="BottomPanoChildDlg.cpp" />
+    <ClCompile Include="BottomSourceChildDlg.cpp" />
+    <ClCompile Include="CenterView.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ColorSettingDlg.cpp" />
+    <ClCompile Include="ConfCalibrationChildOne.cpp" />
+    <ClCompile Include="ConfCalibrationChildThree.cpp" />
+    <ClCompile Include="ConfCalibrationChildTwo.cpp" />
+    <ClCompile Include="ConfiguChildView1.cpp" />
+    <ClCompile Include="ConfiguChildView2.cpp" />
+    <ClCompile Include="ConfiguChildView3.cpp" />
+    <ClCompile Include="ConfiguView.cpp" />
+    <ClCompile Include="ConfOutputsChildFour.cpp" />
+    <ClCompile Include="ConfOutputsChildOne.cpp" />
+    <ClCompile Include="ConfOutputsChildThree.cpp" />
+    <ClCompile Include="ConfOutputsChildTwo.cpp" />
+    <ClCompile Include="ConfPanoramaChildOne.cpp" />
+    <ClCompile Include="ConfPanoramaChildTwo.cpp" />
+    <ClCompile Include="CurvePaneDlg.cpp" />
+    <ClCompile Include="CustCurveCtrl.cpp" />
+    <ClCompile Include="EditCameraParamDlg.cpp" />
+    <ClCompile Include="EditInputDlg.cpp" />
+    <ClCompile Include="EditInputStereoDlg.cpp" />
+    <ClCompile Include="FormView1.cpp" />
+    <ClCompile Include="Label.cpp" />
+    <ClCompile Include="LeftChildDlg.cpp" />
+    <ClCompile Include="LogViewer.cpp" />
+    <ClCompile Include="ManualRotateDlg.cpp" />
+    <ClCompile Include="NewConfigDlg.cpp" />
+    <ClCompile Include="NewLoadConfigChild.cpp" />
+    <ClCompile Include="NewLoadConfigChild_0.cpp" />
+    <ClCompile Include="NewLoadConfigChild_1.cpp" />
+    <ClCompile Include="NewLoadConfigChild_2.cpp" />
+    <ClCompile Include="NewLoadConfigChild_3.cpp" />
+    <ClCompile Include="NewLoadConfigChild_4.cpp" />
+    <ClCompile Include="NewLoadConfigChild_5.cpp" />
+    <ClCompile Include="NewLoadConfigChild_6.cpp" />
+    <ClCompile Include="NewLoadConfigChild_7.cpp" />
+    <ClCompile Include="NewLoadView.cpp" />
+    <ClCompile Include="OverlayEditPositionDlg.cpp" />
+    <ClCompile Include="PaneBottomDlg.cpp" />
+    <ClCompile Include="PaneLeftDlg.cpp" />
+    <ClCompile Include="PaneRightDlg.cpp" />
+    <ClCompile Include="PanoPreViewDlg.cpp" />
+    <ClCompile Include="PictureCtrl.cpp" />
+    <ClCompile Include="ProjAllConfig.cpp" />
+    <ClCompile Include="RightAdvanceAlignChildDlg.cpp" />
+    <ClCompile Include="RightAdvanceChildDlg.cpp" />
+    <ClCompile Include="RightAdvanceManualChildDlg.cpp" />
+    <ClCompile Include="RightAdvanceUpdateChildDlg.cpp" />
+    <ClCompile Include="RightCalibChildDlg.cpp" />
+    <ClCompile Include="RightInteracChildDlg.cpp" />
+    <ClCompile Include="RightManualCalibChildDlg.cpp" />
+    <ClCompile Include="RightOverlayChildDlg.cpp" />
+    <ClCompile Include="RightOverlayListChildDlg.cpp" />
+    <ClCompile Include="RightPanoraChildDlg.cpp" />
+    <ClCompile Include="RightSourceChildDlg.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="SourceEditRect.cpp" />
+    <ClCompile Include="src\FolderDlg.cpp" />
+    <ClCompile Include="src\GdipButton.cpp" />
+    <ClCompile Include="src\GdipButtonext.cpp" />
+    <ClCompile Include="src\ImgDialogBase.cpp" />
+    <ClCompile Include="src\Utility.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="T360VidStitch.cpp" />
+    <ClCompile Include="T360VidStitchDlg.cpp" />
+    <ClCompile Include="TaskPanelDlg.cpp" />
+    <ClCompile Include="TransparentDlgType.cpp" />
+    <ClCompile Include="VIRecentFileList.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="T360VidStitch.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\T360VidStitch.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Nadir\nadir.png" />
+    <Image Include="Nadir\nadir_black.png" />
+    <Image Include="Nadir\nadir_sk.png" />
+    <Image Include="res\btn_apply_disable.png" />
+    <Image Include="res\btn_apply_mover.png" />
+    <Image Include="res\btn_apply_normal.png" />
+    <Image Include="res\btn_apply_pressed.png" />
+    <Image Include="res\btn_browse_mover.png" />
+    <Image Include="res\btn_browse_normal.png" />
+    <Image Include="res\btn_browse_pressed.png" />
+    <Image Include="res\btn_camera_sel_mover.png" />
+    <Image Include="res\btn_camera_sel_normal.png" />
+    <Image Include="res\btn_camera_sel_pressed.png" />
+    <Image Include="res\btn_camera_sel_selected.png" />
+    <Image Include="res\btn_color_mover.png" />
+    <Image Include="res\btn_color_normal.png" />
+    <Image Include="res\btn_color_pressed.png" />
+    <Image Include="res\btn_curves_disable.png" />
+    <Image Include="res\btn_curves_mover.png" />
+    <Image Include="res\btn_curves_normal.png" />
+    <Image Include="res\btn_curves_pressed.png" />
+    <Image Include="res\btn_done_mover.png" />
+    <Image Include="res\btn_done_normal.png" />
+    <Image Include="res\btn_done_pressed.png" />
+    <Image Include="res\btn_editinput_reset_mover.png" />
+    <Image Include="res\btn_editinput_reset_normal.png" />
+    <Image Include="res\btn_editinput_reset_pressed.png" />
+    <Image Include="res\btn_edit_mover.png" />
+    <Image Include="res\btn_edit_normal.png" />
+    <Image Include="res\btn_edit_pressed.png" />
+    <Image Include="res\btn_edit_selected.png" />
+    <Image Include="res\btn_edit_selected_mover.png" />
+    <Image Include="res\btn_edit_selected_pressed.png" />
+    <Image Include="res\btn_manual_1_mover.png" />
+    <Image Include="res\btn_manual_1_normal.png" />
+    <Image Include="res\btn_manual_1_pressed.png" />
+    <Image Include="res\btn_manual_1_selected.png" />
+    <Image Include="res\btn_manual_1_selected_mover.png" />
+    <Image Include="res\btn_manual_1_selected_pressed.png" />
+    <Image Include="res\btn_manual_2_mover.png" />
+    <Image Include="res\btn_manual_2_normal.png" />
+    <Image Include="res\btn_manual_2_pressed.png" />
+    <Image Include="res\btn_manual_2_selected.png" />
+    <Image Include="res\btn_manual_2_selected_mover.png" />
+    <Image Include="res\btn_manual_2_selected_pressed.png" />
+    <Image Include="res\btn_manual_3_mover.png" />
+    <Image Include="res\btn_manual_3_normal.png" />
+    <Image Include="res\btn_manual_3_pressed.png" />
+    <Image Include="res\btn_manual_3_selected.png" />
+    <Image Include="res\btn_manual_3_selected_mover.png" />
+    <Image Include="res\btn_manual_3_selected_pressed.png" />
+    <Image Include="res\btn_manual_4_mover.png" />
+    <Image Include="res\btn_manual_4_normal.png" />
+    <Image Include="res\btn_manual_4_pressed.png" />
+    <Image Include="res\btn_manual_4_selected.png" />
+    <Image Include="res\btn_manual_4_selected_mover.png" />
+    <Image Include="res\btn_manual_4_selected_pressed.png" />
+    <Image Include="res\btn_manual_5_mover.png" />
+    <Image Include="res\btn_manual_5_normal.png" />
+    <Image Include="res\btn_manual_5_pressed.png" />
+    <Image Include="res\btn_manual_5_selected.png" />
+    <Image Include="res\btn_manual_5_selected_mover.png" />
+    <Image Include="res\btn_manual_5_selected_pressed.png" />
+    <Image Include="res\btn_manual_6_mover.png" />
+    <Image Include="res\btn_manual_6_normal.png" />
+    <Image Include="res\btn_manual_6_pressed.png" />
+    <Image Include="res\btn_manual_6_selected.png" />
+    <Image Include="res\btn_manual_6_selected_mover.png" />
+    <Image Include="res\btn_manual_6_selected_pressed.png" />
+    <Image Include="res\btn_manual_7_mover.png" />
+    <Image Include="res\btn_manual_7_normal.png" />
+    <Image Include="res\btn_manual_7_pressed.png" />
+    <Image Include="res\btn_manual_7_selected.png" />
+    <Image Include="res\btn_manual_7_selected_mover.png" />
+    <Image Include="res\btn_manual_7_selected_pressed.png" />
+    <Image Include="res\btn_manual_8_mover.png" />
+    <Image Include="res\btn_manual_8_normal.png" />
+    <Image Include="res\btn_manual_8_pressed.png" />
+    <Image Include="res\btn_manual_8_selected.png" />
+    <Image Include="res\btn_manual_8_selected_mover.png" />
+    <Image Include="res\btn_manual_8_selected_pressed.png" />
+    <Image Include="res\btn_overlaytype_camera_mover.png" />
+    <Image Include="res\btn_overlaytype_camera_normal.png" />
+    <Image Include="res\btn_overlaytype_camera_pressed.png" />
+    <Image Include="res\btn_overlaytype_camera_selected.png" />
+    <Image Include="res\btn_overlaytype_camera_selected_mover.png" />
+    <Image Include="res\btn_overlaytype_camera_selected_pressed.png" />
+    <Image Include="res\btn_overlaytype_gif_mover.png" />
+    <Image Include="res\btn_overlaytype_gif_normal.png" />
+    <Image Include="res\btn_overlaytype_gif_pressed.png" />
+    <Image Include="res\btn_overlaytype_gif_selected.png" />
+    <Image Include="res\btn_overlaytype_gif_selected_mover.png" />
+    <Image Include="res\btn_overlaytype_gif_selected_pressed.png" />
+    <Image Include="res\btn_overlaytype_image_mover.png" />
+    <Image Include="res\btn_overlaytype_image_normal.png" />
+    <Image Include="res\btn_overlaytype_image_pressed.png" />
+    <Image Include="res\btn_overlaytype_image_selected.png" />
+    <Image Include="res\btn_overlaytype_image_selected_moveer.png" />
+    <Image Include="res\btn_overlaytype_image_selected_pressed.png" />
+    <Image Include="res\btn_overlaytype_stream_mover.png" />
+    <Image Include="res\btn_overlaytype_stream_normal.png" />
+    <Image Include="res\btn_overlaytype_stream_pressed.png" />
+    <Image Include="res\btn_overlaytype_stream_selected.png" />
+    <Image Include="res\btn_overlaytype_stream_selected_mover.png" />
+    <Image Include="res\btn_overlaytype_stream_selected_pressed.png" />
+    <Image Include="res\btn_overlaytype_text_mover.png" />
+    <Image Include="res\btn_overlaytype_text_normal.png" />
+    <Image Include="res\btn_overlaytype_text_pressed.png" />
+    <Image Include="res\btn_overlaytype_text_selected.png" />
+    <Image Include="res\btn_overlaytype_text_selected_mover.png" />
+    <Image Include="res\btn_overlaytype_text_selected_pressed.png" />
+    <Image Include="res\btn_overlaytype_video_mover.png" />
+    <Image Include="res\btn_overlaytype_video_normal.png" />
+    <Image Include="res\btn_overlaytype_video_pressed.png" />
+    <Image Include="res\btn_overlaytype_video_selected.png" />
+    <Image Include="res\btn_overlaytype_video_selected_mover.png" />
+    <Image Include="res\btn_overlaytype_video_selected_pressed.png" />
+    <Image Include="res\btn_overlay_cancel_mover.png" />
+    <Image Include="res\btn_overlay_cancel_normal.png" />
+    <Image Include="res\btn_overlay_cancel_pressed.png" />
+    <Image Include="res\btn_overlay_edit_mover.png" />
+    <Image Include="res\btn_overlay_edit_normal.png" />
+    <Image Include="res\btn_overlay_edit_pressed.png" />
+    <Image Include="res\btn_overlay_save_mover.png" />
+    <Image Include="res\btn_overlay_save_normal.png" />
+    <Image Include="res\btn_overlay_save_pressed.png" />
+    <Image Include="res\close_btn_mover.bmp" />
+    <Image Include="res\close_btn_mover.png" />
+    <Image Include="res\close_btn_nor.bmp" />
+    <Image Include="res\close_btn_nor.png" />
+    <Image Include="res\close_btn_pressed.bmp" />
+    <Image Include="res\close_btn_pressed.png" />
+    <Image Include="res\configuration_list_btn_apply_disable.bmp" />
+    <Image Include="res\configuration_list_btn_apply_disable.png" />
+    <Image Include="res\configuration_list_btn_apply_mover.bmp" />
+    <Image Include="res\configuration_list_btn_apply_mover.png" />
+    <Image Include="res\configuration_list_btn_apply_normal.bmp" />
+    <Image Include="res\configuration_list_btn_apply_normal.png" />
+    <Image Include="res\configuration_list_btn_apply_pressed.bmp" />
+    <Image Include="res\configuration_list_btn_apply_pressed.png" />
+    <Image Include="res\configuration_list_btn_create_disable.bmp" />
+    <Image Include="res\configuration_list_btn_create_disable.png" />
+    <Image Include="res\configuration_list_btn_create_mover.bmp" />
+    <Image Include="res\configuration_list_btn_create_mover.png" />
+    <Image Include="res\configuration_list_btn_create_normal.bmp" />
+    <Image Include="res\configuration_list_btn_create_normal.png" />
+    <Image Include="res\configuration_list_btn_create_pressed.bmp" />
+    <Image Include="res\configuration_list_btn_create_pressed.png" />
+    <Image Include="res\configuration_list_btn_save_disable.bmp" />
+    <Image Include="res\configuration_list_btn_save_disable.png" />
+    <Image Include="res\configuration_list_btn_save_mover.bmp" />
+    <Image Include="res\configuration_list_btn_save_mover.png" />
+    <Image Include="res\configuration_list_btn_save_normal.bmp" />
+    <Image Include="res\configuration_list_btn_save_normal.png" />
+    <Image Include="res\configuration_list_btn_save_pressed.bmp" />
+    <Image Include="res\configuration_list_btn_save_pressed.png" />
+    <Image Include="res\configuration_list_line.png" />
+    <Image Include="res\configuration_tab_calibration_mover.png" />
+    <Image Include="res\configuration_tab_calibration_normal.png" />
+    <Image Include="res\configuration_tab_calibration_pressed.png" />
+    <Image Include="res\configuration_tab_calibration_selected.png" />
+    <Image Include="res\configuration_tab_line.png" />
+    <Image Include="res\configuration_tab_outputs_mover.png" />
+    <Image Include="res\configuration_tab_outputs_normal.png" />
+    <Image Include="res\configuration_tab_outputs_pressed.png" />
+    <Image Include="res\configuration_tab_outputs_selected.png" />
+    <Image Include="res\configuration_tab_panorama_mover.png" />
+    <Image Include="res\configuration_tab_panorama_normal.png" />
+    <Image Include="res\configuration_tab_panorama_pressed.png" />
+    <Image Include="res\configuration_tab_panorama_selected.png" />
+    <Image Include="res\divide_line.png" />
+    <Image Include="res\export_b.png" />
+    <Image Include="res\export_btn_add_mover.png" />
+    <Image Include="res\export_btn_add_normal.png" />
+    <Image Include="res\export_btn_add_pressed.png" />
+    <Image Include="res\export_btn_advancecalibration_mover.png" />
+    <Image Include="res\export_btn_advancecalibration_normal.png" />
+    <Image Include="res\export_btn_advancecalibration_pressed.png" />
+    <Image Include="res\export_btn_advance_mover.png" />
+    <Image Include="res\export_btn_advance_normal.png" />
+    <Image Include="res\export_btn_advance_pressed.png" />
+    <Image Include="res\export_btn_alignmode_mover.png" />
+    <Image Include="res\export_btn_alignmode_normal.png" />
+    <Image Include="res\export_btn_alignmode_pressed.png" />
+    <Image Include="res\export_btn_align_mover.png" />
+    <Image Include="res\export_btn_align_normal.png" />
+    <Image Include="res\export_btn_align_pressed.png" />
+    <Image Include="res\export_btn_autocrop_mover.png" />
+    <Image Include="res\export_btn_autocrop_normal.png" />
+    <Image Include="res\export_btn_autocrop_pressed.png" />
+    <Image Include="res\export_btn_back_mover.png" />
+    <Image Include="res\export_btn_back_normal.png" />
+    <Image Include="res\export_btn_back_pressed.png" />
+    <Image Include="res\export_btn_calibration_mover.png" />
+    <Image Include="res\export_btn_calibration_normal.png" />
+    <Image Include="res\export_btn_calibration_pressed.png" />
+    <Image Include="res\export_btn_cameraparameter_mover.png" />
+    <Image Include="res\export_btn_cameraparameter_normal.png" />
+    <Image Include="res\export_btn_cameraparameter_pressed.png" />
+    <Image Include="res\export_btn_clear_mover.png" />
+    <Image Include="res\export_btn_clear_normal.png" />
+    <Image Include="res\export_btn_clear_pressed.png" />
+    <Image Include="res\export_btn_delete_mover.png" />
+    <Image Include="res\export_btn_delete_normal.png" />
+    <Image Include="res\export_btn_delete_pressed.png" />
+    <Image Include="res\export_btn_detail_mover.png" />
+    <Image Include="res\export_btn_detail_normal.png" />
+    <Image Include="res\export_btn_detail_pressed.png" />
+    <Image Include="res\export_btn_EditOff_disable.png" />
+    <Image Include="res\export_btn_EditOff_mover.png" />
+    <Image Include="res\export_btn_EditOff_normal.png" />
+    <Image Include="res\export_btn_EditOff_pressed.png" />
+    <Image Include="res\export_btn_EditOn_mover.png" />
+    <Image Include="res\export_btn_EditOn_normal.png" />
+    <Image Include="res\export_btn_EditOn_pressed.png" />
+    <Image Include="res\export_btn_fast_mover.png" />
+    <Image Include="res\export_btn_fast_normal.png" />
+    <Image Include="res\export_btn_fast_pressed.png" />
+    <Image Include="res\export_btn_hdd_disable.png" />
+    <Image Include="res\export_btn_hdd_encording.png" />
+    <Image Include="res\export_btn_hdd_encording_mover.png" />
+    <Image Include="res\export_btn_hdd_encording_pressed.png" />
+    <Image Include="res\export_btn_hdd_mover.png" />
+    <Image Include="res\export_btn_hdd_normal.png" />
+    <Image Include="res\export_btn_hdd_pressed.png" />
+    <Image Include="res\export_btn_leftrotate_mover.png" />
+    <Image Include="res\export_btn_leftrotate_normal.png" />
+    <Image Include="res\export_btn_leftrotate_pressed.png" />
+    <Image Include="res\export_btn_manualmask_mover.png" />
+    <Image Include="res\export_btn_manualmask_normal.png" />
+    <Image Include="res\export_btn_manualmask_pressed.png" />
+    <Image Include="res\export_btn_manualmode_mover.png" />
+    <Image Include="res\export_btn_manualmode_normal.png" />
+    <Image Include="res\export_btn_manualmode_pressed.png" />
+    <Image Include="res\export_btn_manularotate_mover.png" />
+    <Image Include="res\export_btn_manularotate_normal.png" />
+    <Image Include="res\export_btn_manularotate_pressed.png" />
+    <Image Include="res\export_btn_masksave_mover.png" />
+    <Image Include="res\export_btn_masksave_normal.png" />
+    <Image Include="res\export_btn_masksave_pressed.png" />
+    <Image Include="res\export_btn_mask_mover.png" />
+    <Image Include="res\export_btn_mask_normal.png" />
+    <Image Include="res\export_btn_mask_pressed.png" />
+    <Image Include="res\export_btn_output_disable.png" />
+    <Image Include="res\export_btn_output_mover.png" />
+    <Image Include="res\export_btn_output_normal.png" />
+    <Image Include="res\export_btn_output_pressed.png" />
+    <Image Include="res\export_btn_output_streaming.png" />
+    <Image Include="res\export_btn_output_streaming_mover.png" />
+    <Image Include="res\export_btn_output_streaming_pressed.png" />
+    <Image Include="res\export_btn_overlay_mover.png" />
+    <Image Include="res\export_btn_overlay_normal.png" />
+    <Image Include="res\export_btn_overlay_pressed.png" />
+    <Image Include="res\export_btn_panosave_mover.png" />
+    <Image Include="res\export_btn_panosave_normal.png" />
+    <Image Include="res\export_btn_panosave_pressed.png" />
+    <Image Include="res\export_btn_playandstop_mover.png" />
+    <Image Include="res\export_btn_playandstop_normal.png" />
+    <Image Include="res\export_btn_playandstop_pressed.png" />
+    <Image Include="res\export_btn_playandstop_selected.png" />
+    <Image Include="res\export_btn_playandstop_selected_mover.png" />
+    <Image Include="res\export_btn_playandstop_selected_pressed.png" />
+    <Image Include="res\export_btn_positionedit_mover.png" />
+    <Image Include="res\export_btn_positionedit_normal.png" />
+    <Image Include="res\export_btn_positionedit_pressed.png" />
+    <Image Include="res\export_btn_redo_mover.png" />
+    <Image Include="res\export_btn_redo_normal.png" />
+    <Image Include="res\export_btn_redo_over.png" />
+    <Image Include="res\export_btn_redo_pressed.png" />
+    <Image Include="res\export_btn_rightrotate_mover.png" />
+    <Image Include="res\export_btn_rightrotate_normal.png" />
+    <Image Include="res\export_btn_rightrotate_pressed.png" />
+    <Image Include="res\export_btn_rotate_mover.png" />
+    <Image Include="res\export_btn_rotate_normal.png" />
+    <Image Include="res\export_btn_rotate_pressed.png" />
+    <Image Include="res\export_btn_rotate_selected.png" />
+    <Image Include="res\export_btn_rotate_selected_mover.png" />
+    <Image Include="res\export_btn_rotate_selected_pressed.png" />
+    <Image Include="res\export_btn_rtmp_disable.png" />
+    <Image Include="res\export_btn_rtmp_mover.png" />
+    <Image Include="res\export_btn_rtmp_normal.png" />
+    <Image Include="res\export_btn_rtmp_pressed.png" />
+    <Image Include="res\export_btn_rtmp_streaming.png" />
+    <Image Include="res\export_btn_rtmp_streaming_mover.png" />
+    <Image Include="res\export_btn_rtmp_streaming_pressed.png" />
+    <Image Include="res\export_btn_selectall_mover.png" />
+    <Image Include="res\export_btn_selectall_normal.png" />
+    <Image Include="res\export_btn_selectall_pressed.png" />
+    <Image Include="res\export_btn_selectall_selected.png" />
+    <Image Include="res\export_btn_selectall_selected_mover.png" />
+    <Image Include="res\export_btn_selectall_selected_pressed.png" />
+    <Image Include="res\export_btn_select_mover.png" />
+    <Image Include="res\export_btn_select_normal.png" />
+    <Image Include="res\export_btn_select_pressed.png" />
+    <Image Include="res\export_btn_smartcalibration_mover.png" />
+    <Image Include="res\export_btn_smartcalibration_normal.png" />
+    <Image Include="res\export_btn_smartcalibration_pressed.png" />
+    <Image Include="res\export_btn_snapshot_mover.png" />
+    <Image Include="res\export_btn_snapshot_normal.png" />
+    <Image Include="res\export_btn_snapshot_pressed.png" />
+    <Image Include="res\export_btn_snapshot_selected.png" />
+    <Image Include="res\export_btn_speeddown_mover.png" />
+    <Image Include="res\export_btn_speeddown_normal.png" />
+    <Image Include="res\export_btn_speeddown_pressed.png" />
+    <Image Include="res\export_btn_speedup_mover.png" />
+    <Image Include="res\export_btn_speedup_normal.png" />
+    <Image Include="res\export_btn_speedup_pressed.png" />
+    <Image Include="res\export_btn_step_mover.png" />
+    <Image Include="res\export_btn_step_normal.png" />
+    <Image Include="res\export_btn_step_pressed.png" />
+    <Image Include="res\export_btn_straighten_mover.png" />
+    <Image Include="res\export_btn_straighten_normal.png" />
+    <Image Include="res\export_btn_straighten_pressed.png" />
+    <Image Include="res\export_btn_textedit_mover.png" />
+    <Image Include="res\export_btn_textedit_normal.png" />
+    <Image Include="res\export_btn_textedit_pressed.png" />
+    <Image Include="res\export_btn_undo_mover.png" />
+    <Image Include="res\export_btn_undo_normal.png" />
+    <Image Include="res\export_btn_undo_over.png" />
+    <Image Include="res\export_btn_undo_pressed.png" />
+    <Image Include="res\export_btn_updatemode_mover.png" />
+    <Image Include="res\export_btn_updatemode_normal.png" />
+    <Image Include="res\export_btn_updatemode_pressed.png" />
+    <Image Include="res\export_btn_vodrtmp_disable.png" />
+    <Image Include="res\export_btn_vodrtmp_mover.png" />
+    <Image Include="res\export_btn_vodrtmp_normal.png" />
+    <Image Include="res\export_btn_vodrtmp_pressed.png" />
+    <Image Include="res\export_btn_vodrtmp_streaming.png" />
+    <Image Include="res\export_btn_vodrtmp_streaming_mover.png" />
+    <Image Include="res\export_btn_vodrtmp_streaming_pressed.png" />
+    <Image Include="res\export_btn_WarpingReturn_mover.png" />
+    <Image Include="res\export_btn_WarpingReturn_normal.png" />
+    <Image Include="res\export_btn_WarpingReturn_pressed.png" />
+    <Image Include="res\export_btn_Warping_mover.png" />
+    <Image Include="res\export_btn_Warping_normal.png" />
+    <Image Include="res\export_btn_Warping_pressed.png" />
+    <Image Include="res\export_btn_Warping_resetwarping_mover.png" />
+    <Image Include="res\export_btn_Warping_resetwarping_normal.png" />
+    <Image Include="res\export_btn_Warping_resetwarping_pressed.png" />
+    <Image Include="res\file_btn_load_mover.png" />
+    <Image Include="res\file_btn_load_normal.png" />
+    <Image Include="res\file_btn_load_pressed.png" />
+    <Image Include="res\file_btn_load_selected.png" />
+    <Image Include="res\file_btn_new_mover.png" />
+    <Image Include="res\file_btn_new_normal.png" />
+    <Image Include="res\file_btn_new_pressed.png" />
+    <Image Include="res\file_btn_new_selected.png" />
+    <Image Include="res\icon1.ico" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\line.png" />
+    <Image Include="res\logo_PowedByLG.png" />
+    <Image Include="res\logo_PoweredByLG.png" />
+    <Image Include="res\mainmenu_btn_configuration_disable.png" />
+    <Image Include="res\mainmenu_btn_configuration_mover.png" />
+    <Image Include="res\mainmenu_btn_configuration_normal.png" />
+    <Image Include="res\mainmenu_btn_configuration_pressed.png" />
+    <Image Include="res\mainmenu_btn_configuration_selected.png" />
+    <Image Include="res\mainmenu_btn_configuration_selected_mover.png" />
+    <Image Include="res\mainmenu_btn_configuration_selected_pressed.png" />
+    <Image Include="res\mainmenu_btn_interaction_mover.png" />
+    <Image Include="res\mainmenu_btn_interaction_normal.png" />
+    <Image Include="res\mainmenu_btn_interaction_pressed.png" />
+    <Image Include="res\mainmenu_btn_interaction_selected.png" />
+    <Image Include="res\mainmenu_btn_interaction_selected_mover.png" />
+    <Image Include="res\mainmenu_btn_interaction_selected_pressed.png" />
+    <Image Include="res\mainmenu_btn_logview_mover.png" />
+    <Image Include="res\mainmenu_btn_logview_normal.png" />
+    <Image Include="res\mainmenu_btn_logview_pressed.png" />
+    <Image Include="res\mainmenu_btn_logview_selected.png" />
+    <Image Include="res\mainmenu_btn_logview_selected_mover.png" />
+    <Image Include="res\mainmenu_btn_logview_selected_pressed.png" />
+    <Image Include="res\mainmenu_btn_pair0_mover.png" />
+    <Image Include="res\mainmenu_btn_pair0_normal.png" />
+    <Image Include="res\mainmenu_btn_pair0_pressed.png" />
+    <Image Include="res\mainmenu_btn_pair0_selected.png" />
+    <Image Include="res\mainmenu_btn_pair0_selected_mover.png" />
+    <Image Include="res\mainmenu_btn_pair0_selected_pressed.png" />
+    <Image Include="res\mainmenu_btn_pair1_mover.png" />
+    <Image Include="res\mainmenu_btn_pair1_normal.png" />
+    <Image Include="res\mainmenu_btn_pair1_pressed.png" />
+    <Image Include="res\mainmenu_btn_pair1_selected.png" />
+    <Image Include="res\mainmenu_btn_pair1_selected_mover.png" />
+    <Image Include="res\mainmenu_btn_pair1_selected_pressed.png" />
+    <Image Include="res\mainmenu_btn_pair2_mover.png" />
+    <Image Include="res\mainmenu_btn_pair2_normal.png" />
+    <Image Include="res\mainmenu_btn_pair2_pressed.png" />
+    <Image Include="res\mainmenu_btn_pair2_selected.png" />
+    <Image Include="res\mainmenu_btn_pair2_selected_movere.png" />
+    <Image Include="res\mainmenu_btn_pair2_selected_pressed.png" />
+    <Image Include="res\mainmenu_btn_pair3_mover.png" />
+    <Image Include="res\mainmenu_btn_pair3_normal.png" />
+    <Image Include="res\mainmenu_btn_pair3_pressed.png" />
+    <Image Include="res\mainmenu_btn_pair3_selected.png" />
+    <Image Include="res\mainmenu_btn_pair3_selected_mover.png" />
+    <Image Include="res\mainmenu_btn_pair3_selected_pressed.png" />
+    <Image Include="res\mainmenu_btn_panorama_mover.png" />
+    <Image Include="res\mainmenu_btn_panorama_normal.png" />
+    <Image Include="res\mainmenu_btn_panorama_pressed.png" />
+    <Image Include="res\mainmenu_btn_panorama_selected.png" />
+    <Image Include="res\mainmenu_btn_panorama_selected_mover.png" />
+    <Image Include="res\mainmenu_btn_panorama_selected_pressed.png" />
+    <Image Include="res\mainmenu_btn_preparemode_mover.png" />
+    <Image Include="res\mainmenu_btn_preparemode_normal.png" />
+    <Image Include="res\mainmenu_btn_preparemode_pressed.png" />
+    <Image Include="res\mainmenu_btn_preparemode_selsected.png" />
+    <Image Include="res\mainmenu_btn_preparemode_selsected_mover.png" />
+    <Image Include="res\mainmenu_btn_preparemode_selsected_pressed.png" />
+    <Image Include="res\mainmenu_btn_sources_mover.png" />
+    <Image Include="res\mainmenu_btn_sources_normal.png" />
+    <Image Include="res\mainmenu_btn_sources_pressed.png" />
+    <Image Include="res\mainmenu_btn_sources_selected.png" />
+    <Image Include="res\mainmenu_btn_sources_selected_mover.png" />
+    <Image Include="res\mainmenu_btn_sources_selected_pressed.png" />
+    <Image Include="res\popup_btn_loadconfig_mover.png" />
+    <Image Include="res\popup_btn_loadconfig_normal.png" />
+    <Image Include="res\popup_btn_loadconfig_pressed.png" />
+    <Image Include="res\popup_btn_loadconfig_selected.png" />
+    <Image Include="res\popup_btn_newproject_normal.bmp" />
+    <Image Include="res\popup_btn_newproject_pressed.bmp" />
+    <Image Include="res\popup_btn_OK_disable.png" />
+    <Image Include="res\popup_btn_OK_normal.png" />
+    <Image Include="res\popup_btn_OK_pressed.png" />
+    <Image Include="res\popup_btn_saveD_mover.png" />
+    <Image Include="res\popup_btn_saveD_normal.png" />
+    <Image Include="res\popup_btn_saveD_pressed.png" />
+    <Image Include="res\popup_btn_save_disable.bmp" />
+    <Image Include="res\popup_btn_save_disable.png" />
+    <Image Include="res\popup_btn_save_normal.bmp" />
+    <Image Include="res\popup_btn_save_normal.png" />
+    <Image Include="res\popup_btn_save_pressed.bmp" />
+    <Image Include="res\popup_btn_save_pressed.png" />
+    <Image Include="res\popup_openfile_btn_disable.bmp" />
+    <Image Include="res\popup_openfile_btn_disable.png" />
+    <Image Include="res\popup_openfile_btn_mover.png" />
+    <Image Include="res\popup_openfile_btn_normal.bmp" />
+    <Image Include="res\popup_openfile_btn_normal.png" />
+    <Image Include="res\popup_sources_thumbnail_sel_1.png" />
+    <Image Include="res\popup_sources_thumbnail_sel_2.png" />
+    <Image Include="res\popup_sources_thumbnail_sel_3.png" />
+    <Image Include="res\popup_sources_thumbnail_sel_4.png" />
+    <Image Include="res\popup_sources_thumbnail_sel_5.png" />
+    <Image Include="res\popup_sources_thumbnail_sel_6.png" />
+    <Image Include="res\popup_sources_thumbnail_sel_7.png" />
+    <Image Include="res\popup_sources_thumbnail_sel_8.png" />
+    <Image Include="res\sources_drag.png" />
+    <Image Include="res\sources_guideline_1.png" />
+    <Image Include="res\sources_guideline_2.png" />
+    <Image Include="res\splash.png" />
+    <Image Include="res\T360VidStitch.ico" />
+    <Image Include="res\toast_bg.png" />
+    <Image Include="res\toast_bg1.png" />
+    <Image Include="res\toggle_off.png" />
+    <Image Include="res\toggle_on.png" />
+    <Image Include="res\transparent_color_btn_normal.bmp" />
+    <Image Include="res\vrue360_logo.png" />
+    <Image Include="res\vrue360_logo_small.png" />
+    <Image Include="res\window_icon_configu.bmp" />
+    <Image Include="res\window_icon_interaction.bmp" />
+    <Image Include="res\window_icon_none.bmp" />
+    <Image Include="res\window_icon_panorama.bmp" />
+    <Image Include="res\window_icon_sources.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 8.0.targets" />
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="T360VidStitch.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
