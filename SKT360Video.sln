@@ -10,6 +10,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "T360VidStitch", "T360VidSti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Q360Core", "Q360Core\Q360Core.vcxproj", "{D14B1836-A83A-4528-9E10-D830B58253A0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VentaVRLiveApp", "VentaVRLiveApp\VentaVRLiveApp.vcxproj", "{D8314BA7-F9AF-4747-836D-E6DC22A136A2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D14B1836-A83A-4528-9E10-D830B58253A0} = {D14B1836-A83A-4528-9E10-D830B58253A0}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -42,6 +47,17 @@ Global
 		{D14B1836-A83A-4528-9E10-D830B58253A0}.Release|Win32.Build.0 = Release|Win32
 		{D14B1836-A83A-4528-9E10-D830B58253A0}.Release|x64.ActiveCfg = Release|x64
 		{D14B1836-A83A-4528-9E10-D830B58253A0}.Release|x64.Build.0 = Release|x64
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Debug|Win32.Build.0 = Debug|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Debug|x64.ActiveCfg = Debug|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Release|Win32.ActiveCfg = Release|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Release|Win32.Build.0 = Release|Win32
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Release|x64.ActiveCfg = Release|x64
+		{D8314BA7-F9AF-4747-836D-E6DC22A136A2}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

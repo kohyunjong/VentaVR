@@ -241,6 +241,7 @@ int EngineManager::Create(int numCamera, int inputWidth, int inputHeight, int ou
 
 	mNumOtherInput = 0;
 
+	/*
 	mSelectSize = 100;
 	printf("mSelectSize : %d\n", mSelectSize);
 	for (int i = 0; i < 8; i++)
@@ -280,6 +281,7 @@ int EngineManager::Create(int numCamera, int inputWidth, int inputHeight, int ou
 			selected_img.release();
 		}
 	}
+	*/
 	mSelectMode = QVS_Engine::InputSelectMode_Off;
 	mCalibrationMode = QVS_Engine::CalibrationMode_MakeTemplate;
 	mRegionalWarpingViewMode = QVS_Engine::RegionalWarpingViewMode_Off;
@@ -1290,6 +1292,7 @@ int EngineManager::Stitching(int w, int h, int panorama_preview_mode)
 
 			mWarpingMapThread = CreateThread(NULL, 0, run_warpMap, this, 0, NULL);
 
+			/*
 			SingleRegionalWarping* warper = mRegionalWarping;
 			for (int num = 0; num < mNumCamera; num++)
 			{
@@ -1299,6 +1302,7 @@ int EngineManager::Stitching(int w, int h, int panorama_preview_mode)
 				else
 					tex.setBeforeMap(warper->getMapZeros(), warper->getWidth(), warper->getHeight());
 			}
+			*/
 		}
 		else if (is_request_change_param == STITCHING_TEMPLATE_REFRESH)
 		{
