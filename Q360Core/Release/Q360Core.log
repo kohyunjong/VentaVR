@@ -1,0 +1,1220 @@
+﻿Build started 2023-12-12 오후 9:05:38.
+     1>Project "D:\Venta\trunk\Q360Core\Q360Core.vcxproj" on node 2 (Rebuild target(s)).
+     1>CudaClean:
+         cmd.exe /C "C:\Users\wing1\AppData\Local\Temp\tmpa15eb9eb41254c02b736bfd17a6ebeb0.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I. -ID:\Venta\trunk\\3rdParty\headers -ID:\Venta\trunk\\3rdParty\headers\XICapture -ID:\Venta\trunk\\3rdParty\headers\opencv\include -ID:\Venta\trunk\\3rdParty\headers\MWCapture -ID:\Venta\trunk\\3rdParty\headers\PThread\include -ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile      -DWIN32 -DNDEBUG -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /FS /Zi  /MD " -o Release\calcCuda.cu.obj "D:\Venta\trunk\Q360Core\calcCuda.cu" -clean
+         
+         D:\Venta\trunk\Q360Core>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I. -ID:\Venta\trunk\\3rdParty\headers -ID:\Venta\trunk\\3rdParty\headers\XICapture -ID:\Venta\trunk\\3rdParty\headers\opencv\include -ID:\Venta\trunk\\3rdParty\headers\MWCapture -ID:\Venta\trunk\\3rdParty\headers\PThread\include -ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile      -DWIN32 -DNDEBUG -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /FS /Zi  /MD " -o Release\calcCuda.cu.obj "D:\Venta\trunk\Q360Core\calcCuda.cu" -clean 
+     1>CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+         calcCuda.cu
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /DNDEBUG /D_LIB /D_UNICODE /DUNICODE /I. /ID:\Venta\trunk\\3rdParty\headers /ID:\Venta\trunk\\3rdParty\headers\XICapture /ID:\Venta\trunk\\3rdParty\headers\opencv\include /ID:\Venta\trunk\\3rdParty\headers\MWCapture /ID:\Venta\trunk\\3rdParty\headers\PThread\include /ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c D:\Venta\trunk\Q360Core\calcCuda.cu 
+     1>Project "D:\Venta\trunk\Q360Core\Q360Core.vcxproj" (1) is building "D:\Venta\trunk\Q360Core\Q360Core.vcxproj" (1:2) on node 2 (CudaBuildCore target(s)).
+     1>CudaBuildCore:
+         Compiling CUDA source file calcCuda.cu...
+         cmd.exe /C "C:\Users\wing1\AppData\Local\Temp\tmpe958c6cd366a42aa91a35e3009d747f4.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I. -ID:\Venta\trunk\\3rdParty\headers -ID:\Venta\trunk\\3rdParty\headers\XICapture -ID:\Venta\trunk\\3rdParty\headers\opencv\include -ID:\Venta\trunk\\3rdParty\headers\MWCapture -ID:\Venta\trunk\\3rdParty\headers\PThread\include -ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /FS /Zi  /MD " -o Release\calcCuda.cu.obj "D:\Venta\trunk\Q360Core\calcCuda.cu"
+         
+         D:\Venta\trunk\Q360Core>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I. -ID:\Venta\trunk\\3rdParty\headers -ID:\Venta\trunk\\3rdParty\headers\XICapture -ID:\Venta\trunk\\3rdParty\headers\opencv\include -ID:\Venta\trunk\\3rdParty\headers\MWCapture -ID:\Venta\trunk\\3rdParty\headers\PThread\include -ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include"     --keep-dir Release -maxrregcount=0  --machine 32 --compile -cudart static     -DWIN32 -DNDEBUG -D_LIB -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /FS /Zi  /MD " -o Release\calcCuda.cu.obj "D:\Venta\trunk\Q360Core\calcCuda.cu" 
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(849): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(1787): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(2636): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(3501): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(4442): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(5353): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(6264): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7154): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7972): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h(774): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h(1618): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_double_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\sm_20_intrinsics.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\sm_20_intrinsics.h(943): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:/Venta/trunk/Q360Core/calcCuda.cu(86): warning : variable "dst_size" was declared but never referenced
+     1>D:/Venta/trunk/Q360Core/calcCuda.cu(117): warning : variable "dst_size" was declared but never referenced
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(849): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(1787): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(2636): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(3501): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(4442): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(5353): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(6264): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7154): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7972): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h(774): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h(1618): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_double_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\sm_20_intrinsics.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\sm_20_intrinsics.h(943): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:/Venta/trunk/Q360Core/calcCuda.cu(86): warning : variable "dst_size" was declared but never referenced
+     1>D:/Venta/trunk/Q360Core/calcCuda.cu(117): warning : variable "dst_size" was declared but never referenced
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(849): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(1787): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(2636): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(3501): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(4442): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(5353): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(6264): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7154): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7972): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(849): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(1787): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(2636): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(3501): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(4442): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(5353): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(6264): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7154): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7972): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(910): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(1903): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(2843): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(3779): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(4721): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(5723): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(6682): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(7610): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(8543): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(9413): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(10391): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions_decls.h(11435): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h(774): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_functions.h(1618): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\device_double_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\sm_20_intrinsics.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\sm_20_intrinsics.h(943): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(849): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(1787): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(2636): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(3501): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(4442): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(5353): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(6264): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7154): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\cuda\v8.0\include\math_functions.h(7972): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>CUDACOMPILE : nvcc warning : The 'compute_20', 'sm_20', and 'sm_21' architectures are deprecated, and may be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+         calcCuda.cu
+     1>Done Building Project "D:\Venta\trunk\Q360Core\Q360Core.vcxproj" (CudaBuildCore target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /ID:\Venta\trunk\\3rdParty\headers /ID:\Venta\trunk\\3rdParty\headers\XICapture /ID:\Venta\trunk\\3rdParty\headers\opencv\include /ID:\Venta\trunk\\3rdParty\headers\MWCapture /ID:\Venta\trunk\\3rdParty\headers\PThread\include /ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt AudioController.cpp AudioPlayer.cpp Base64ImageDecoder.cpp Calibrator_Input.cpp CameraParameter\QCameraParams.cpp CamInput\CamInput.cpp CamInput\CamInputArray.cpp Capture\AudioCapture.cpp Capture\BMAudioCapture.cpp Capture\BMOutput.cpp Capture\BMVideoCapture.cpp Capture\Capture.cpp Capture\FILEVideoCapture.cpp Capture\IMGVideoCapture.cpp Capture\MICAudioCapture.cpp Capture\MWAudioCapture.cpp Capture\MWVideoCapture.cpp Capture\platform.cpp Capture\VideoCapture.cpp Capture\XIAudioCapture.cpp Capture\XIVideoCapture.cpp Composer\ComposeHelper.cpp Composer\Composer.cpp Draw\Draw.cpp Draw\Texture.cpp EditPanorama.cpp EngineManager.cpp ExposureCompensation.cpp ExposureCompensator.cpp GLbase\glProg.cpp GLbase\glPyramid.cpp GLbase\glTexMask.cpp InputManager.cpp InputTempData.cpp main.cpp mask_util.cpp OverlayManager.cpp PTSParam.cpp PugiXML\pugixml.cpp QAdvencedParam.cpp qSeamFinder.cpp QTP\QTPMutex.cpp QTP\QTPTask.cpp QTP\QTPThreadManager.cpp QTP\QTP.cpp Quram360Engine.cpp QWarperCore.cpp RegionalWarping\MLSWarping\imgwarp_mls.cpp RegionalWarping\MLSWarping\imgwarp_mls_rigid.cpp RegionalWarping\MLSWarping\imgwarp_mls_similarity.cpp RegionalWarping\MultiRegionalWarping.cpp RegionalWarping\RegionalWarping.cpp RegionalWarping\SingleRegionalWarping.cpp RegionalWarping\TPSWarping\CThinPlateSpline.cpp seamFinder.cpp snapshot.cpp stitcher.cpp StitchingTemplate.cpp QWarper.cpp
+         AudioController.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\Composer/Composer.h(203): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>AudioController.cpp(31): warning C4018: '<' : signed/unsigned mismatch
+         AudioPlayer.cpp
+     1>AudioPlayer.cpp(342): warning C4018: '<=' : signed/unsigned mismatch
+         Base64ImageDecoder.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>Base64ImageDecoder.cpp(56): warning C4018: '<' : signed/unsigned mismatch
+     1>Base64ImageDecoder.cpp(92): warning C4018: '<' : signed/unsigned mismatch
+         Calibrator_Input.cpp
+         QCameraParams.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>CameraParameter\QCameraParams.cpp(41): warning C4018: '<' : signed/unsigned mismatch
+     1>CameraParameter\QCameraParams.cpp(42): warning C4018: '<' : signed/unsigned mismatch
+     1>CameraParameter\QCameraParams.cpp(43): warning C4018: '<' : signed/unsigned mismatch
+         CamInput.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>CamInput\CamInput.cpp(296): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(297): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(298): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(300): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(301): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(303): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(305): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(306): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(307): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>CamInput\CamInput.cpp(320): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         CamInputArray.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+         AudioCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         BMAudioCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         BMOutput.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         BMVideoCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>Capture\BMVideoCapture.cpp(96): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Capture\BMVideoCapture.cpp(253): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Capture\BMVideoCapture.cpp(525): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>Capture\BMVideoCapture.cpp(548): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         Capture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         FILEVideoCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         IMGVideoCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>Capture\IMGVideoCapture.cpp(38): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         MICAudioCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>Capture\MICAudioCapture.cpp(41): warning C4101: 'mRes' : unreferenced local variable
+     1>Capture\MICAudioCapture.cpp(606): warning C4101: 'dwDataWrote' : unreferenced local variable
+         MWAudioCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         MWVideoCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>Capture\MWVideoCapture.cpp(71): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Capture\MWVideoCapture.cpp(272): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>Capture\MWVideoCapture.cpp(349): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         platform.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>Capture\platform.cpp(102): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(195) : see declaration of 'strncpy'
+         VideoCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         XIAudioCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Compiling...
+         XIVideoCapture.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>Capture\XIVideoCapture.cpp(96): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>Capture\XIVideoCapture.cpp(309): warning C4018: '>' : signed/unsigned mismatch
+         ComposeHelper.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>Composer\ComposeHelper.cpp(17): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(77): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(190): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(191): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(99): warning C4101: 'Dx2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(99): warning C4101: 'Dy2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(259): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(199): warning C4101: 'Dx2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(199): warning C4101: 'Dy2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(496): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(497): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(361): warning C4101: 'Dx2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(361): warning C4101: 'Dy2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(626): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(636): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(557): warning C4101: 'mprad' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(738): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(739): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(740): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(741): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(652): warning C4101: 'Dx2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(649): warning C4101: 'x_jump' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(649): warning C4101: 'y' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(649): warning C4101: 'x' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(652): warning C4101: 'Dy2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(749): warning C4101: 'Dx2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(749): warning C4101: 'Dy2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(880): warning C4101: 'Dx2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(880): warning C4101: 'Dy2' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(1011): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1012): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1018): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1020): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1041): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1047): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1053): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1057): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1063): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1064): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1065): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1066): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1087): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1092): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>Composer\ComposeHelper.cpp(1096): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1097): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>Composer\ComposeHelper.cpp(1145): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1146): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\ComposeHelper.cpp(1169): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1170): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1179): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1180): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1055): warning C4101: 'mprad' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(1022): warning C4101: 'mat_temp' : unreferenced local variable
+     1>Composer\ComposeHelper.cpp(1313): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1317): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1357): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1387): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1389): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\ComposeHelper.cpp(1451): warning C4101: 'mprad' : unreferenced local variable
+         Composer.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\Composer.h(203): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\venta\trunk\q360core\glbase\glsl.h(131): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>Composer\Composer.cpp(153): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(201): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(419): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(435): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(463): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(476): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(562): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(711): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\Composer.cpp(752): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\Composer.cpp(934): warning C4244: 'argument' : conversion from 'double' to 'GLsizei', possible loss of data
+     1>Composer\Composer.cpp(945): warning C4244: 'argument' : conversion from 'double' to 'GLsizei', possible loss of data
+     1>Composer\Composer.cpp(976): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>Composer\Composer.cpp(1156): warning C4244: 'initializing' : conversion from 'double' to '__int64', possible loss of data
+     1>Composer\Composer.cpp(1159): warning C4018: '<=' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1163): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>Composer\Composer.cpp(1177): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>Composer\Composer.cpp(1272): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1296): warning C4305: '=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1300): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1306): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1425): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1448): warning C4305: '=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1452): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1458): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1566): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1588): warning C4305: '=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1592): warning C4305: '+=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1598): warning C4305: '-=' : truncation from 'double' to 'float'
+     1>Composer\Composer.cpp(1609): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>Composer\Composer.cpp(1838): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\Composer.cpp(1848): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1854): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1870): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1892): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1894): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1905): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1912): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1974): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1987): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(2035): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\Composer.cpp(2042): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\Composer.cpp(2045): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>Composer\Composer.cpp(2061): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(2067): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(1999): warning C4101: 'rx' : unreferenced local variable
+     1>Composer\Composer.cpp(1999): warning C4101: 'ry' : unreferenced local variable
+     1>Composer\Composer.cpp(2424): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(2460): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(2468): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(2501): warning C4018: '<' : signed/unsigned mismatch
+     1>Composer\Composer.cpp(2572): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>Composer\Composer.cpp(2577): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         Draw.cpp
+         Texture.cpp
+     1>Draw\Texture.cpp(185): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Draw\Texture.cpp(186): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Draw\Texture.cpp(197): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Draw\Texture.cpp(198): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         EditPanorama.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>EditPanorama.cpp(11): warning C4244: 'argument' : conversion from 'float' to 'uchar', possible loss of data
+     1>EditPanorama.cpp(34): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(39): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(41): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(43): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(45): warning C4244: '+=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(52): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(54): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(56): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(58): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(81): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>EditPanorama.cpp(87): warning C4244: 'argument' : conversion from 'float' to 'uchar', possible loss of data
+     1>EditPanorama.cpp(95): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(103): warning C4244: 'argument' : conversion from 'float' to 'uchar', possible loss of data
+     1>EditPanorama.cpp(114): warning C4244: 'argument' : conversion from 'float' to 'uchar', possible loss of data
+     1>EditPanorama.cpp(121): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(132): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(133): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(134): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(142): warning C4244: 'argument' : conversion from 'float' to 'uchar', possible loss of data
+     1>EditPanorama.cpp(148): warning C4244: 'argument' : conversion from 'float' to 'uchar', possible loss of data
+     1>EditPanorama.cpp(77): warning C4101: 'best_roll2' : unreferenced local variable
+     1>EditPanorama.cpp(77): warning C4101: 'best_pitch2' : unreferenced local variable
+     1>EditPanorama.cpp(77): warning C4101: 'best_yaw2' : unreferenced local variable
+     1>EditPanorama.cpp(185): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(192): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(193): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(194): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(198): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(199): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EditPanorama.cpp(202): warning C4244: 'argument' : conversion from 'float' to 'uchar', possible loss of data
+         EngineManager.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\Composer/Composer.h(203): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\EditPanorama.h(11): warning C4005: 'PI' : macro redefinition
+                 d:\venta\trunk\q360core\QWarperCore.h(8) : see previous definition of 'PI'
+     1>d:\venta\trunk\q360core\GLBase/glsl.h(23): warning C4005: 'PI' : macro redefinition
+                 d:\venta\trunk\q360core\EditPanorama.h(11) : see previous definition of 'PI'
+     1>d:\venta\trunk\q360core\GLBase/glsl.h(131): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\result_set.h(306): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\result_set.h(428): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\lsh_index.h(203): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\lsh_index.h(269): warning C4003: not enough actual parameters for macro 'max'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>EngineManager.cpp(71): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(197): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(232): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(569): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(577): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(625): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(682): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(711): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(731): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(739): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(798): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(861): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(891): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(906): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(932): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(1123): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(1140): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(1232): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(1368): warning C4244: 'argument' : conversion from 'float' to 'uchar', possible loss of data
+     1>EngineManager.cpp(1486): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>EngineManager.cpp(1487): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>EngineManager.cpp(1571): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>EngineManager.cpp(1708): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(1714): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(1823): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(1830): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(1655): warning C4101: 'drawRatio' : unreferenced local variable
+     1>EngineManager.cpp(1919): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>EngineManager.cpp(1948): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>EngineManager.cpp(1989): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2014): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2021): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(2023): warning C4305: '=' : truncation from 'int' to 'char'
+     1>EngineManager.cpp(2023): warning C4309: '=' : truncation of constant value
+     1>EngineManager.cpp(2026): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2035): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2038): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(2050): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 EngineManager.cpp(2038) : definition of 'i' ignored
+                 EngineManager.cpp(2032) : definition of 'i' used
+     1>EngineManager.cpp(2051): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 EngineManager.cpp(2038) : definition of 'i' ignored
+                 EngineManager.cpp(2032) : definition of 'i' used
+     1>EngineManager.cpp(2052): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 EngineManager.cpp(2038) : definition of 'i' ignored
+                 EngineManager.cpp(2032) : definition of 'i' used
+     1>EngineManager.cpp(2061): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2081): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2091): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2094): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2097): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2100): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2103): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2106): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2119): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2139): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2149): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2152): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2162): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2173): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2183): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2186): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2191): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2194): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(1963): warning C4101: 'temp_i' : unreferenced local variable
+     1>EngineManager.cpp(1937): warning C4101: 'fps' : unreferenced local variable
+     1>EngineManager.cpp(2248): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>EngineManager.cpp(2749): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\string.h(112) : see declaration of 'strcpy'
+     1>EngineManager.cpp(2785): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>EngineManager.cpp(2817): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2839): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2842): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2878): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2888): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2891): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2894): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2897): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2900): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2903): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2906): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2956): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(2968): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2971): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2974): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2977): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2983): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2989): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(2995): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(3001): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(3004): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>EngineManager.cpp(3015): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(3028): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(3034): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(3070): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(3071): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(3072): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(3076): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(230) : see declaration of 'fscanf'
+     1>EngineManager.cpp(3168): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(3178): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(4152): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(4172): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(4192): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(4212): warning C4018: '<' : signed/unsigned mismatch
+     1>EngineManager.cpp(4697): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(4702): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(4707): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(4799): warning C4244: 'return' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(4949): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(4950): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(4961): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(4979): warning C4101: 'projection' : unreferenced local variable
+     1>EngineManager.cpp(4980): warning C4101: '__modelv' : unreferenced local variable
+     1>EngineManager.cpp(5107): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(5110): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(5113): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(5125): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(5128): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(5131): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(5134): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(5136): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>EngineManager.cpp(5450): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5451): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5528): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(5530): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(5532): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(5534): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(5718): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5719): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5720): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5721): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5723): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5724): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5727): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5728): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5729): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5730): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5733): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(5900): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>EngineManager.cpp(5901): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>EngineManager.cpp(5945): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>EngineManager.cpp(5978): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>EngineManager.cpp(5979): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>EngineManager.cpp(6002): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>EngineManager.cpp(6348): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>EngineManager.cpp(6427): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>EngineManager.cpp(6493): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>EngineManager.cpp(6500): warning C4172: returning address of local variable or temporary
+     1>EngineManager.cpp(6615): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(6616): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>EngineManager.cpp(6617): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         ExposureCompensation.cpp
+     1>ExposureCompensation.cpp(124): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensation.cpp(147): warning C4101: 'pre_index' : unreferenced local variable
+     1>ExposureCompensation.cpp(147): warning C4101: 'cur_index' : unreferenced local variable
+     1>ExposureCompensation.cpp(231): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>ExposureCompensation.cpp(232): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>ExposureCompensation.cpp(233): warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+     1>ExposureCompensation.cpp(195): warning C4101: 'pre_index' : unreferenced local variable
+     1>ExposureCompensation.cpp(195): warning C4101: 'cur_index' : unreferenced local variable
+         ExposureCompensator.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>ExposureCompensator.cpp(162): warning C4101: 'curveInfo' : unreferenced local variable
+     1>ExposureCompensator.cpp(759): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(763): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(780): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(784): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(794): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(798): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(808): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(812): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(1216): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(1226): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(1318): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(1320): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1321): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1323): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1324): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1325): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1461): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(1466): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1478): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1481): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1482): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1483): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1570): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(1572): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1573): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1575): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1576): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(1577): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(2244): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(2283): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(2317): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(2337): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(2348): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(2616): warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(2621): warning C4244: '+=' : conversion from 'float' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(2624): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>ExposureCompensator.cpp(2376): warning C4101: 'rx' : unreferenced local variable
+     1>ExposureCompensator.cpp(2376): warning C4101: 'ry' : unreferenced local variable
+     1>ExposureCompensator.cpp(2764): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(2829): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(2860): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(2856): warning C4101: 'rx' : unreferenced local variable
+     1>ExposureCompensator.cpp(2856): warning C4101: 'ry' : unreferenced local variable
+     1>ExposureCompensator.cpp(3042): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>ExposureCompensator.cpp(3101): warning C4018: '<' : signed/unsigned mismatch
+     1>ExposureCompensator.cpp(3117): warning C4101: 'rx' : unreferenced local variable
+     1>ExposureCompensator.cpp(3117): warning C4101: 'ry' : unreferenced local variable
+         glProg.cpp
+     1>d:\venta\trunk\q360core\glbase\glsl.h(131): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>GLbase\glProg.cpp(942): warning C4244: 'argument' : conversion from 'float' to 'GLint', possible loss of data
+     1>GLbase\glProg.cpp(943): warning C4244: 'argument' : conversion from 'float' to 'GLint', possible loss of data
+     1>GLbase\glProg.cpp(944): warning C4244: 'argument' : conversion from 'float' to 'GLint', possible loss of data
+         glPyramid.cpp
+     1>d:\venta\trunk\q360core\glbase\glsl.h(131): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         glTexMask.cpp
+     1>d:\venta\trunk\q360core\glbase\glsl.h(131): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\venta\trunk\q360core\glbase\../stitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\glbase\../stitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\glbase\../stitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\glbase\../stitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+         InputManager.cpp
+         InputTempData.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         main.cpp
+     1>main.cpp(18): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+         mask_util.cpp
+         OverlayManager.cpp
+         PTSParam.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         pugixml.cpp
+         QAdvencedParam.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         Compiling...
+         qSeamFinder.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         QTPMutex.cpp
+         QTPTask.cpp
+         QTPThreadManager.cpp
+         QTP.cpp
+         Quram360Engine.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\Composer/Composer.h(203): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\EditPanorama.h(11): warning C4005: 'PI' : macro redefinition
+                 d:\venta\trunk\q360core\QWarperCore.h(8) : see previous definition of 'PI'
+     1>d:\venta\trunk\q360core\GLBase/glsl.h(23): warning C4005: 'PI' : macro redefinition
+                 d:\venta\trunk\q360core\EditPanorama.h(11) : see previous definition of 'PI'
+     1>d:\venta\trunk\q360core\GLBase/glsl.h(131): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\result_set.h(306): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\result_set.h(428): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\lsh_index.h(203): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\lsh_index.h(269): warning C4003: not enough actual parameters for macro 'max'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>Quram360Engine.cpp(416): warning C4800: 'BOOL' : forcing value to bool 'true' or 'false' (performance warning)
+         QWarperCore.cpp
+         imgwarp_mls.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>RegionalWarping\MLSWarping\imgwarp_mls.cpp(24): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MLSWarping\imgwarp_mls.cpp(27): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MLSWarping\imgwarp_mls.cpp(103): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MLSWarping\imgwarp_mls.cpp(104): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MLSWarping\imgwarp_mls.cpp(107): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MLSWarping\imgwarp_mls.cpp(111): warning C4244: '=' : conversion from 'double' to 'uchar', possible loss of data
+     1>RegionalWarping\MLSWarping\imgwarp_mls.cpp(114): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MLSWarping\imgwarp_mls.cpp(120): warning C4244: '=' : conversion from 'double' to 'uchar', possible loss of data
+         imgwarp_mls_rigid.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         imgwarp_mls_similarity.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         MultiRegionalWarping.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>RegionalWarping\MultiRegionalWarping.cpp(83): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(94): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(106): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(107): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(127): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(139): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(210): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(211): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(212): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(214): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(228): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RegionalWarping\MultiRegionalWarping.cpp(245): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RegionalWarping\MultiRegionalWarping.cpp(247): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RegionalWarping\MultiRegionalWarping.cpp(250): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RegionalWarping\MultiRegionalWarping.cpp(252): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RegionalWarping\MultiRegionalWarping.cpp(255): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(263): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(264): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(265): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(270): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RegionalWarping\MultiRegionalWarping.cpp(272): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(356) : see declaration of 'sprintf'
+     1>RegionalWarping\MultiRegionalWarping.cpp(297): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(311): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(312): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(341): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(342): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(372): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\MultiRegionalWarping.cpp(409): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(410): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(412): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\MultiRegionalWarping.cpp(413): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         RegionalWarping.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         SingleRegionalWarping.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>RegionalWarping\SingleRegionalWarping.cpp(114): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(115): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(116): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(117): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(119): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(120): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(121): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(122): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(129): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(130): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(131): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(132): warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(134): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(135): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(136): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(137): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(154): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(155): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(175): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(187): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\SingleRegionalWarping.cpp(258): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\SingleRegionalWarping.cpp(259): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(260): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(262): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\SingleRegionalWarping.cpp(332): warning C4018: '<' : signed/unsigned mismatch
+     1>RegionalWarping\SingleRegionalWarping.cpp(346): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(347): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(376): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(377): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(436): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(437): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(439): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+     1>RegionalWarping\SingleRegionalWarping.cpp(440): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         CThinPlateSpline.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         seamFinder.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         snapshot.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+         stitcher.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\composer\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\composer\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\Composer/Composer.h(203): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>d:\venta\trunk\q360core\GLBase/glsl.h(131): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\result_set.h(306): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\result_set.h(428): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\logger.h(66): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\lsh_index.h(203): warning C4003: not enough actual parameters for macro 'max'
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\lsh_index.h(269): warning C4003: not enough actual parameters for macro 'max'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>stitcher.cpp(86): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
+     1>stitcher.cpp(98): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
+         StitchingTemplate.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\3rdparty\headers\opencv\include\opencv2\flann\dist.h : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/stitching/detail/motion_estimators.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/video/tracking.hpp(532): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+         QWarper.cpp
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/mat.hpp(2586): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/persistence.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/core/utility.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp : warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>D:\Venta\trunk\3rdParty\headers\opencv\include\opencv2/imgproc.hpp(592): warning C4819: The file contains a character that cannot be represented in the current code page (949). Save the file in Unicode format to prevent data loss
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(6): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(13) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(7): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(14) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(13): warning C4005: 'CIRCULAR_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(6) : see previous definition of 'CIRCULAR_FISHEYE'
+     1>d:\venta\trunk\q360core\caminput\../StitchingMode.h(14): warning C4005: 'FULL_FRAME_FISHEYE' : macro redefinition
+                 d:\venta\trunk\q360core\caminput\../StitchingMode.h(7) : see previous definition of 'FULL_FRAME_FISHEYE'
+     1>QWarper.cpp(64): warning C4101: 'i' : unreferenced local variable
+     1>QWarper.cpp(116): warning C4101: 'i' : unreferenced local variable
+     1>QWarper.cpp(174): warning C4101: 'i' : unreferenced local variable
+     1>QWarper.cpp(455): warning C4101: 'Dx2' : unreferenced local variable
+     1>QWarper.cpp(455): warning C4101: 'Dy2' : unreferenced local variable
+     1>QWarper.cpp(555): warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+     1>QWarper.cpp(511): warning C4101: 'tempFileName' : unreferenced local variable
+     1>QWarper.cpp(518): warning C4101: 'dist' : unreferenced local variable
+     1>QWarper.cpp(574): warning C4101: 'tempFileName' : unreferenced local variable
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I. /ID:\Venta\trunk\\3rdParty\headers /ID:\Venta\trunk\\3rdParty\headers\XICapture /ID:\Venta\trunk\\3rdParty\headers\opencv\include /ID:\Venta\trunk\\3rdParty\headers\MWCapture /ID:\Venta\trunk\\3rdParty\headers\PThread\include /ID:\Venta\trunk\\3rdParty\headers\CUDA\v8.0\include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt Capture\DeckLinkAPI_i.c csc_converter\csc_converter.c csc_converter\QuramThreadpool.c
+         DeckLinkAPI_i.c
+         csc_converter.c
+     1>csc_converter\csc_converter.c(33): warning C4005: 'YCBCR_TO_RED' : macro redefinition
+                 csc_converter\csc_converter.c(29) : see previous definition of 'YCBCR_TO_RED'
+     1>csc_converter\csc_converter.c(34): warning C4005: 'YCBCR_TO_GREEN' : macro redefinition
+                 csc_converter\csc_converter.c(30) : see previous definition of 'YCBCR_TO_GREEN'
+     1>csc_converter\csc_converter.c(35): warning C4005: 'YCBCR_TO_BLUE' : macro redefinition
+                 csc_converter\csc_converter.c(31) : see previous definition of 'YCBCR_TO_BLUE'
+     1>csc_converter\csc_converter.c(3605): warning C4133: 'initializing' : incompatible types - from 'int *' to 'unsigned char *'
+     1>csc_converter\csc_converter.c(3606): warning C4133: 'initializing' : incompatible types - from 'int *' to 'unsigned char *'
+     1>csc_converter\csc_converter.c(3839): warning C4028: formal parameter 3 different from declaration
+     1>csc_converter\csc_converter.c(3839): warning C4028: formal parameter 4 different from declaration
+     1>csc_converter\csc_converter.c(3839): warning C4028: formal parameter 5 different from declaration
+     1>csc_converter\csc_converter.c(3847): warning C4020: '_yuv420_to_rgba8888_tps' : too many actual parameters
+         QuramThreadpool.c
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\Lib.exe /OUT:"D:\Venta\trunk\Release\Q360Core.lib" /NOLOGO /LTCG Release\calcCuda.cu.obj
+         Release\AudioController.obj
+         Release\AudioPlayer.obj
+         Release\Base64ImageDecoder.obj
+         Release\Calibrator_Input.obj
+         Release\QCameraParams.obj
+         Release\CamInput.obj
+         Release\CamInputArray.obj
+         Release\AudioCapture.obj
+         Release\BMAudioCapture.obj
+         Release\BMOutput.obj
+         Release\BMVideoCapture.obj
+         Release\Capture.obj
+         Release\DeckLinkAPI_i.obj
+         Release\FILEVideoCapture.obj
+         Release\IMGVideoCapture.obj
+         Release\MICAudioCapture.obj
+         Release\MWAudioCapture.obj
+         Release\MWVideoCapture.obj
+         Release\platform.obj
+         Release\VideoCapture.obj
+         Release\XIAudioCapture.obj
+         Release\XIVideoCapture.obj
+         Release\ComposeHelper.obj
+         Release\Composer.obj
+         Release\csc_converter.obj
+         Release\QuramThreadpool.obj
+         Release\Draw.obj
+         Release\Texture.obj
+         Release\EditPanorama.obj
+         Release\EngineManager.obj
+         Release\ExposureCompensation.obj
+         Release\ExposureCompensator.obj
+         Release\glProg.obj
+         Release\glPyramid.obj
+         Release\glTexMask.obj
+         Release\InputManager.obj
+         Release\InputTempData.obj
+         Release\main.obj
+         Release\mask_util.obj
+         Release\OverlayManager.obj
+         Release\PTSParam.obj
+         Release\pugixml.obj
+         Release\QAdvencedParam.obj
+         Release\qSeamFinder.obj
+         Release\QTPMutex.obj
+         Release\QTPTask.obj
+         Release\QTPThreadManager.obj
+         Release\QTP.obj
+         Release\Quram360Engine.obj
+         Release\QWarperCore.obj
+         Release\imgwarp_mls.obj
+         Release\imgwarp_mls_rigid.obj
+         Release\imgwarp_mls_similarity.obj
+         Release\MultiRegionalWarping.obj
+         Release\RegionalWarping.obj
+         Release\SingleRegionalWarping.obj
+         Release\CThinPlateSpline.obj
+         Release\seamFinder.obj
+         Release\snapshot.obj
+         Release\stitcher.obj
+         Release\StitchingTemplate.obj
+         Release\QWarper.obj
+         Q360Core.vcxproj -> D:\Venta\trunk\Release\Q360Core.lib
+     1>Done Building Project "D:\Venta\trunk\Q360Core\Q360Core.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:35.41

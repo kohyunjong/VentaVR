@@ -227,6 +227,33 @@ struct FullframeFisheyeStereoProg : WarpProg {
 		
 };
 
+struct FullframeFisheyeStereoWithMapProg : WarpProg {
+	GLuint isMapSet;
+	GLuint isMapAnimation;
+	GLuint isEdited;
+	GLuint mapWidth;
+	GLuint mapHeight;
+	GLuint aPos, bPos, cPos, dPos;		// lens coeff
+	GLuint mPos;						// matrix rotate(pitch, roll)
+	GLuint rot0Pos, rot1Pos;			// rotate(yaw)
+	GLuint scale0Pos, scale1Pos;		// ratio
+	GLuint distPos;						// horizontal pixels per degree
+	GLuint aspect_dwPos, aspect_swPos;
+	GLuint laplacian_modePos;
+	GLuint r_gainPos, g_gainPos, b_gainPos;		// modified, r,g,b
+	GLuint gain_modePos;
+	GLuint gray_modePos;
+	GLuint brightness_stepPos;
+	GLuint animation_timePos;
+	GLuint crop_ratio_wPos, crop_ratio_hPos, crop_sxPos, crop_syPos;
+	GLuint cam_indexPos;
+	FullframeFisheyeStereoWithMapProg() : WarpProg(){}
+	virtual std::string getFShader() const;
+
+	void setting(GLuint tex, GLuint mask, GLuint lut0, GLuint lut1, GLuint lut2, GLuint map, GLuint before_map, float m[], float rot0, float rot1, float scale0, float scale1, float distance, float aspect_dw, float aspect_sw, float lens_dist[], int laplacian_mode, float r_gain, float g_gain, float b_gain, int gain_mode, float crop_ratio_w, float crop_ratio_h, float crop_sx, float crop_sy, int mapSet, float mapw, float maph, int gray_mode, float brightness_step, float animation_time, int cam_index);
+
+};
+
 struct FullframeFisheyeWarpProg : WarpSingleProg {
 	GLuint aPos, bPos, cPos, dPos;		// lens coeff
 	GLuint mPos;						// matrix rotate(pitch, roll)
@@ -395,6 +422,7 @@ extern	Alpha2ColorProg		alpha2ColorProg;
 extern FullframeFisheyeWarpUnalphaedWarapedMaskProg fullframeFisheyeWarpUnalphaedWarapedMaskProg;
 extern FullframeFisheyeWarpProg fullframeFisheyeWarpProg;
 extern FullframeFisheyeStereoProg fullframeFisheyeStereoProg;
+extern FullframeFisheyeStereoWithMapProg fullframeFisheyeStereoWithMapProg;
 extern FullframeFisheyeCylindricalWarpProg fullframeFisheyeCylindricalWarpProg;
 //extern FullframeFisheyeWarpUnalphaedCylindricalWarapedMaskProg fullframeFisheyeWarpUnalphaedCylindricalWarapedMaskProg;
 extern RectlinearWarpUnalphaedPanoramaWarapedMaskProg rectlinearWarpUnalphaedPanoramaWarapedMaskProg;

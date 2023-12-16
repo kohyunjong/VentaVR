@@ -27,6 +27,7 @@ WarpUnalphaedWarapedMaskProg warpUnalphaedWarpedMaskProg;
 FullframeFisheyeWarpUnalphaedWarapedMaskProg fullframeFisheyeWarpUnalphaedWarapedMaskProg;
 FullframeFisheyeWarpProg fullframeFisheyeWarpProg;
 FullframeFisheyeStereoProg fullframeFisheyeStereoProg;
+FullframeFisheyeStereoWithMapProg fullframeFisheyeStereoWithMapProg;
 FullframeFisheyeCylindricalWarpProg fullframeFisheyeCylindricalWarpProg;
 //FullframeFisheyeWarpUnalphaedCylindricalWarapedMaskProg fullframeFisheyeWarpUnalphaedCylindricalWarapedMaskProg;
 RectlinearWarpUnalphaedPanoramaWarapedMaskProg rectlinearWarpUnalphaedPanoramaWarapedMaskProg;
@@ -1037,6 +1038,99 @@ void FullframeFisheyeStereoProg::setting(GLuint tex, GLuint mask, GLuint lut0, G
 	glUniform1i(cam_indexPos, cam_index);
 }
 
+void FullframeFisheyeStereoWithMapProg::setting(GLuint tex, GLuint mask, GLuint lut0, GLuint lut1, GLuint lut2, GLuint map, GLuint before_map, float m[], float rot0, float rot1, float scale0, float scale1, float distance, float aspect_dw, float aspect_sw, float lens_dist[], int laplacian_mode,
+	float r_gain, float g_gain, float b_gain, int gain_mode, float crop_ratio_w, float crop_ratio_h, float crop_sx, float crop_sy, int mapSet, float mapw, float maph, int gray_mode, float brightness_step, float animation_time, int cam_index)
+{
+	//TwoTexProg::use(tex, mask);
+	//ThreeTexProg::use(tex, mask, lut);
+	//FiveTexProg::use(tex, mask, lut0, lut1, lut2);
+	//SixTexProg::use(tex, mask, lut0, lut1, lut2, map);
+	SevenTexProg::use(tex, mask, lut0, lut1, lut2, map, before_map);
+
+	if (aPos == 0) {
+		//isMapSet = glGetUniformLocation(prog, "isMapSet");
+		//isMapAnimation = glGetUniformLocation(prog, "isMapAnimation");
+		mapWidth = glGetUniformLocation(prog, "mapWidth");
+		mapHeight = glGetUniformLocation(prog, "mapHeight");
+
+		aPos = glGetUniformLocation(prog, "a");
+		bPos = glGetUniformLocation(prog, "b");
+		cPos = glGetUniformLocation(prog, "c");
+		dPos = glGetUniformLocation(prog, "d");
+
+		mPos = glGetUniformLocation(prog, "m");
+
+		rot0Pos = glGetUniformLocation(prog, "rot0");
+		rot1Pos = glGetUniformLocation(prog, "rot1");
+
+		scale0Pos = glGetUniformLocation(prog, "scale0");
+		scale1Pos = glGetUniformLocation(prog, "scale1");
+
+		distPos = glGetUniformLocation(prog, "dist");
+
+		aspect_dwPos = glGetUniformLocation(prog, "aspect_dw");
+		aspect_swPos = glGetUniformLocation(prog, "aspect_sw");
+
+		laplacian_modePos = glGetUniformLocation(prog, "laplacian_mode");
+
+		r_gainPos = glGetUniformLocation(prog, "r_gain");
+		g_gainPos = glGetUniformLocation(prog, "g_gain");
+		b_gainPos = glGetUniformLocation(prog, "b_gain");
+
+		gain_modePos = glGetUniformLocation(prog, "gain_mode");
+		gray_modePos = glGetUniformLocation(prog, "gray_mode");
+
+		brightness_stepPos = glGetUniformLocation(prog, "brightness_step");
+		animation_timePos = glGetUniformLocation(prog, "animation_time");
+
+		crop_ratio_wPos = glGetUniformLocation(prog, "crop_ratio_w");
+		crop_ratio_hPos = glGetUniformLocation(prog, "crop_ratio_h");
+		crop_sxPos = glGetUniformLocation(prog, "crop_sx");
+		crop_syPos = glGetUniformLocation(prog, "crop_sy");
+		cam_indexPos = glGetUniformLocation(prog, "cam_index");
+	}
+	//glUniform1i(isMapSet, mapSet);
+	//glUniform1i(isMapAnimation, resetMapAnimation);
+	glUniform1f(mapWidth, mapw);
+	glUniform1f(mapHeight, maph);
+
+	glUniform1f(aPos, lens_dist[0]);
+	glUniform1f(bPos, lens_dist[1]);
+	glUniform1f(cPos, lens_dist[2]);
+	glUniform1f(dPos, lens_dist[3]);
+
+	glUniformMatrix3fv(mPos, 1, 0, m);
+
+	glUniform1f(rot0Pos, rot0);
+	glUniform1f(rot1Pos, rot1);
+
+	glUniform1f(scale0Pos, scale0);
+	glUniform1f(scale1Pos, scale1);
+
+	glUniform1f(distPos, distance);
+
+	glUniform1f(aspect_dwPos, aspect_dw);
+	glUniform1f(aspect_swPos, aspect_sw);
+
+	glUniform1i(laplacian_modePos, laplacian_mode);
+
+	glUniform1f(r_gainPos, r_gain);
+	glUniform1f(g_gainPos, g_gain);
+	glUniform1f(b_gainPos, b_gain);
+
+	glUniform1i(gain_modePos, gain_mode);
+	glUniform1i(gray_modePos, gray_mode);
+
+	glUniform1f(brightness_stepPos, brightness_step);
+	glUniform1f(animation_timePos, animation_time);
+
+	glUniform1f(crop_ratio_wPos, crop_ratio_w);
+	glUniform1f(crop_ratio_hPos, crop_ratio_h);
+	glUniform1f(crop_sxPos, crop_sx);
+	glUniform1f(crop_syPos, crop_sy);
+	glUniform1i(cam_indexPos, cam_index);
+}
+
 void RectlinearWarpUnalphaedPanoramaWarapedMaskProg::setting(GLuint tex, GLuint mask, GLuint lut0, GLuint lut1, GLuint lut2, GLuint map, GLuint before_map, float m[], float rot0, float rot1, float scale0, float scale1, float distance, float aspect_dw, float aspect_sw, float lens_dist[], int laplacian_mode,
 	float r_gain, float g_gain, float b_gain, int gain_mode, float crop_ratio_w, float crop_ratio_h, float crop_sx, float crop_sy, int mapSet, float mapw, float maph, int gray_mode, float brightness_step, float animation_time, int resetMapAnimation, int lens_type)
 {
@@ -1582,6 +1676,111 @@ std::string FullframeFisheyeStereoProg::getFShader() const {
 		"	if(laplacian_mode == 1)\n"
 		"		gl_FragColor = vec4(c0.rgb*a,a);\n"
 		"	else\n"
+		"		gl_FragColor = vec4(c0.rgb*a,a);\n"
+		"}\n";
+}
+
+std::string FullframeFisheyeStereoWithMapProg::getFShader() const {
+	return
+		"uniform sampler2D tex1, tex2;\n"
+		"uniform sampler1D tex3, tex4, tex5;\n"
+		"uniform float a, b, c, d;\n"
+		"uniform mat3 m;\n"
+		"uniform float rot0, rot1;\n"
+		"uniform float scale0, scale1;\n"
+		"uniform float dist;\n"
+		"uniform float aspect_dw, aspect_sw;\n"
+		"uniform int laplacian_mode;\n"
+		"uniform float r_gain;\n"
+		"uniform float g_gain;\n"
+		"uniform float b_gain;\n"
+		"uniform int gain_mode;\n"
+		"uniform int gray_mode;\n"
+		"uniform float brightness_step;\n"
+		"uniform float animation_time;\n"
+		"uniform float crop_ratio_w, crop_ratio_h, crop_sx, crop_sy;\n"
+		"uniform int cam_index;\n"
+
+		"uniform sampler2D tex6;\n"
+		"uniform sampler2D tex7;\n"
+		//"uniform int isMapSet;\n"
+		//"uniform int isMapAnimation;\n"
+		"uniform float mapWidth;\n"
+		"uniform float mapHeight;\n"
+
+		ROTATE_EQUIRECT
+		SPHERICAL_IMAGE_TO_EQUIRECT
+		PERSPECTIVE_CONTROL_SPHERICAL_IMAGE
+		CORRECT_LENSE_DIST_BIGHEADK
+
+		"void main() {\n"
+		"	vec2 v = gl_TexCoord[0].st;\n"
+		"	vec2 tv = v;\n"
+
+
+		"	float mapx1 = texture2D(tex6, v.xy).r;\n"
+		"	float mapx2 = texture2D(tex6, v.xy).g;\n"
+		"	float mapy1 = texture2D(tex6, v.xy).b;\n"
+		"	float mapy2 = texture2D(tex6, v.xy).a;\n"
+
+		"	v.x = mapx1 + mapx2 / 256.0;\n"
+		"	v.y = mapy1 + mapy2 / 256.0;\n"
+
+		"	vec4 c0=vec4(0,0,0,0);\n"
+		"	float a=0.0;\n"
+
+		"	v.x = (v.x-crop_sx)*crop_ratio_w;\n"
+		"	v.y = (v.y-crop_sy)*crop_ratio_h;\n"
+
+		"	if(v.x>=0. && v.x<=1. && v.y>=0. && v.y<=1.) \n"
+		"	{\n"
+		"		if( sqrt( (v.x-0.5)*(v.x-0.5) + ( (v.y-0.5)*0.5625 )*((v.y-0.5)*0.5625) ) < (crop_ratio_w / 2.0)) \n"
+		"			a =1.0;\n"
+		"	}\n"
+
+
+		"	c0 =texture2D(tex1, v.xy);\n"
+
+		"	if(gain_mode == 0){\n"	//all of mode 
+		"		c0.r = texture1D(tex3, c0.r + r_gain).a;\n"
+		"		c0.g = texture1D(tex4, c0.g + g_gain).a;\n"
+		"		c0.b = texture1D(tex5, c0.b + b_gain).a;\n"
+		"	}\n"
+
+		"	if(brightness_step != 0.0) {\n"
+		"		c0.r = c0.r + brightness_step;\n"
+		"		c0.g = c0.g + brightness_step;\n"
+		"		c0.b = c0.b + brightness_step;\n"
+		"	}\n"
+
+		"	if(gray_mode == 1) {\n"
+		"		float intensity = (c0.r*0.299 + c0.g*0.587 + c0.b*0.114);\n"	// BT.601
+		//"	float intensity = (c0.r*0.3 + c0.g*0.59 + c0.b*0.11);\n" // photoshop
+		//"	float intensity = (c0.r*0.2126 + c0.g*0.7152 + c0.b*0.0722);\n"	// Luma
+
+		"		c0.r = intensity;\n"
+		"		c0.g = intensity;\n"
+		"		c0.b = intensity;\n"
+		"	}\n"
+
+
+		"	if(c0.r > 1.0)\n"
+		"		c0.r = 1.0;\n"
+		"	if(c0.g > 1.0)\n"
+		"		c0.g = 1.0;\n"
+		"	if(c0.b > 1.0)\n"
+		"		c0.b = 1.0;\n"
+
+		"	if(c0.r < 0.0)\n"
+		"		c0.r = 0.0;\n"
+		"	if(c0.g < 0.0)\n"
+		"		c0.g = 0.0;\n"
+		"	if(c0.b < 0.0)\n"
+		"		c0.b = 0.0;\n"
+
+		//"	if(laplacian_mode == 1)\n"
+		//"		gl_FragColor = vec4(c0.rgb*a,a);\n"
+		//"	else\n"
 		"		gl_FragColor = vec4(c0.rgb*a,a);\n"
 		"}\n";
 }

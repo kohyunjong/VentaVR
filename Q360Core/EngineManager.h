@@ -335,11 +335,13 @@ struct EngineManager {
 	static DWORD WINAPI run_seam(LPVOID handle);
 	static DWORD WINAPI run_gain(LPVOID handle);
 	static DWORD WINAPI run_manual_curve(LPVOID handle);
+	static DWORD WINAPI run_regional_warping(LPVOID handle);
 	static DWORD WINAPI run_warpMap(LPVOID handle);
 	static DWORD WINAPI	run_edit_mode(LPVOID handle);
 	static DWORD WINAPI	run_undo(LPVOID handle);
 	static DWORD WINAPI	run_redo(LPVOID handle);
 	static DWORD WINAPI	run_load_param(LPVOID handle);
+	static DWORD WINAPI run_stereo_calibration(LPVOID handle);
 	
 
 	int is_thread_seam;
@@ -357,7 +359,6 @@ struct EngineManager {
 	int isDoingUndoRegionWarping;
 	int isDoingEvent;
 	SingleRegionalWarping* mRegionalWarping;
-	MultiRegionalWarping* mMultiRegionalWarping;
 	int mUseViewSize;
 	int mViewW, mViewH;
 	int mImageW, mImageH;
@@ -389,6 +390,8 @@ struct EngineManager {
 	char mNadirPath[MAX_PATH];
 	int mRGBIndex;
 	int mRed[CAMERA_MAX], mGreen[CAMERA_MAX], mBlue[CAMERA_MAX];
+	char mStmap_L_Path[MAX_PATH];
+	char mStmap_R_Path[MAX_PATH];
 
 	bool is_doing_exposure = false;
 	bool is_doing_seam = false;
@@ -574,21 +577,21 @@ struct EngineManager {
 	bool doingLoad = false;
 	void setDoingLoad(bool status);
 	bool getDoingLoad();
-	/*void setCallbackStartOutput(callback_startOutput cb);
-	void setCallbackStartEncoding(callback_startEncoding cb);
-	void setCallbackStartStreaming(callback_startStreaming cb);
-	void setCallbackAudioBufferOffset(callback_audioBufferOffset cb);
-	void setCallbackVideoBufferOffset(callback_videoBufferOffset cb);*/
 
 
 	void makeSeamMask(long long timeStame, int* buffer_idx, int edit_mode);
+	void makeStereoInputData(long long timeStamp, int* buffer_idx);
 	//void calculatePixelAvg(int* buffer_idx);
 	void estimateExposureCompensation(int* buffer_idx);
 	std::vector<cv::Mat> getCurve(long long timeStamp, std::vector<std::vector<std::vector<cv::Point2d>>> manualCurvePoints);
 	int setNadirCompensationMode(int mode);
 	int setNadirCompensationParam(int position, int size);
+	bool startAutoCrop(std::vector<cv::Mat>& imgs, PTSParam* input_image_param, PTSParam *global_image_param, PTSParam* output_image_param, WarpInfo* warp_info);
+	void circles_detector(cv::Mat &image, std::vector<cv::Vec3f> &circles, cv::Rect& boundingRect, int index, double canny_threshold = 100.0, double circle_threshold = 0.23, int numIterations = 50);
+	int makeCircularMask(cv::Mat& Img, cv::Mat& mask, std::vector<cv::Vec3f> circles, cv::Rect& boundingRect, int margin);
 
 	int updateNadirImage();
+	int updateStmap(int index);
 
 	//added for engine API
 	void setRGBIndex(int index);
@@ -624,6 +627,7 @@ struct EngineManager {
 	int getNadirSize();
 	char* getNadirPath();
 	void setNadirPath(const char* path);
+	void setStmapPath(int index, const char* path);
 	char* getSnapshot_path();
 	int isEncoding();
 	void setGainPointX1(double x);
@@ -654,8 +658,6 @@ struct EngineManager {
 	void setOutputCurveData(void* data);
 
 	//Temporary Gain Curve Data
-	std::vector<std::vector<std::vector<cv::Point2d>>> getTempCurvePoints(int cameraNum);
-	void generatePoints(int cameraNum, cv::Point2d *curvePointsMin, cv::Point2d *curvePointsMid, cv::Point2d *curvePointsMax);
 	double *tempX0, *tempX1, *tempX2;
 	double *tempY0, *tempY1, *tempY2;
 	std::vector<std::vector<std::vector<cv::Point2d>>> mCurvePoints;

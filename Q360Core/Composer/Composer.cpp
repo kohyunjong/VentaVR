@@ -906,7 +906,6 @@ void StitchComposer::add(size_t k, long long timeStamp, float animation_time, bo
 	//colorG = colors[1];
 	//colorB = colors[2];
 	//colorY = colors[3];
-
 	if (blendMode == MULTIBAND_BLEND || blendMode == NORMAL_BLEND)
 	{
 		//warping
@@ -922,10 +921,17 @@ void StitchComposer::add(size_t k, long long timeStamp, float animation_time, bo
 		}
 		else if (stitching_mode == STEREO_STITCHING_LR)
 		{
+			
 			glBindFramebuffer(GL_FRAMEBUFFER, resFBO);
 			glViewport(0, 0, width * 2, height);
-			fullframeFisheyeStereoProg.setting(p.getImageTex(), p.getMaskTex(), p.getLUT0(), p.getLUT1(), p.getLUT2(), p.getMap(), p.getBeforeMap(), (float*)stereoHlp.rotatem, (float)stereoHlp.rot0, (float)stereoHlp.rot1, (float)stereoHlp.scale0, (float)stereoHlp.scale1,
-				(float)stereoHlp.distance, (float)stereoHlp.aspect_dw, (float)stereoHlp.aspect_sw, (float*)stereoHlp.lens_dist, is_laplacian_mode, colors[0], colors[1], colors[2], gainRenderingMode, (float)stereoHlp.crop_ratio_w, (float)stereoHlp.crop_ratio_h, (float)stereoHlp.crop_sx, (float)stereoHlp.crop_sy, grayscale_mode, brightness_step, animation_time, (int)k % 2 + 2);
+			if (p.isMapSet()) {
+				fullframeFisheyeStereoWithMapProg.setting(p.getImageTex(), p.getMaskTex(), p.getLUT0(), p.getLUT1(), p.getLUT2(), p.getMap(), p.getBeforeMap(), (float*)stereoHlp.rotatem, (float)stereoHlp.rot0, (float)stereoHlp.rot1, (float)stereoHlp.scale0, (float)stereoHlp.scale1,
+					(float)stereoHlp.distance, (float)stereoHlp.aspect_dw, (float)stereoHlp.aspect_sw, (float*)stereoHlp.lens_dist, is_laplacian_mode, colors[0], colors[1], colors[2], gainRenderingMode, (float)stereoHlp.crop_ratio_w, (float)stereoHlp.crop_ratio_h, (float)stereoHlp.crop_sx, (float)stereoHlp.crop_sy, p.isMapSet(), (float)p.getMapW(), (float)p.getMapH(), grayscale_mode, brightness_step, animation_time, (int)k % 2 + 2);
+			}
+			else {
+				fullframeFisheyeStereoProg.setting(p.getImageTex(), p.getMaskTex(), p.getLUT0(), p.getLUT1(), p.getLUT2(), p.getMap(), p.getBeforeMap(), (float*)stereoHlp.rotatem, (float)stereoHlp.rot0, (float)stereoHlp.rot1, (float)stereoHlp.scale0, (float)stereoHlp.scale1,
+					(float)stereoHlp.distance, (float)stereoHlp.aspect_dw, (float)stereoHlp.aspect_sw, (float*)stereoHlp.lens_dist, is_laplacian_mode, colors[0], colors[1], colors[2], gainRenderingMode, (float)stereoHlp.crop_ratio_w, (float)stereoHlp.crop_ratio_h, (float)stereoHlp.crop_sx, (float)stereoHlp.crop_sy, grayscale_mode, brightness_step, animation_time, (int)k % 2 + 2);
+			}
 		}
 		else if (stitching_mode == WIDE_STITCHING){
 			buf[k]->clear();

@@ -16,15 +16,12 @@ int EngineManager::Create(int numCamera, int inputWidth, int inputHeight, int ou
 	if (m_pQLicense.checkMacAddress(LICENSE_MACADDRESS) == QVS_FALSE)
 		return QVS_FALSE;
 #endif
-
 	output_width = outputWidth;
 	output_height = outputHeight;
-
 
 	for (int i = 0; i < numCamera; i++) {
 		texId[i] = 0;
 	}
-
 	roiTexId[0] = 0;
 
 #ifdef SDI_OUTPUT_TEST
@@ -193,8 +190,10 @@ int EngineManager::Create(int numCamera, int inputWidth, int inputHeight, int ou
 		image_param[i].out_fov = mOutputFov;
 	}
 
-
 	sprintf(snapshot_path, ".\\");
+
+	// Reiognal Warping
+	mRegionalWarping = SingleRegionalWarping::create_SingleRegionalWarping(outputWidth, outputHeight);
 	//PTS_path[0] = NULL;
 
 	mUseViewSize = 1;
@@ -219,7 +218,6 @@ int EngineManager::Create(int numCamera, int inputWidth, int inputHeight, int ou
 	mAudioController = AudioController::create_AudioController(stitcher->composer);
 
 	temp_videoCapture_state = (int**)malloc(CAMERA_MAX * sizeof(int*));
-
 	for (int i = 0; i < CAMERA_MAX; i++)
 	{
 		mVideoCaptureList[i].mVideoCapture = NULL;
@@ -290,7 +288,6 @@ int EngineManager::Create(int numCamera, int inputWidth, int inputHeight, int ou
 	is_editmode = false;
 	calculateInteractiveCoordinates();
 	calculateInteractiveCoordinatesForWidePanorama();
-
 	mCaptureDoneCounter = 0;
 	mIsSeamThread = false;
 	mIsGainThread = false;
@@ -386,12 +383,12 @@ int EngineManager::Destroy()
 		printf("bigheadk, wait 5 \n");
 	}
 
-
 	for (int i = 0; i < CAMERA_MAX; i++)
 	{
 		destroyVideoCapture(i);
 	}
 
+	SingleRegionalWarping::destroy_SingleRegionalWarping(mRegionalWarping);
 
 	destroyAudioDevice();
 	input_manager->destroy();
@@ -1259,7 +1256,6 @@ int EngineManager::Stitching(int w, int h, int panorama_preview_mode)
 
 	int editMode = STITCHING_MODE;
 	bool isStereoMode = false;
-	
 
 	if (is_Init == 0 && is_load != 0)
 	{
@@ -1277,6 +1273,62 @@ int EngineManager::Stitching(int w, int h, int panorama_preview_mode)
 		int* idx = input_manager->getOutIndex(0);
 		if (idx == 0)
 			return QVS_FAIL;
+
+		if (is_RegionWarping == 1)
+		{
+			for (int i = 0; i < mNumCamera; i++)
+			{
+				if (mRegionalWarpingMapIndex[i] == 1)
+				{
+					PTSParam* image_param = stitcher->stitchingTemplate->getImageParams();
+
+					GLTexMask& tex = stitcher->inputArray->camIn(i)->getTexMask();
+					tex.setMap(image_param[i].regional_warping_raw_buffer, image_param[i].mapW, image_param[i].mapH, image_param[i].regional_warping_level);
+					//free(decoded_buffer);
+					mSaveMapIndex[i] = true;
+
+					mRegionalWarpingMapIndex[i] = 0;
+				}
+			}
+
+			warping_animTime = 0.0f;
+			//is_beforeRegionWarping = 1;
+			is_RegionWarping = 0;
+		}
+		else if (is_undoRegionWarping == 2)
+		{
+			for (int i = 0; i < mNumCamera; i++)
+			{
+				if (mRegionalWarpingUndoMapIndex[i] == 1)
+				{
+					PTSParam* image_param = stitcher->stitchingTemplate->getImageParams();
+					if (image_param[i].regional_warping_buffer != NULL)
+					{
+
+						GLTexMask& tex = stitcher->inputArray->camIn(i)->getTexMask();
+						tex.setMap(image_param[i].regional_warping_raw_buffer, image_param[i].mapW, image_param[i].mapH, image_param[i].regional_warping_level);
+						//free(decoded_buffer);
+						mSaveMapIndex[i] = true;
+						mRegionalWarpingUndoMapIndex[i] = 0;
+					}
+				}
+				else if (mRegionalWarpingBeforeMapZeros[i] == 1)
+				{
+					GLTexMask& tex = stitcher->inputArray->camIn(i)->getTexMask();
+					//tex.resetMap();
+					if (tex.isMapSet() == 1)
+						tex.doResetAnimation();
+
+					tex.resetMap();
+
+					mSaveMapIndex[i] = false;
+				}
+			}
+
+			warping_animTime = 0.0f;
+			is_beforeRegionWarping = 1;
+			is_undoRegionWarping = 0;
+		}
 
 		if (is_doing_exposure || is_doing_seam)
 		{
@@ -1368,8 +1420,6 @@ int EngineManager::Stitching(int w, int h, int panorama_preview_mode)
 			cv::Vec3b input_theta(input_roll, input_pitch, input_yaw);
 			rotation_Image(input_theta, mNumCamera, image_param);
 
-			//printf("KHJ, test mOutputType=%d, isDoingEvent=%d, mRotateScale=%f \n", mOutputType, isDoingEvent, mRotateScale);
-
 			if (isStraighten)
 			{
 				isStraighten = false;
@@ -1414,7 +1464,46 @@ int EngineManager::Stitching(int w, int h, int panorama_preview_mode)
 			}
 			//double tick = QClock();
 			stitcher->stitching(w, h, idx, temp_videoCapture_state, input_tempData, panorama_preview_mode, mCurrentScale, mCurrentX, mCurrentY, warping_animTime, stereoIndex, editMode, stitchingMode);
-			
+			//if (is_beforeRegionWarping == 1)
+			//{
+			//	SingleRegionalWarping* warper = mRegionalWarping;
+			//	for (int num = 0; num < mNumCamera; num++)
+			//	{
+			//		GLTexMask& tex = stitcher->inputArray->camIn(num)->getTexMask();
+
+			//		PTSParam* image_param = stitcher->stitchingTemplate->getImageParams();
+			//		if (image_param[num].regional_warping_raw_buffer != NULL)
+			//		{
+			//			PTSParam* image_param = stitcher->stitchingTemplate->getImageParams();
+
+			//			//int size = strlen(image_param[num].regional_warping_buffer);
+
+			//			//if (base64ImageDecoder == NULL)
+			//			//{
+			//			//	base64ImageDecoder = new Base64ImageDecoder();
+			//			//}
+
+			//			//cv::Mat decoded_mat = base64ImageDecoder->base64_decode_for_ROIMapSave(image_param[num].regional_warping_buffer, size);
+
+			//			//void* decoded_buffer = malloc(warper->getWidth() * warper->getHeight() * 4);
+			//			//memcpy(decoded_buffer, decoded_mat.data, warper->getWidth() * warper->getHeight() * 4);
+
+			//			//decoded_mat.release();
+
+			//			tex.setBeforeMap(image_param[num].regional_warping_raw_buffer, image_param[num].mapW, image_param[num].mapH, image_param[num].regional_warping_level);
+
+			//			free(image_param[num].regional_warping_raw_buffer);
+			//			image_param[num].regional_warping_raw_buffer = NULL;
+			//		}
+			//		else if (mRegionalWarpingBeforeMapZeros[num] == 1)
+			//		{
+			//			tex.setBeforeMap(warper->getMapZeros(), warper->getWidth(), warper->getHeight(), image_param[num].regional_warping_level);
+			//			mRegionalWarpingBeforeMapZeros[num] = 0;
+			//		}
+			//	}
+
+			//	is_beforeRegionWarping = 0;
+			//}
 		}
 	}
 	else{
@@ -2207,7 +2296,6 @@ DWORD WINAPI EngineManager::run_load_param(LPVOID handle)
 		free(temp_o);
 		temp_o = NULL;
 	}
-
 	manager->ParsingPTS(manager->save_path);
 
 	//overlaytest_param check
@@ -3070,12 +3158,10 @@ int EngineManager::ParsingPTS(const char *path)
 				fscanf(fp, "%d", &(image_param[img_count].regional_warping_level));
 				fscanf(fp, "%d", &(image_param[img_count].mapW));
 				fscanf(fp, "%d", &(image_param[img_count].mapH));
-
 				//char* decoded_buffer = (char*)mRegionalWarping->getFirstMapBuffer(img_count);
 				char* decoded_buffer = (char*)malloc(mRegionalWarping->getWidth() * mRegionalWarping->getHeight() * 4);
 				fscanf(fp, "%s", decoded_buffer);
 				int size = strlen(decoded_buffer);
-
 				char* source_buffer = (char*)malloc(size + 1);
 				memcpy(source_buffer, decoded_buffer, size + 1);
 
@@ -3083,18 +3169,16 @@ int EngineManager::ParsingPTS(const char *path)
 				{
 					base64ImageDecoder = new Base64ImageDecoder();
 				}
-
 				cv::Mat decoded_mat = base64ImageDecoder->base64_decode_for_ROIMapSave(decoded_buffer, size);
 
 				//memset(decoded_buffer, 0, mCaptureWidth * mCaptureHeight * 4);
-				memcpy(decoded_buffer, decoded_mat.data, mCaptureWidth * mCaptureHeight * 4);
+				//memcpy(decoded_buffer, decoded_mat.data, mCaptureWidth * mCaptureHeight * 4);
+				memcpy(decoded_buffer, decoded_mat.data, mRegionalWarping->getWidth() * mRegionalWarping->getHeight() * 4);
 				free(decoded_buffer);
 				//mRegionalWarping->setFirstMapBuffer(img_count);
 				//mRegionalWarping->setMapZeros(img_count);
-
 				image_param[img_count].regional_warping_raw_buffer = (char*)malloc(mRegionalWarping->getWidth() * mRegionalWarping->getHeight() * 4);
 				memcpy(image_param[img_count].regional_warping_raw_buffer, decoded_mat.data, mRegionalWarping->getWidth() * mRegionalWarping->getHeight() * 4);
-
 				decoded_mat.release();
 
 				image_param[img_count].regional_warping_size = strlen(source_buffer) + 1;
@@ -3598,6 +3682,165 @@ DWORD WINAPI EngineManager::run_manual_curve(LPVOID handle) {
 	return 0;
 }
 
+DWORD WINAPI EngineManager::run_regional_warping(LPVOID handle) {
+	EngineManager* manager = (EngineManager *)handle;
+	SingleRegionalWarping* warper = manager->mRegionalWarping;
+
+	if (manager->regionWarping_done_callback != NULL)
+		manager->regionWarping_done_callback(QVS_MSG_REGIONAL_WARPING_START);
+
+	bool callback_flag = false;
+	void* input_buffer = NULL;
+	void* output_buffer = NULL;
+
+	/*for (int i = 0; i < manager->mNumCamera; i++)
+	{
+		if (manager->mVideoCaptureList[i].mVideoCapture)
+		{
+			if (manager->mRegionalWarpingIndex[i] == 1)
+			{
+				PTSParam* image_param = manager->stitcher->stitchingTemplate->getImageParams();
+				if (image_param[i].regional_warping_buffer)
+				{
+					int size = strlen(image_param[i].regional_warping_buffer);
+					if (manager->base64ImageDecoder == NULL)
+					{
+						manager->base64ImageDecoder = new Base64ImageDecoder();
+					}
+					cv::Mat decoded_mat = manager->base64ImageDecoder->base64_decode_for_ROIMapSave(image_param[i].regional_warping_buffer, size);
+					input_buffer = malloc(image_param[i].mapW * image_param[i].mapH * 4);
+					memcpy(input_buffer, decoded_mat.data, image_param[i].mapW * image_param[i].mapH * 4);
+					decoded_mat.release();
+				}
+
+				output_buffer = malloc(manager->output_width * manager->output_height * 4);
+				int result = StartManualCalibration((Calibration_Mode)6, input_buffer, output_buffer, manager->output_width, manager->output_height, manager->mSrcX, manager->mSrcY, manager->mDstX, manager->mDstY, image_param[i].regional_warping_level);
+
+				if (result == 1) {
+					manager->mRegionalWarpingMapIndex[i] = 1;
+				}
+				else if (result == -1) {
+					if (manager->regionWarping_done_callback != NULL)
+						manager->regionWarping_done_callback(QVS_MSG_REGIONAL_WARPING_INVALID_POINT);
+				}
+				else if (result == -2) {
+					if (manager->regionWarping_done_callback != NULL)
+						manager->regionWarping_done_callback(QVS_MSG_REGIONAL_WARPING_INVALID_AREA);
+				}
+				else if (result == -3) {
+					if (manager->regionWarping_done_callback != NULL)
+						manager->regionWarping_done_callback(QVS_MSG_REGIONAL_WARPING_BIG_AREA);
+				}
+				else if (result == -4) {
+					if (manager->regionWarping_done_callback != NULL)
+						manager->regionWarping_done_callback(QVS_MSG_REGIONAL_WARPING_LONG_DISTANCE);
+				}
+
+				callback_flag = true;
+				if (result != 1)
+					manager->isDoingAnimation = false;
+				printf("Regional Warping Finish\n");
+			}
+		}
+	}*/
+
+	if (callback_flag == true)
+	{
+		for (int i = 0; i < manager->mNumCamera; i++)
+		{
+			PTSParam* image_param = manager->stitcher->stitchingTemplate->getImageParams();
+			if (image_param[i].is_dirty == false)
+			{
+				if (image_param[i].regional_warping_buffer != NULL){
+					free(image_param[i].regional_warping_buffer); image_param[i].regional_warping_buffer = NULL;
+				}
+
+				image_param[i].is_clear = false;
+				image_param[i].is_dirty = false;
+			}
+
+			if (manager->mRegionalWarpingMapIndex[i] == 1)
+			{
+				if (image_param[i].regional_warping_buffer != NULL){
+					free(image_param[i].regional_warping_buffer); image_param[i].regional_warping_buffer = NULL;
+				}
+
+				cv::Mat temp;
+				std::vector<uchar> buff;
+				std::vector<int> param = std::vector<int>(2);
+				if (manager->base64ImageDecoder == NULL)
+				{
+					manager->base64ImageDecoder = new Base64ImageDecoder();
+				}
+
+				temp = cv::Mat(manager->output_width, manager->output_height, CV_8UC4);
+				memcpy(temp.data, output_buffer, manager->output_width * manager->output_height * 4);
+
+				param[0] = CV_IMWRITE_PNG_COMPRESSION;
+				param[1] = 4;
+				cv::imencode(".png", temp, buff, param);
+
+				size_t out_length = 4 * ((buff.size() + 2) / 3) + 1;
+				char* source_buffer = (char*)malloc(out_length);
+				memset(source_buffer, 0, out_length);
+
+				manager->base64ImageDecoder->base64_encode((char*)(buff.data()), buff.size(), source_buffer, &out_length);
+
+				temp.release();
+				buff.clear();
+
+				image_param[i].mapW = manager->output_width;
+				image_param[i].mapH = manager->output_height;
+				image_param[i].regional_warping_level = 1;
+				image_param[i].regional_warping_size = strlen(source_buffer) + 1;
+				image_param[i].regional_warping_buffer = source_buffer;
+
+				//image_param[i].regional_warping_size = warper->getWidth() * warper->getHeight() * 4;
+				//image_param[i].regional_warping_buffer = (char *)malloc(image_param[i].regional_warping_size);
+				//memcpy(image_param[i].regional_warping_buffer, warper->getMapBuffer(i), image_param[i].regional_warping_size);
+				image_param[i].is_clear = false;
+				image_param[i].is_dirty = true;
+
+				image_param[i].regional_warping_raw_buffer = (char*)malloc(manager->output_width * manager->output_height * 4);
+				memcpy(image_param[i].regional_warping_raw_buffer, output_buffer, manager->output_width * manager->output_height * 4);
+			}
+		}
+
+		manager->is_RegionWarping = 1;
+		if (manager->regionWarping_done_callback != NULL)
+			manager->regionWarping_done_callback(QVS_MSG_REGIONAL_WARPING_DONE);
+
+		manager->stitcher->stitchingTemplate->mCircularQueue->pre_enqueue();
+		manager->stitcher->stitchingTemplate->mCameraParams->mIsRegionalWarping = true;
+		manager->stitcher->stitchingTemplate->mCircularQueue->enqueue(manager->stitcher->stitchingTemplate->mCameraParams);
+		manager->history_callback(QVS_MSG_HISTORY_ENQUEUE);
+	}
+	else
+	{
+		manager->isDoingAnimation = false;
+		if (manager->regionWarping_done_callback != NULL)
+			manager->regionWarping_done_callback(QVS_MSG_CALIBRATION_NOT_RUN);
+	}
+
+	if (input_buffer != NULL)
+		free(input_buffer);
+	if (output_buffer != NULL)
+		free(output_buffer);
+
+	manager->mSrcX.clear();
+	manager->mSrcY.clear();
+	manager->mDstX.clear();
+	manager->mDstY.clear();
+
+	manager->mOutputSrcX.clear();
+	manager->mOutputSrcY.clear();
+	manager->mOutputDstX.clear();
+	manager->mOutputDstY.clear();
+
+	return 0;
+}
+
+
 void EngineManager::makeSeamMask(long long timeStamp, int* buffer_idx, int edit_mode)
 {
 	stitcher->makeSeamMask(input_tempData, timeStamp, buffer_idx, edit_mode);
@@ -4035,6 +4278,118 @@ int EngineManager::updateNadirImage()
 #endif
 
 	//return 1;
+}
+
+int EngineManager::updateStmap(int index)
+{
+	unsigned char* buffer;
+	char* path;
+	cv::Mat img;
+	if (index == 0)
+		path = mStmap_L_Path;
+	else
+		path = mStmap_R_Path;
+	img = cv::imread(path, cv::IMREAD_UNCHANGED);
+	int out_width = output_width;
+	int out_height = output_height;
+	//int out_width = img.cols;
+	//int out_height = img.rows;
+	if (img.data == NULL)
+	{
+		return QVS_MSG_FILE_CORRUP_ERROR;
+	}
+	else
+	{
+		if (img.cols != out_width || img.rows != out_height)
+		{
+			cv::resize(img, img, cv::Size(out_width, out_height));
+		}
+		buffer = (unsigned char*)malloc(out_width * out_height * 8);
+		memcpy(buffer, img.data, out_width * out_height * 8);
+		int channel = 8;
+		unsigned char* output_map = (unsigned char*)malloc(out_width * out_height * 4);
+		for (int i = 0; i < out_width * out_height; i++) {
+
+			float g0 = buffer[i * channel + 2];
+			float g1 = buffer[i * channel + 3];
+			float r0 = buffer[i * channel + 4];
+			float r1 = buffer[i * channel + 5];
+
+			output_map[i * 4] = r1;
+			output_map[i * 4 + 1] = r0;
+			output_map[i * 4 + 2] = g1;
+			output_map[i * 4 + 3] = g0;
+		}
+		mRegionalWarpingMapIndex[index] = 1;
+		PTSParam* image_param = stitcher->stitchingTemplate->getImageParams();
+		if (image_param[index].is_dirty == false)
+		{
+			if (image_param[index].regional_warping_buffer != NULL){
+				free(image_param[index].regional_warping_buffer);
+				image_param[index].regional_warping_buffer = NULL;
+			}
+
+			image_param[index].is_clear = false;
+			image_param[index].is_dirty = false;
+		}
+
+		if (mRegionalWarpingMapIndex[index] == 1)
+		{
+			if (image_param[index].regional_warping_buffer != NULL){
+				free(image_param[index].regional_warping_buffer);
+				image_param[index].regional_warping_buffer = NULL;
+			}
+
+			cv::Mat temp;
+			std::vector<uchar> buff;
+			std::vector<int> param = std::vector<int>(2);
+			if (base64ImageDecoder == NULL)
+			{
+				base64ImageDecoder = new Base64ImageDecoder();
+			}
+
+			temp = cv::Mat(output_width, output_height, CV_8UC4);
+			memcpy(temp.data, output_map, output_width * output_height * 4);
+
+			param[0] = CV_IMWRITE_PNG_COMPRESSION;
+			param[1] = 4;
+			cv::imencode(".png", temp, buff, param);
+
+			size_t out_length = 4 * ((buff.size() + 2) / 3) + 1;
+			char* source_buffer = (char*)malloc(out_length);
+			memset(source_buffer, 0, out_length);
+
+			base64ImageDecoder->base64_encode((char*)(buff.data()), buff.size(), source_buffer, &out_length);
+
+			temp.release();
+			buff.clear();
+
+			image_param[index].mapW = output_width;
+			image_param[index].mapH = output_height;
+			image_param[index].regional_warping_level = 1;
+			image_param[index].regional_warping_size = strlen(source_buffer) + 1;
+			image_param[index].regional_warping_buffer = source_buffer;
+
+			image_param[index].is_clear = false;
+			image_param[index].is_dirty = true;
+
+			image_param[index].regional_warping_raw_buffer = (char*)malloc(output_width * output_height * 4);
+			memcpy(image_param[index].regional_warping_raw_buffer, output_map, output_width * output_height * 4);
+		}
+	}
+
+	is_RegionWarping = 1;
+	if (regionWarping_done_callback != NULL)
+		regionWarping_done_callback(QVS_MSG_REGIONAL_WARPING_DONE);
+
+	stitcher->stitchingTemplate->mCircularQueue->pre_enqueue();
+	stitcher->stitchingTemplate->mCameraParams->mIsRegionalWarping = true;
+	stitcher->stitchingTemplate->mCircularQueue->enqueue(stitcher->stitchingTemplate->mCameraParams);
+	history_callback(QVS_MSG_HISTORY_ENQUEUE);
+
+
+	img.release();
+	return QVS_SUCCESS;
 }
 
 int EngineManager::setOutputConfiguration(QVS_Engine::Configuration config)
@@ -4695,6 +5050,14 @@ void EngineManager::setNadirPath(const char* path)
 {
 	is_need_save = true;
 	sprintf(mNadirPath, "%s", path);
+}
+void EngineManager::setStmapPath(int index, const char* path)
+{
+	is_need_save = true;
+	if (index == 0)
+		sprintf(mStmap_L_Path, "%s", path);
+	else
+		sprintf(mStmap_R_Path, "%s", path);
 }
 char* EngineManager::getSnapshot_path()
 {
@@ -6083,6 +6446,14 @@ void EngineManager::convertOutput2Input(int num, int x, int y, double point[2])
 	point[0] += left;
 	point[1] += top;
 }
+
+int EngineManager::doRegionalWarping()
+{
+	mRegionalWarpingThread = CreateThread(NULL, 0, run_regional_warping, this, 0, NULL);
+
+	return QVS_SUCCESS;
+}
+
 
 int EngineManager::zoomIn(float s, int x, int y)
 {

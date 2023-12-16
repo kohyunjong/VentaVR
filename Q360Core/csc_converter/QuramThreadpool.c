@@ -14,7 +14,7 @@
 #include <pthread.h>
 #endif
 #ifdef _DEBUG
-#include "memory_leak_checker.h"
+//#include "memory_leak_checker.h"
 #endif
 
 //#define THREAD_POOL_DEBUG

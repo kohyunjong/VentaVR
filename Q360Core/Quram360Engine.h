@@ -347,6 +347,7 @@ public:
 	static int QVS_SetNadirCompensationMode(int mode);
 	static int QVS_SetNadirCompensationParam(int position, int size);
 	static int QVS_UpdateNadirImage();
+	static int QVS_UpdateStmap(int index);
 
 	static int QVS_SetAudioBufferOffset(int offset);
 	static int QVS_SetVideoBufferOffset(int offset);
@@ -389,6 +390,7 @@ public:
 	static int QVS_GetBmOutputDevice();
 	static int QVS_GetBmOutputDisplay();
 	static void QVS_SetNadirPath(const char* path);
+	static void QVS_SetStmapPath(int index, const char* path);
 
 	static void QVS_SetZoom(float a);
 	static void QVS_SetMultiStreaming(int isMultiStreaming);

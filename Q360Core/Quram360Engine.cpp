@@ -130,6 +130,12 @@ int QVS_Engine::QVS_UpdateNadirImage()
 		return mQuramEngineManager->updateNadirImage();
 	return QVS_FAIL;
 }
+int QVS_Engine::QVS_UpdateStmap(int index)
+{
+	if (mQuramEngineManager != NULL)
+		return mQuramEngineManager->updateStmap(index);
+	return QVS_FAIL;
+}
 int QVS_Engine::QVS_SetAudioBufferOffset(int offset)
 {
 	if (mQuramEngineManager != NULL)
@@ -443,6 +449,11 @@ void QVS_Engine::QVS_SetNadirPath(const char* path)
 {
 	if (mQuramEngineManager != NULL)
 		mQuramEngineManager->setNadirPath(path);
+}
+void QVS_Engine::QVS_SetStmapPath(int index, const char* path)
+{
+	if (mQuramEngineManager != NULL)
+		mQuramEngineManager->setStmapPath(index, path);
 }
 
 void QVS_Engine::QVS_SetZoom(float a)

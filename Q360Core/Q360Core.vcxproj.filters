@@ -171,9 +171,6 @@
     <ClCompile Include="Capture\FILEVideoCapture.cpp">
       <Filter>Capture</Filter>
     </ClCompile>
-    <ClCompile Include="QParser.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="AudioController.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -193,12 +190,6 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="csc_converter\QuramThreadpool.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="QCalibrator\QUtils\qwarping.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="QCalibrator\QUtils\Warping.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Draw\Draw.cpp">
@@ -429,12 +420,6 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="csc_converter\QuramThreadpool.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="QCalibrator\QUtils\qwarping.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="QCalibrator\QUtils\Warping.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Draw\Draw.h">

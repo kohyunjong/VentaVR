@@ -1,7 +1,7 @@
 
 #include "csc_converter.h"
 #ifdef _DEBUG
-#include "memory_leak_checker.h"
+//#include "memory_leak_checker.h"
 #endif
 
 #if HAVE_NEON
